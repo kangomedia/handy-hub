@@ -2,6 +2,18 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+import Gallery from '../components/Gallery.astro';
+
+const areaOverviewGallery = [
+  { src: '/assets/images/portfolio/img_7092.jpeg', alt: 'Home renovation in Westminster, CO', category: 'Interior Renovation', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8049.jpeg', alt: 'Bathroom remodel in Arvada, CO', category: 'Bathroom Remodel', location: 'Arvada, CO' },
+  { src: '/assets/images/portfolio/img_7135.jpeg', alt: 'Kitchen remodel in Broomfield, CO', category: 'Kitchen Remodel', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_8540.jpeg', alt: 'Deck build in Erie, CO', category: 'Deck Build', location: 'Erie, CO' },
+  { src: '/assets/images/portfolio/img_8632.jpeg', alt: 'Full renovation in Lafayette, CO', category: 'Full Renovation', location: 'Lafayette, CO' },
+  { src: '/assets/images/portfolio/img_9382.jpeg', alt: 'Painting project in Denver, CO', category: 'Painting', location: 'Denver, CO' },
+  { src: '/assets/images/portfolio/img_8716.jpeg', alt: 'Exterior renovation in Westminster', category: 'Exterior Work', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_7384.jpeg', alt: 'Home improvement in Denver Metro', category: 'Home Improvement', location: 'Denver Metro' },
+];
 ---
 
 <BaseLayout
@@ -162,6 +174,17 @@ import Footer from '../components/Footer.astro';
         </div>
       </div>
     </section>
+
+    <!-- Portfolio Gallery -->
+    <Gallery
+      eyebrow="Our Work Across Colorado"
+      title="Projects From Every Service Area"
+      subtitle="No matter where you are in the Denver Metro, you'll get the same premium craftsmanship and attention to detail."
+      images={areaOverviewGallery}
+      variant="default"
+      columns={4}
+      id="sa-overview-gallery"
+    />
 
     <!-- CTA Banner -->
     <section class="sa-cta-banner">

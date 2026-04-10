@@ -2,6 +2,16 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+import Gallery from '../../components/Gallery.astro';
+
+const svcGalleryImages = [
+  { src: '/assets/images/portfolio/img_7092.jpeg', alt: 'Roofing project by Elite Property Innovations', category: 'Roofing', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8049.jpeg', alt: 'Roofing work in the Denver Metro area', category: 'Roofing', location: 'Denver Metro' },
+  { src: '/assets/images/portfolio/img_7135.jpeg', alt: 'Professional Roofing services in Colorado', category: 'Roofing', location: 'Arvada, CO' },
+  { src: '/assets/images/portfolio/img_8632.jpeg', alt: 'Roofing project completed in Broomfield', category: 'Roofing', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_9382.jpeg', alt: 'Quality Roofing craftsmanship in Westminster', category: 'Roofing', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8716.jpeg', alt: 'Roofing service in the Denver Metro area', category: 'Roofing', location: 'Denver, CO' },
+];
 ---
 
 <BaseLayout

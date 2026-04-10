@@ -2,6 +2,16 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+import Gallery from '../components/Gallery.astro';
+
+const aboutGalleryImages = [
+  { src: '/assets/images/portfolio/img_7093.jpeg', alt: 'Elite Property Innovations team completing a kitchen remodel', category: 'Kitchen Remodel', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8515.jpeg', alt: 'Professional bathroom renovation by our team', category: 'Bathroom', location: 'Arvada, CO' },
+  { src: '/assets/images/portfolio/img_8867.jpeg', alt: 'Interior painting project with premium finish', category: 'Painting', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_7302.jpeg', alt: 'Custom carpentry and woodwork installation', category: 'Carpentry', location: 'Denver, CO' },
+  { src: '/assets/images/portfolio/img_8912.jpeg', alt: 'Complete home renovation project', category: 'Full Renovation', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_9193.jpeg', alt: 'Exterior improvement and landscaping work', category: 'Exterior Work', location: 'Arvada, CO' },
+];
 ---
 
 <BaseLayout
@@ -125,6 +135,17 @@ import Footer from '../components/Footer.astro';
         </div>
       </div>
     </section>
+
+    <!-- ========== PORTFOLIO GALLERY ========== -->
+    <Gallery
+      eyebrow="Our Portfolio"
+      title="A Track Record You Can See"
+      subtitle="Every photo here is a real project completed by our team. No stock images — just honest craftsmanship on display."
+      images={aboutGalleryImages}
+      variant="default"
+      columns={3}
+      id="about-gallery"
+    />
 
     <!-- ========== CTA SECTION ========== -->
     <section class="about-cta">

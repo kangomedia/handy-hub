@@ -2,6 +2,22 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+import Gallery from '../components/Gallery.astro';
+
+const servicesGalleryImages = [
+  { src: '/assets/images/portfolio/img_7092.jpeg', alt: 'Interior room renovation in Westminster, CO', category: 'Interior Renovation', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_7136.jpeg', alt: 'Bathroom remodeling with tile work', category: 'Bathroom Remodel', location: 'Arvada, CO' },
+  { src: '/assets/images/portfolio/img_8538.jpeg', alt: 'Custom painting and finishing', category: 'Painting', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_9387.jpeg', alt: 'Deck construction and outdoor renovation', category: 'Deck Build', location: 'Denver, CO' },
+  { src: '/assets/images/portfolio/img_8007.jpeg', alt: 'Home improvement and drywall project', category: 'Drywall', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8691.jpeg', alt: 'Carpentry and woodworking project', category: 'Carpentry', location: 'Erie, CO' },
+  { src: '/assets/images/portfolio/img_7307.jpeg', alt: 'Full home renovation project', category: 'Full Renovation', location: 'Lafayette, CO' },
+  { src: '/assets/images/portfolio/img_9389.jpeg', alt: 'Fencing and exterior work', category: 'Fencing', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8537.jpeg', alt: 'Window and door replacement project', category: 'Windows & Doors', location: 'Arvada, CO' },
+  { src: '/assets/images/portfolio/img_8722.jpeg', alt: 'Roofing service in the Denver Metro area', category: 'Roofing', location: 'Denver Metro' },
+  { src: '/assets/images/portfolio/img_7384.jpeg', alt: 'Handyman services and home repairs', category: 'Handyman', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_8516.jpeg', alt: 'Kitchen remodel with modern updates', category: 'Kitchen Remodel', location: 'Westminster, CO' },
+];
 ---
 
 <BaseLayout
@@ -285,6 +301,19 @@ import Footer from '../components/Footer.astro';
         </div>
       </div>
     </section>
+
+    <!-- ============================================================
+         Extended Project Gallery
+         ============================================================ -->
+    <Gallery
+      eyebrow="Full Portfolio"
+      title="More of Our Work"
+      subtitle="Browse our complete collection of recent home improvement projects across Westminster and the Denver Metro area."
+      images={servicesGalleryImages}
+      variant="masonry"
+      columns={4}
+      id="services-gallery"
+    />
 
     <!-- ============================================================
          CTA Banner

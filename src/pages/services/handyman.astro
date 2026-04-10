@@ -2,6 +2,16 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+import Gallery from '../../components/Gallery.astro';
+
+const svcGalleryImages = [
+  { src: '/assets/images/portfolio/img_7092.jpeg', alt: 'Handyman Services project by Elite Property Innovations', category: 'Handyman Services', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8049.jpeg', alt: 'Handyman Services work in the Denver Metro area', category: 'Handyman Services', location: 'Denver Metro' },
+  { src: '/assets/images/portfolio/img_7135.jpeg', alt: 'Professional Handyman Services services in Colorado', category: 'Handyman Services', location: 'Arvada, CO' },
+  { src: '/assets/images/portfolio/img_8632.jpeg', alt: 'Handyman Services project completed in Broomfield', category: 'Handyman Services', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_9382.jpeg', alt: 'Quality Handyman Services craftsmanship in Westminster', category: 'Handyman Services', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8716.jpeg', alt: 'Handyman Services service in the Denver Metro area', category: 'Handyman Services', location: 'Denver, CO' },
+];
 ---
 
 <BaseLayout

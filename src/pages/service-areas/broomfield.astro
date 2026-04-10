@@ -2,6 +2,16 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+import Gallery from '../../components/Gallery.astro';
+
+const areaGalleryImages = [
+  { src: '/assets/images/portfolio/img_7092.jpeg', alt: 'Home renovation project in Broomfield, CO', category: 'Interior Renovation', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_8049.jpeg', alt: 'Bathroom remodel in Broomfield, CO', category: 'Bathroom Remodel', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_7135.jpeg', alt: 'Kitchen transformation in Broomfield, CO', category: 'Kitchen Remodel', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_8540.jpeg', alt: 'Deck construction project near Broomfield', category: 'Deck Build', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_8632.jpeg', alt: 'Full home improvement in Broomfield area', category: 'Full Renovation', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_9382.jpeg', alt: 'Professional painting in Broomfield, CO', category: 'Painting', location: 'Broomfield, CO' },
+];
 ---
 
 <BaseLayout
@@ -162,6 +172,17 @@ import Footer from '../../components/Footer.astro';
       </div>
     </section>
 
+
+    <!-- Portfolio Gallery -->
+    <Gallery
+      eyebrow="Our Work in Broomfield"
+      title="Recent Broomfield Projects"
+      subtitle="Browse recent home improvement projects we've completed in Broomfield and the surrounding areas."
+      images={areaGalleryImages}
+      variant="default"
+      columns={3}
+      id="broomfield-gallery"
+    />
     <!-- CTA Banner -->
     <section class="sa-page-cta-banner">
       <div class="sa-page-cta-banner__inner container">

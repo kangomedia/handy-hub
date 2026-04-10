@@ -2,6 +2,16 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+import Gallery from '../../components/Gallery.astro';
+
+const areaGalleryImages = [
+  { src: '/assets/images/portfolio/img_7092.jpeg', alt: 'Home renovation project in Denver, CO', category: 'Interior Renovation', location: 'Denver, CO' },
+  { src: '/assets/images/portfolio/img_8049.jpeg', alt: 'Bathroom remodel in Denver, CO', category: 'Bathroom Remodel', location: 'Denver, CO' },
+  { src: '/assets/images/portfolio/img_7135.jpeg', alt: 'Kitchen transformation in Denver, CO', category: 'Kitchen Remodel', location: 'Denver, CO' },
+  { src: '/assets/images/portfolio/img_8540.jpeg', alt: 'Deck construction project near Denver', category: 'Deck Build', location: 'Denver, CO' },
+  { src: '/assets/images/portfolio/img_8632.jpeg', alt: 'Full home improvement in Denver area', category: 'Full Renovation', location: 'Denver, CO' },
+  { src: '/assets/images/portfolio/img_9382.jpeg', alt: 'Professional painting in Denver, CO', category: 'Painting', location: 'Denver, CO' },
+];
 ---
 
 <BaseLayout
@@ -162,6 +172,17 @@ import Footer from '../../components/Footer.astro';
       </div>
     </section>
 
+
+    <!-- Portfolio Gallery -->
+    <Gallery
+      eyebrow="Our Work in Denver"
+      title="Recent Denver Projects"
+      subtitle="Browse recent home improvement projects we've completed in Denver and the surrounding areas."
+      images={areaGalleryImages}
+      variant="default"
+      columns={3}
+      id="denver-gallery"
+    />
     <!-- CTA Banner -->
     <section class="sa-page-cta-banner">
       <div class="sa-page-cta-banner__inner container">

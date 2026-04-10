@@ -2,6 +2,16 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+import Gallery from '../../components/Gallery.astro';
+
+const svcGalleryImages = [
+  { src: '/assets/images/portfolio/img_7092.jpeg', alt: 'Kitchen Remodeling project by Elite Property Innovations', category: 'Kitchen Remodeling', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8049.jpeg', alt: 'Kitchen Remodeling work in the Denver Metro area', category: 'Kitchen Remodeling', location: 'Denver Metro' },
+  { src: '/assets/images/portfolio/img_7135.jpeg', alt: 'Professional Kitchen Remodeling services in Colorado', category: 'Kitchen Remodeling', location: 'Arvada, CO' },
+  { src: '/assets/images/portfolio/img_8632.jpeg', alt: 'Kitchen Remodeling project completed in Broomfield', category: 'Kitchen Remodeling', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_9382.jpeg', alt: 'Quality Kitchen Remodeling craftsmanship in Westminster', category: 'Kitchen Remodeling', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8716.jpeg', alt: 'Kitchen Remodeling service in the Denver Metro area', category: 'Kitchen Remodeling', location: 'Denver, CO' },
+];
 ---
 
 <BaseLayout
@@ -200,6 +210,18 @@ import Footer from '../../components/Footer.astro';
         </div>
       </div>
     </section>
+
+
+    <!-- Portfolio Gallery -->
+    <Gallery
+      eyebrow="Our Kitchen Remodeling Work"
+      title="Recent Kitchen Remodeling Projects"
+      subtitle="Browse recent projects we have completed across Westminster and the Denver Metro area."
+      images={svcGalleryImages}
+      variant="default"
+      columns={3}
+      id="kitchen-remodeling-gallery"
+    />
 
     <!-- ============================================================
          CTA Banner

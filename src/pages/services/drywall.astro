@@ -2,6 +2,16 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+import Gallery from '../../components/Gallery.astro';
+
+const svcGalleryImages = [
+  { src: '/assets/images/portfolio/img_7092.jpeg', alt: 'Drywall project by Elite Property Innovations', category: 'Drywall', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8049.jpeg', alt: 'Drywall work in the Denver Metro area', category: 'Drywall', location: 'Denver Metro' },
+  { src: '/assets/images/portfolio/img_7135.jpeg', alt: 'Professional Drywall services in Colorado', category: 'Drywall', location: 'Arvada, CO' },
+  { src: '/assets/images/portfolio/img_8632.jpeg', alt: 'Drywall project completed in Broomfield', category: 'Drywall', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_9382.jpeg', alt: 'Quality Drywall craftsmanship in Westminster', category: 'Drywall', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8716.jpeg', alt: 'Drywall service in the Denver Metro area', category: 'Drywall', location: 'Denver, CO' },
+];
 ---
 
 <BaseLayout

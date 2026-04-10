@@ -2,6 +2,16 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
+import Gallery from '../../components/Gallery.astro';
+
+const svcGalleryImages = [
+  { src: '/assets/images/portfolio/img_7092.jpeg', alt: 'Windows & Doors project by Elite Property Innovations', category: 'Windows & Doors', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8049.jpeg', alt: 'Windows & Doors work in the Denver Metro area', category: 'Windows & Doors', location: 'Denver Metro' },
+  { src: '/assets/images/portfolio/img_7135.jpeg', alt: 'Professional Windows & Doors services in Colorado', category: 'Windows & Doors', location: 'Arvada, CO' },
+  { src: '/assets/images/portfolio/img_8632.jpeg', alt: 'Windows & Doors project completed in Broomfield', category: 'Windows & Doors', location: 'Broomfield, CO' },
+  { src: '/assets/images/portfolio/img_9382.jpeg', alt: 'Quality Windows & Doors craftsmanship in Westminster', category: 'Windows & Doors', location: 'Westminster, CO' },
+  { src: '/assets/images/portfolio/img_8716.jpeg', alt: 'Windows & Doors service in the Denver Metro area', category: 'Windows & Doors', location: 'Denver, CO' },
+];
 ---
 
 <BaseLayout
