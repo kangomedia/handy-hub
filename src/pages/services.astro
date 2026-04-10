@@ -4,7 +4,10 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout title="Services | HandyHub" description="Expert handyman services for every need. Quality solutions from skilled professionals.">
+<BaseLayout
+  title="Our Services | Home Improvement & Remodeling in Westminster, CO — Elite Property Innovations"
+  description="Explore our full range of home improvement services: kitchen remodeling, bathroom remodeling, painting, carpentry, decks, fences, windows, roofing & more. Serving Westminster, Arvada, Broomfield & Denver."
+>
   <Navbar variant="dark" />
   <main id="main-content">
 
@@ -12,214 +15,247 @@ import Footer from '../components/Footer.astro';
          Hero Section
          ============================================================ -->
     <section class="services-hero">
-      <div class="services-hero__pattern" aria-hidden="true"></div>
+      <div class="services-hero__gradient" aria-hidden="true"></div>
+      <div class="services-hero__grid-overlay" aria-hidden="true"></div>
       <div class="services-hero__content container">
-        <span class="section-label services-hero__eyebrow">HANDYHUB</span>
-        <h1 class="services-hero__heading">Expert handyman services for every need</h1>
-        <a href="/contact" class="btn btn--light">Contact us</a>
-      </div>
-      <div class="services-hero__image-wrap">
-        <div class="services-hero__gradient" aria-hidden="true"></div>
-        <img
-          src="/assets/images/hero-services.jpg"
-          alt="Professional handyman service in action"
-          width="1440"
-          height="600"
-          class="services-hero__image"
-          loading="eager"
-        />
-      </div>
-      <div class="services-hero__partners container">
-        <img src="/assets/images/logo-partner-1.png" alt="Partner logo" width="120" height="32" class="services-hero__partner-logo" loading="lazy" />
-        <img src="/assets/images/logo-partner-2.png" alt="Partner logo" width="120" height="32" class="services-hero__partner-logo" loading="lazy" />
-        <img src="/assets/images/logo-partner-3.png" alt="Partner logo" width="120" height="32" class="services-hero__partner-logo" loading="lazy" />
-        <img src="/assets/images/logo-partner-4.png" alt="Partner logo" width="120" height="32" class="services-hero__partner-logo" loading="lazy" />
-        <img src="/assets/images/logo-partner-5.png" alt="Partner logo" width="120" height="32" class="services-hero__partner-logo" loading="lazy" />
+        <span class="section-label services-hero__eyebrow">Our Services</span>
+        <h1 class="services-hero__heading">Home Improvement Services in Westminster&nbsp;&amp;&nbsp;Denver</h1>
+        <p class="services-hero__subtext">From complete kitchen transformations to custom deck builds, Elite Property Innovations delivers the quality craftsmanship Westminster homeowners trust. Explore our full range of services below.</p>
+        <div class="services-hero__ctas">
+          <a href="/contact" class="btn btn--accent">Get a Free Estimate</a>
+          <a href="tel:7202991238" class="btn btn--outline">(720) 299-1238</a>
+        </div>
       </div>
     </section>
 
     <!-- ============================================================
-         Services Section
+         Services Grid Section — 10 Real Services
          ============================================================ -->
-    <section class="services-grid-section">
+    <section class="services-grid-section" id="all-services">
       <div class="services-grid-section__inner container">
-        <span class="section-label">HANDYHUB</span>
-        <h2 class="services-grid-section__heading">Quality Handyman Solutions</h2>
+        <span class="section-label">What We Do</span>
+        <h2 class="services-grid-section__heading">Comprehensive Home Improvement Solutions</h2>
         <p class="services-grid-section__subtext">
-          At QuickFix, we offer a comprehensive range of handyman services to keep your home in top condition. Whether it's a minor repair or a major project, our skilled team is here to help.
+          Whether you need a single room refreshed or a whole-home renovation, our experienced team handles every phase — from planning to final walkthrough. All work is backed by our satisfaction guarantee.
         </p>
 
         <div class="services-grid">
-          <a href="/internal-services" class="service-card">
+
+          <!-- 1. Kitchen Remodeling -->
+          <a href="/internal-services" class="service-card" id="service-kitchen">
             <div class="service-card__icon-wrap">
-              <img src="/assets/images/icon-home-repair.svg" alt="" role="presentation" width="24" height="24" class="service-card__icon" />
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-card__icon"><path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/><path d="M3 9V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4"/><line x1="12" y1="13" x2="12" y2="17"/><line x1="8" y1="13" x2="8" y2="17"/><line x1="16" y1="13" x2="16" y2="17"/></svg>
             </div>
-            <h3 class="service-card__title">Home Repairs</h3>
-            <p class="service-card__desc">From fixing leaky faucets to patching drywall, we handle all your home repair needs.</p>
-            <span class="service-card__link">Learn more &rarr;</span>
+            <h3 class="service-card__title">Kitchen Remodeling</h3>
+            <p class="service-card__desc">Custom cabinetry, countertops, backsplashes, and full layout redesigns. Modernize your kitchen with premium materials and expert installation.</p>
+            <span class="service-card__link">View service &rarr;</span>
           </a>
 
-          <a href="/internal-services" class="service-card">
+          <!-- 2. Bathroom Remodeling -->
+          <a href="/internal-services" class="service-card" id="service-bathroom">
             <div class="service-card__icon-wrap">
-              <img src="/assets/images/icon-furniture.svg" alt="" role="presentation" width="24" height="24" class="service-card__icon" />
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-card__icon"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1z"/><path d="M6 12V5a2 2 0 0 1 2-2h1"/><circle cx="9" cy="5" r="1"/></svg>
             </div>
-            <h3 class="service-card__title">Furniture Assembly</h3>
-            <p class="service-card__desc">Professional assembly for all types of furniture, ensuring sturdy and precise results.</p>
-            <span class="service-card__link">Learn more &rarr;</span>
+            <h3 class="service-card__title">Bathroom Remodeling</h3>
+            <p class="service-card__desc">Walk-in showers, tub-to-shower conversions, vanity upgrades, and complete bathroom renovations tailored to your style and budget.</p>
+            <span class="service-card__link">View service &rarr;</span>
           </a>
 
-          <a href="/internal-services" class="service-card">
+          <!-- 3. Interior & Exterior Painting -->
+          <a href="/internal-services" class="service-card" id="service-painting">
             <div class="service-card__icon-wrap">
-              <img src="/assets/images/icon-painting.svg" alt="" role="presentation" width="24" height="24" class="service-card__icon" />
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-card__icon"><path d="M19 3H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/><path d="M12 11v4"/><path d="M10 15h4l-2 6-2-6z"/></svg>
             </div>
-            <h3 class="service-card__title">Painting</h3>
-            <p class="service-card__desc">Interior and exterior painting services to refresh and beautify your home.</p>
-            <span class="service-card__link">Learn more &rarr;</span>
+            <h3 class="service-card__title">Interior & Exterior Painting</h3>
+            <p class="service-card__desc">Professional surface prep, premium paint application, and clean, crisp results. Transform any room or your home's curb appeal.</p>
+            <span class="service-card__link">View service &rarr;</span>
           </a>
 
-          <a href="/internal-services" class="service-card">
+          <!-- 4. Handyman Services -->
+          <a href="/internal-services" class="service-card" id="service-handyman">
             <div class="service-card__icon-wrap">
-              <img src="/assets/images/icon-plumbing.svg" alt="" role="presentation" width="24" height="24" class="service-card__icon" />
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-card__icon"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
             </div>
-            <h3 class="service-card__title">Plumbing</h3>
-            <p class="service-card__desc">Expert plumbing solutions for leaks, clogs, installations, and more.</p>
-            <span class="service-card__link">Learn more &rarr;</span>
+            <h3 class="service-card__title">Handyman Services</h3>
+            <p class="service-card__desc">Fixture installs, shelving, minor repairs, and odd jobs. No project is too small — we'll get it done right the first time.</p>
+            <span class="service-card__link">View service &rarr;</span>
           </a>
 
-          <a href="/internal-services" class="service-card">
+          <!-- 5. Drywall Services -->
+          <a href="/internal-services" class="service-card" id="service-drywall">
             <div class="service-card__icon-wrap">
-              <img src="/assets/images/icon-electrical.svg" alt="" role="presentation" width="24" height="24" class="service-card__icon" />
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-card__icon"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
             </div>
-            <h3 class="service-card__title">Electrical Work</h3>
-            <p class="service-card__desc">Safe and reliable electrical services, from outlet installation to lighting upgrades.</p>
-            <span class="service-card__link">Learn more &rarr;</span>
+            <h3 class="service-card__title">Drywall Services</h3>
+            <p class="service-card__desc">Drywall hanging, taping, mudding, texture matching, and seamless patching. Walls that look factory-smooth, guaranteed.</p>
+            <span class="service-card__link">View service &rarr;</span>
           </a>
 
-          <a href="/internal-services" class="service-card">
+          <!-- 6. Carpentry -->
+          <a href="/internal-services" class="service-card" id="service-carpentry">
             <div class="service-card__icon-wrap">
-              <img src="/assets/images/icon-carpentry.svg" alt="" role="presentation" width="24" height="24" class="service-card__icon" />
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-card__icon"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/><path d="M9 20v-6h6v6"/></svg>
             </div>
             <h3 class="service-card__title">Carpentry</h3>
-            <p class="service-card__desc">Custom carpentry work including shelving, trim, and cabinetry for your home.</p>
-            <span class="service-card__link">Learn more &rarr;</span>
+            <p class="service-card__desc">Custom trim, crown molding, built-ins, shelving, and structural framing. Precision woodwork that elevates every room.</p>
+            <span class="service-card__link">View service &rarr;</span>
           </a>
+
+          <!-- 7. Deck Construction & Repair -->
+          <a href="/internal-services" class="service-card" id="service-deck">
+            <div class="service-card__icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-card__icon"><path d="M3 7h18"/><path d="M3 11h18"/><path d="M5 7v12"/><path d="M9 7v12"/><path d="M15 7v12"/><path d="M19 7v12"/><path d="M3 19h18"/></svg>
+            </div>
+            <h3 class="service-card__title">Deck Construction & Repair</h3>
+            <p class="service-card__desc">New deck builds, board replacement, staining, sealing, and railing upgrades. Extend your outdoor living space with confidence.</p>
+            <span class="service-card__link">View service &rarr;</span>
+          </a>
+
+          <!-- 8. Fence Installation & Repair -->
+          <a href="/internal-services" class="service-card" id="service-fence">
+            <div class="service-card__icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-card__icon"><path d="M4 4v16"/><path d="M12 4v16"/><path d="M20 4v16"/><path d="M4 8h8"/><path d="M12 8h8"/><path d="M4 14h8"/><path d="M12 14h8"/><path d="M2 4h4"/><path d="M10 4h4"/><path d="M18 4h4"/></svg>
+            </div>
+            <h3 class="service-card__title">Fence Installation & Repair</h3>
+            <p class="service-card__desc">Wood, vinyl, and composite fencing. New installations, post replacements, and storm damage repair. Privacy and curb appeal in one.</p>
+            <span class="service-card__link">View service &rarr;</span>
+          </a>
+
+          <!-- 9. Window & Door Replacement -->
+          <a href="/internal-services" class="service-card" id="service-windows">
+            <div class="service-card__icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-card__icon"><rect x="3" y="3" width="18" height="18" rx="1"/><line x1="12" y1="3" x2="12" y2="21"/><line x1="3" y1="12" x2="21" y2="12"/></svg>
+            </div>
+            <h3 class="service-card__title">Window & Door Replacement</h3>
+            <p class="service-card__desc">Energy-efficient window installs, entry door upgrades, and patio door replacements. Improve comfort and cut energy costs.</p>
+            <span class="service-card__link">View service &rarr;</span>
+          </a>
+
+          <!-- 10. Roofing Services -->
+          <a href="/internal-services" class="service-card" id="service-roofing">
+            <div class="service-card__icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="service-card__icon"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6"/></svg>
+            </div>
+            <h3 class="service-card__title">Roofing Services</h3>
+            <p class="service-card__desc">Inspections, repairs, re-roofing, and gutter maintenance. Protect your home from Colorado's extreme weather year-round.</p>
+            <span class="service-card__link">View service &rarr;</span>
+          </a>
+
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-         CTA Section
+         Why EPI Section
          ============================================================ -->
-    <section class="services-cta">
-      <div class="services-cta__pattern" aria-hidden="true"></div>
-      <div class="services-cta__inner container">
-        <div class="services-cta__content">
-          <span class="section-label services-cta__eyebrow">HANDYHUB</span>
-          <h2 class="services-cta__heading">Ready to get started?</h2>
-          <p class="services-cta__text">
-            Contact us today for a free estimate. Our team is ready to help with all your handyman needs.
-          </p>
-          <a href="/contact" class="btn btn--light">Contact us</a>
-        </div>
-        <div class="services-cta__image-wrap">
-          <img
-            src="/assets/images/cta-image.jpg"
-            alt="Handyman working on a project"
-            width="560"
-            height="400"
-            class="services-cta__image"
-            loading="lazy"
-          />
+    <section class="services-why">
+      <div class="services-why__inner container">
+        <span class="section-label">Why Elite Property Innovations</span>
+        <h2 class="services-why__heading">What Sets Us Apart</h2>
+        <p class="services-why__subtext">
+          Not all contractors are created equal. Here's why Westminster homeowners choose us for their most important home projects.
+        </p>
+        <div class="services-why__grid">
+          <div class="services-why__card">
+            <div class="services-why__card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="services-why__card-title">25+ Years of Hands-On Experience</h3>
+            <p class="services-why__card-desc">We've been transforming Colorado homes since before many competitors opened their doors. Experience means fewer mistakes and faster results.</p>
+          </div>
+          <div class="services-why__card">
+            <div class="services-why__card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3 class="services-why__card-title">5-Star Google Rating</h3>
+            <p class="services-why__card-desc">Our reviews speak for themselves. Real Westminster homeowners rating us 5 stars for quality, communication, and reliability.</p>
+          </div>
+          <div class="services-why__card">
+            <div class="services-why__card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="services-why__card-title">Clear Communication, Always</h3>
+            <p class="services-why__card-desc">You'll never wonder what's happening with your project. We provide detailed estimates, daily updates, and honest timelines.</p>
+          </div>
+          <div class="services-why__card">
+            <div class="services-why__card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="services-why__card-title">Locally Owned & Operated</h3>
+            <p class="services-why__card-desc">We live and work in Westminster. Your home is in our neighborhood — and we treat it like our own.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-         Testimonials Section
+         Testimonials Section — Real Google Reviews
          ============================================================ -->
     <section class="services-testimonials">
       <div class="services-testimonials__inner container">
-        <span class="section-label">HANDYHUB</span>
-        <h2 class="services-testimonials__heading">What our clients say</h2>
+        <span class="section-label">Client Reviews</span>
+        <h2 class="services-testimonials__heading">What Westminster Homeowners Say</h2>
         <p class="services-testimonials__subtext">
-          Real feedback from homeowners who trust our handyman services.
+          Real reviews from real customers. See why our neighbors trust us with their biggest home investments.
         </p>
-
         <div class="testimonials-grid">
           <div class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="testimonial-card__quote">
-              &ldquo;The team was professional, punctual, and did an amazing job on our kitchen renovation. Highly recommend!&rdquo;
+              &ldquo;Jacob and his team did an incredible job remodeling our home. We had a pretty large job that included a complete renovation of our bedroom, and they knocked it out of the park!&rdquo;
             </p>
             <div class="testimonial-card__author">
-              <img src="/assets/images/testimonial-avatar-1.jpg" alt="Sarah M." width="48" height="48" class="testimonial-card__avatar" loading="lazy" />
+              <div class="testimonial-card__avatar-placeholder">C</div>
               <div>
-                <span class="testimonial-card__name">Sarah M.</span>
-                <span class="testimonial-card__role">Homeowner</span>
+                <span class="testimonial-card__name">Corie D.</span>
+                <span class="testimonial-card__role">Home Remodel · Westminster</span>
               </div>
             </div>
           </div>
-
           <div class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="testimonial-card__quote">
-              &ldquo;Quick response time and excellent workmanship. They fixed our plumbing issues in no time.&rdquo;
+              &ldquo;The work they did on our property was absolutely amazing. They brought our vision to life. Professional, detailed, and just overall a great team to work with.&rdquo;
             </p>
             <div class="testimonial-card__author">
-              <img src="/assets/images/testimonial-avatar-2.jpg" alt="Michael R." width="48" height="48" class="testimonial-card__avatar" loading="lazy" />
+              <div class="testimonial-card__avatar-placeholder">G</div>
               <div>
-                <span class="testimonial-card__name">Michael R.</span>
-                <span class="testimonial-card__role">Homeowner</span>
+                <span class="testimonial-card__name">Gabriella G.</span>
+                <span class="testimonial-card__role">Renovation · Denver Metro</span>
               </div>
             </div>
           </div>
-
           <div class="testimonial-card">
-            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
             <p class="testimonial-card__quote">
-              &ldquo;Excellent attention to detail. Our bathroom remodel looks absolutely stunning. Will definitely use again.&rdquo;
+              &ldquo;We hired Elite Property Innovations for our renovation and couldn't be happier. They were communicative, thorough, and really cared about the quality of their work.&rdquo;
             </p>
             <div class="testimonial-card__author">
-              <img src="/assets/images/testimonial-avatar-3.jpg" alt="Emily T." width="48" height="48" class="testimonial-card__avatar" loading="lazy" />
+              <div class="testimonial-card__avatar-placeholder">A</div>
               <div>
-                <span class="testimonial-card__name">Emily T.</span>
-                <span class="testimonial-card__role">Homeowner</span>
+                <span class="testimonial-card__name">Alyson A.</span>
+                <span class="testimonial-card__role">Renovation · Westminster</span>
               </div>
             </div>
           </div>
+        </div>
+        <div class="services-testimonials__cta">
+          <a href="https://www.google.com/maps/place/Elite+Property+Innovations" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Read All Reviews on Google &rarr;</a>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-         Contact Section
+         CTA Banner
          ============================================================ -->
-    <section class="services-contact">
-      <div class="services-contact__inner container">
-        <div class="services-contact__text">
-          <span class="section-label">HANDYHUB</span>
-          <h2 class="services-contact__heading">Get in touch with us</h2>
-          <p class="services-contact__desc">
-            Have a question or need a quote? Fill out the form and our team will get back to you shortly.
-          </p>
+    <section class="services-cta-banner">
+      <div class="services-cta-banner__inner container">
+        <h2 class="services-cta-banner__heading">Ready to Transform Your Home?</h2>
+        <p class="services-cta-banner__text">Get a detailed, no-obligation estimate for your project. We respond within 60 seconds — even after hours.</p>
+        <div class="services-cta-banner__actions">
+          <a href="/contact" class="btn btn--accent">Get Your Free Estimate</a>
+          <a href="tel:7202991238" class="btn btn--outline">(720) 299-1238</a>
         </div>
-        <form class="services-contact__form" action="#" method="post">
-          <div class="services-contact__form-row">
-            <div class="services-contact__field">
-              <label for="contact-name" class="services-contact__label">Name</label>
-              <input type="text" id="contact-name" name="name" class="services-contact__input" placeholder="Your name" required />
-            </div>
-            <div class="services-contact__field">
-              <label for="contact-email" class="services-contact__label">Email</label>
-              <input type="email" id="contact-email" name="email" class="services-contact__input" placeholder="Your email" required />
-            </div>
-          </div>
-          <div class="services-contact__field">
-            <label for="contact-message" class="services-contact__label">Message</label>
-            <textarea id="contact-message" name="message" class="services-contact__textarea" placeholder="Your message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn">Send message</button>
-        </form>
       </div>
     </section>
 
@@ -234,25 +270,30 @@ import Footer from '../components/Footer.astro';
   .services-hero {
     width: 100%;
     background-color: var(--color-bg-dark);
-    height: 71.25em;
     position: relative;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    padding: 10em 0 6em;
   }
 
-  .services-hero__pattern {
+  .services-hero__gradient {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(0, 200, 232, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 80%, rgba(168, 224, 0, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .services-hero__grid-overlay {
     position: absolute;
     inset: 0;
     background-image: repeating-linear-gradient(
       135deg,
-      rgba(255, 255, 255, 0.03) 0px,
-      rgba(255, 255, 255, 0.03) 1px,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
       transparent 1px,
       transparent 60px
     );
     pointer-events: none;
-    z-index: 1;
   }
 
   .services-hero__content {
@@ -262,67 +303,35 @@ import Footer from '../components/Footer.astro';
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 7.5em;
-    padding-bottom: 3em;
   }
 
   .services-hero__eyebrow {
-    color: var(--color-text-white-muted);
     margin-bottom: 1.5em;
   }
 
   .services-hero__heading {
     font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.133;
-    letter-spacing: -1.2px;
+    font-size: 3.5em;
+    font-weight: 800;
+    line-height: 1.1;
     color: var(--color-text-white);
-    max-width: 42.75em;
-    margin-bottom: 1.5em;
+    max-width: 16em;
+    margin-bottom: 0.5em;
   }
 
-  .services-hero__image-wrap {
-    position: absolute;
-    bottom: 3.5em;
-    left: 0;
-    right: 0;
-    height: 50%;
-    z-index: 1;
+  .services-hero__subtext {
+    font-size: 1.0625em;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    max-width: 38em;
+    margin-bottom: 2em;
   }
 
-  .services-hero__gradient {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, var(--color-bg-dark), rgba(0, 0, 0, 0));
-    z-index: 1;
-  }
-
-  .services-hero__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .services-hero__partners {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
+  .services-hero__ctas {
     display: flex;
-    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 3em;
-    padding-block: 1.5em;
-    width: 100%;
-  }
-
-  .services-hero__partner-logo {
-    height: 2em;
-    width: auto;
-    opacity: 0.7;
-    filter: brightness(0) invert(1);
   }
 
   /* ==========================================================================
@@ -331,7 +340,7 @@ import Footer from '../components/Footer.astro';
   .services-grid-section {
     width: 100%;
     background-color: var(--color-bg-white);
-    padding-block: 7.5em;
+    padding-block: 6.25em;
   }
 
   .services-grid-section__inner {
@@ -343,165 +352,173 @@ import Footer from '../components/Footer.astro';
 
   .services-grid-section__heading {
     font-family: var(--font-heading);
-    font-size: 3em;
-    font-weight: 400;
-    line-height: 1.167;
-    letter-spacing: -0.96px;
-    color: var(--color-text-primary);
-    margin-top: 1em;
+    font-size: 2.75em;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--color-text-white);
+    margin-top: 0.75em;
     margin-bottom: 0.5em;
   }
 
   .services-grid-section__subtext {
-    font-family: var(--font-body);
     font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--color-text-secondary);
-    max-width: 53em;
+    max-width: 44em;
     margin-bottom: 3em;
   }
 
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5em;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25em;
     width: 100%;
   }
 
   .service-card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    padding: 2em;
-    background-color: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding: 2em 1.5em;
+    background-color: var(--color-bg-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     text-decoration: none;
-    transition: box-shadow var(--transition-base);
+    transition: all var(--transition-base);
+    color: var(--color-primary);
   }
 
   .service-card:hover {
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-2px);
   }
 
   .service-card__icon-wrap {
+    width: 3.5em;
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 200, 232, 0.08);
+    border-radius: var(--radius-md);
+    margin-bottom: 1.25em;
+  }
+
+  .service-card__icon {
+    width: 1.75em;
+    height: 1.75em;
+  }
+
+  .service-card__title {
+    font-family: var(--font-heading);
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-text-white);
+    margin-bottom: 0.5em;
+  }
+
+  .service-card__desc {
+    font-size: 0.8125em;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.25em;
+    flex-grow: 1;
+  }
+
+  .service-card__link {
+    font-size: 0.8125em;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: color var(--transition-fast);
+  }
+
+  .service-card:hover .service-card__link {
+    color: var(--color-accent);
+  }
+
+  /* ==========================================================================
+     Why Section
+     ========================================================================== */
+  .services-why {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    padding-block: 6.25em;
+  }
+
+  .services-why__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-why__heading {
+    font-family: var(--font-heading);
+    font-size: 2.75em;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--color-text-white);
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+  }
+
+  .services-why__subtext {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    max-width: 40em;
+    margin-bottom: 3em;
+  }
+
+  .services-why__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25em;
+    width: 100%;
+  }
+
+  .services-why__card {
+    padding: 2em 1.5em;
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    text-align: left;
+    transition: all var(--transition-base);
+  }
+
+  .services-why__card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .services-why__card-icon {
     width: 3em;
     height: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(0, 200, 232, 0.08);
     border-radius: var(--radius-md);
-    margin-bottom: 1.5em;
+    margin-bottom: 1.25em;
+    color: var(--color-primary);
   }
 
-  .service-card__icon {
-    width: 1.5em;
-    height: 1.5em;
-  }
-
-  .service-card__title {
+  .services-why__card-title {
     font-family: var(--font-heading);
-    font-size: 1.25em;
-    font-weight: 500;
-    line-height: 1.4;
-    letter-spacing: -0.4px;
-    color: var(--color-text-primary);
-    margin-bottom: 0.5em;
-  }
-
-  .service-card__desc {
-    font-family: var(--font-body);
-    font-size: 0.875em;
-    font-weight: 400;
-    line-height: 1.429;
-    color: var(--color-text-secondary);
-    margin-bottom: 1.5em;
-    flex-grow: 1;
-  }
-
-  .service-card__link {
-    font-family: var(--font-body);
-    font-size: 0.875em;
-    font-weight: 500;
-    line-height: 1.429;
-    color: var(--color-text-primary);
-  }
-
-  /* ==========================================================================
-     CTA Section
-     ========================================================================== */
-  .services-cta {
-    width: 100%;
-    background-color: var(--color-bg-dark);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .services-cta__pattern {
-    position: absolute;
-    inset: 0;
-    background-image: repeating-linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.03) 0px,
-      rgba(255, 255, 255, 0.03) 1px,
-      transparent 1px,
-      transparent 60px
-    );
-    pointer-events: none;
-  }
-
-  .services-cta__inner {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    gap: 4em;
-    padding-block: 6.25em;
-  }
-
-  .services-cta__content {
-    flex: 1;
-  }
-
-  .services-cta__eyebrow {
-    color: var(--color-text-white-muted);
-    margin-bottom: 1.5em;
-    display: block;
-  }
-
-  .services-cta__heading {
-    font-family: var(--font-heading);
-    font-size: 3em;
-    font-weight: 400;
-    line-height: 1.167;
-    letter-spacing: -0.96px;
+    font-size: 1.0625em;
+    font-weight: 700;
+    line-height: 1.3;
     color: var(--color-text-white);
     margin-bottom: 0.5em;
   }
 
-  .services-cta__text {
-    font-family: var(--font-body);
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--color-text-white-muted);
-    margin-bottom: 2em;
-    max-width: 32em;
-  }
-
-  .services-cta__image-wrap {
-    flex-shrink: 0;
-    width: 35em;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-  }
-
-  .services-cta__image {
-    width: 100%;
-    height: auto;
-    display: block;
+  .services-why__card-desc {
+    font-size: 0.875em;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
   }
 
   /* ==========================================================================
@@ -510,7 +527,7 @@ import Footer from '../components/Footer.astro';
   .services-testimonials {
     width: 100%;
     background-color: var(--color-bg-white);
-    padding-block: 7.5em;
+    padding-block: 6.25em;
   }
 
   .services-testimonials__inner {
@@ -522,28 +539,29 @@ import Footer from '../components/Footer.astro';
 
   .services-testimonials__heading {
     font-family: var(--font-heading);
-    font-size: 3em;
-    font-weight: 400;
-    line-height: 1.167;
-    letter-spacing: -0.96px;
-    color: var(--color-text-primary);
-    margin-top: 1em;
+    font-size: 2.75em;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--color-text-white);
+    margin-top: 0.75em;
     margin-bottom: 0.5em;
   }
 
   .services-testimonials__subtext {
-    font-family: var(--font-body);
     font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--color-text-secondary);
     margin-bottom: 3em;
+  }
+
+  .services-testimonials__cta {
+    margin-top: 2.5em;
   }
 
   .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5em;
+    gap: 1.25em;
     width: 100%;
   }
 
@@ -553,23 +571,27 @@ import Footer from '../components/Footer.astro';
     align-items: flex-start;
     text-align: left;
     padding: 2em;
-    background-color: #ffffff;
+    background-color: var(--color-bg-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
+    transition: all var(--transition-base);
+  }
+
+  .testimonial-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-card-hover);
   }
 
   .testimonial-card__stars {
-    color: #f5a623;
+    color: var(--color-accent);
     font-size: 1.125em;
     margin-bottom: 1em;
     letter-spacing: 2px;
   }
 
   .testimonial-card__quote {
-    font-family: var(--font-body);
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
+    font-size: 0.9375em;
+    line-height: 1.6;
     color: var(--color-text-secondary);
     margin-bottom: 1.5em;
     flex-grow: 1;
@@ -581,157 +603,87 @@ import Footer from '../components/Footer.astro';
     gap: 0.75em;
   }
 
-  .testimonial-card__avatar {
-    width: 3em;
-    height: 3em;
+  .testimonial-card__avatar-placeholder {
+    width: 2.75em;
+    height: 2.75em;
     border-radius: 50%;
-    object-fit: cover;
+    background-color: rgba(0, 200, 232, 0.15);
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
   }
 
   .testimonial-card__name {
     display: block;
     font-family: var(--font-heading);
     font-size: 0.875em;
-    font-weight: 500;
-    line-height: 1.429;
-    color: var(--color-text-primary);
+    font-weight: 600;
+    color: var(--color-text-white);
   }
 
   .testimonial-card__role {
     display: block;
-    font-family: var(--font-body);
     font-size: 0.75em;
-    font-weight: 400;
-    line-height: 1.333;
     color: var(--color-text-secondary);
   }
 
   /* ==========================================================================
-     Contact Section
+     CTA Banner
      ========================================================================== */
-  .services-contact {
+  .services-cta-banner {
     width: 100%;
-    background-color: var(--color-bg-dark);
-    padding-block: 7.5em;
+    background: linear-gradient(135deg, rgba(0, 200, 232, 0.1) 0%, var(--color-bg-dark) 50%, rgba(168, 224, 0, 0.08) 100%);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding-block: 5em;
   }
 
-  .services-contact__inner {
-    display: flex;
-    gap: 4em;
+  .services-cta-banner__inner {
+    text-align: center;
   }
 
-  .services-contact__text {
-    flex: 1;
-  }
-
-  .services-contact__text .section-label {
-    color: var(--color-text-white-muted);
-    display: block;
-    margin-bottom: 1.5em;
-  }
-
-  .services-contact__heading {
+  .services-cta-banner__heading {
     font-family: var(--font-heading);
-    font-size: 3em;
-    font-weight: 400;
-    line-height: 1.167;
-    letter-spacing: -0.96px;
+    font-size: 2.5em;
+    font-weight: 800;
     color: var(--color-text-white);
     margin-bottom: 0.5em;
   }
 
-  .services-contact__desc {
-    font-family: var(--font-body);
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--color-text-white-muted);
-    max-width: 28em;
+  .services-cta-banner__text {
+    font-size: 1.0625em;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    max-width: 36em;
+    margin-inline: auto;
+    margin-bottom: 2em;
   }
 
-  .services-contact__form {
-    flex: 1;
+  .services-cta-banner__actions {
     display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-  }
-
-  .services-contact__form-row {
-    display: flex;
-    gap: 1.5em;
-  }
-
-  .services-contact__field {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    flex: 1;
-  }
-
-  .services-contact__label {
-    font-family: var(--font-body);
-    font-size: 0.875em;
-    font-weight: 500;
-    line-height: 1.429;
-    color: var(--color-text-white);
-  }
-
-  .services-contact__input,
-  .services-contact__textarea {
-    width: 100%;
-    padding: 0.875em 1em;
-    background-color: transparent;
-    border: 1px solid var(--color-border-dark);
-    border-radius: var(--radius-md);
-    color: var(--color-text-white);
-    font-family: var(--font-body);
-    font-size: 1em;
-    line-height: 1.5;
-  }
-
-  .services-contact__input::placeholder,
-  .services-contact__textarea::placeholder {
-    color: var(--color-text-gray);
-  }
-
-  .services-contact__textarea {
-    resize: vertical;
-    min-height: 8em;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   /* ==========================================================================
      Responsive — Tablet
      ========================================================================== */
   @media (max-width: 991px) {
-    .services-hero {
-      height: auto;
-      min-height: 50em;
-    }
-
-    .services-hero__content {
-      padding-top: 5em;
-    }
-
     .services-hero__heading {
-      font-size: 3em;
-    }
-
-    .services-hero__image-wrap {
-      position: relative;
-      bottom: auto;
-      height: 25em;
-    }
-
-    .services-hero__partners {
-      position: relative;
-      left: auto;
-      transform: none;
-      flex-wrap: wrap;
-      gap: 2em;
-      padding-block: 1.5em;
+      font-size: 2.75em;
     }
 
     .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .services-why__grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -744,49 +696,25 @@ import Footer from '../components/Footer.astro';
       max-width: 50%;
       margin-inline: auto;
     }
-
-    .services-cta__inner {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .services-cta__content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .services-cta__image-wrap {
-      width: 100%;
-      max-width: 35em;
-    }
-
-    .services-contact__inner {
-      flex-direction: column;
-    }
   }
 
   /* ==========================================================================
      Responsive — Mobile Landscape
      ========================================================================== */
   @media (max-width: 767px) {
+    .services-hero {
+      padding: 8em 0 4em;
+    }
+
     .services-hero__heading {
-      font-size: 2.5em;
-    }
-
-    .services-hero__image-wrap {
-      height: 18em;
-    }
-
-    .services-hero__partners {
-      gap: 1.5em;
-    }
-
-    .services-hero__partner-logo {
-      height: 1.5em;
+      font-size: 2.25em;
     }
 
     .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-why__grid {
       grid-template-columns: 1fr;
     }
 
@@ -798,12 +726,8 @@ import Footer from '../components/Footer.astro';
       max-width: 100%;
     }
 
-    .services-cta__image-wrap {
-      width: 100%;
-    }
-
-    .services-contact__form-row {
-      flex-direction: column;
+    .services-cta-banner__heading {
+      font-size: 2em;
     }
   }
 
@@ -812,27 +736,28 @@ import Footer from '../components/Footer.astro';
      ========================================================================== */
   @media (max-width: 479px) {
     .services-hero__heading {
-      font-size: 2em;
+      font-size: 1.875em;
     }
 
-    .services-hero__content {
-      padding-top: 3em;
+    .services-grid {
+      grid-template-columns: 1fr;
     }
 
-    .services-hero__image-wrap {
-      height: 14em;
+    .services-hero__ctas {
+      flex-direction: column;
+      width: 100%;
     }
 
-    .services-hero__partner-logo {
-      height: 1.25em;
+    .services-hero__ctas .btn {
+      width: 100%;
     }
 
-    .services-hero__partners {
-      gap: 1em;
+    .services-cta-banner__actions {
+      flex-direction: column;
     }
 
-    .services-contact__inner {
-      gap: 2.5em;
+    .services-cta-banner__actions .btn {
+      width: 100%;
     }
   }
 </style>

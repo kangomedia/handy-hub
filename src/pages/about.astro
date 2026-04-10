@@ -4,115 +4,40 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout title="About Us | HandyHub" description="Learn about HandyHub — 10 years of quality handyman services in New York. Meet our experienced team and discover our story.">
+<BaseLayout
+  title="About Us | Elite Property Innovations — Westminster's Trusted Contractor"
+  description="Learn about Elite Property Innovations — 25+ years of quality home improvement in Westminster, CO. Meet Jacob, our founder, and discover our commitment to integrity and craftsmanship."
+>
   <Navbar variant="dark" />
   <main id="main-content">
 
     <!-- ========== HERO ========== -->
     <section class="about-hero">
-      <div class="about-hero__lines" aria-hidden="true">
-        <span></span><span></span><span></span><span></span><span></span>
-      </div>
-      <div class="about-hero__image-wrapper">
-        <img
-          src="/assets/images/hero-about.jpg"
-          alt="Handyman at work on a residential project"
-          width="652"
-          height="864"
-          class="about-hero__image"
-        />
-      </div>
+      <div class="about-hero__gradient" aria-hidden="true"></div>
+      <div class="about-hero__grid-overlay" aria-hidden="true"></div>
       <div class="about-hero__inner container">
         <div class="about-hero__content">
-          <span class="section-label about-hero__eyebrow">HANDYHUB</span>
-          <h1 class="about-hero__heading">Build relationships, one home at a time</h1>
+          <span class="section-label about-hero__eyebrow">About Us</span>
+          <h1 class="about-hero__heading">Building Trust, One Colorado Home at a&nbsp;Time</h1>
           <p class="about-hero__text">
-            At QuickFix, we believe that every home deserves the best care. Founded on a commitment to quality workmanship and exceptional customer service, we have been proudly serving the New York community for 10 years.
+            Elite Property Innovations was founded on a simple belief: homeowners deserve a contractor who shows up when they say they will, communicates openly, and takes pride in every detail. For over 25 years, we've been proving that great craftsmanship and genuine care go hand in hand.
           </p>
-          <a href="/contact" class="btn btn--light">Contact us</a>
+          <div class="about-hero__ctas">
+            <a href="/contact" class="btn btn--accent">Get a Free Estimate</a>
+            <a href="tel:7202991238" class="btn btn--outline">(720) 299-1238</a>
+          </div>
           <div class="about-hero__stats">
             <div class="about-hero__stat">
-              <span class="about-hero__stat-number">10y</span>
-              <span class="about-hero__stat-label">EXPEREINCES</span>
+              <span class="about-hero__stat-number">25+</span>
+              <span class="about-hero__stat-label">YEARS EXPERIENCE</span>
             </div>
             <div class="about-hero__stat">
-              <span class="about-hero__stat-number">100+</span>
-              <span class="about-hero__stat-label">TEAM MEMBERS</span>
+              <span class="about-hero__stat-number">1,000+</span>
+              <span class="about-hero__stat-label">PROJECTS COMPLETED</span>
             </div>
             <div class="about-hero__stat">
-              <span class="about-hero__stat-number">1k</span>
-              <span class="about-hero__stat-label">PROJECTS</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== WHY CHOOSE US ========== -->
-    <section class="why-choose">
-      <div class="why-choose__inner container">
-        <div class="why-choose__header">
-          <span class="section-label">HANDYHUB</span>
-          <h2 class="why-choose__heading">Why choose us?</h2>
-          <p class="why-choose__subtext">
-            We are dedicated to delivering top-quality craftsmanship and exceptional service on every project.
-          </p>
-        </div>
-        <div class="why-choose__grid">
-          <div class="why-choose__card why-choose__card--open">
-            <div class="why-choose__card-header">
-              <div class="why-choose__card-icon-title">
-                <img src="/assets/images/icon-discount.svg" alt="" role="presentation" width="24" height="24" class="why-choose__card-icon" />
-                <h3 class="why-choose__card-title">Transparent Pricing</h3>
-              </div>
-              <button class="why-choose__card-toggle" aria-label="Toggle Transparent Pricing details" aria-expanded="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2"/></svg>
-              </button>
-            </div>
-            <div class="why-choose__card-body">
-              <p>No hidden fees, no surprises—just clear, honest pricing for every job. We provide detailed estimates upfront so you know exactly what to expect.</p>
-            </div>
-          </div>
-          <div class="why-choose__card">
-            <div class="why-choose__card-header">
-              <div class="why-choose__card-icon-title">
-                <img src="/assets/images/icon-home-repair.svg" alt="" role="presentation" width="24" height="24" class="why-choose__card-icon" />
-                <h3 class="why-choose__card-title">Experienced and Skilled Team</h3>
-              </div>
-              <button class="why-choose__card-toggle" aria-label="Toggle Experienced and Skilled Team details" aria-expanded="false">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2"/><line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2"/></svg>
-              </button>
-            </div>
-            <div class="why-choose__card-body" hidden>
-              <p>Our team of highly trained professionals brings years of experience to every project, ensuring quality results you can count on.</p>
-            </div>
-          </div>
-          <div class="why-choose__card">
-            <div class="why-choose__card-header">
-              <div class="why-choose__card-icon-title">
-                <img src="/assets/images/icon-trusted.svg" alt="" role="presentation" width="24" height="24" class="why-choose__card-icon" />
-                <h3 class="why-choose__card-title">Reliable and Trustworthy</h3>
-              </div>
-              <button class="why-choose__card-toggle" aria-label="Toggle Reliable and Trustworthy details" aria-expanded="false">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2"/><line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2"/></svg>
-              </button>
-            </div>
-            <div class="why-choose__card-body" hidden>
-              <p>We know how important it is to trust the people working in your home. Our team is fully vetted and committed to your safety and satisfaction.</p>
-            </div>
-          </div>
-          <div class="why-choose__card">
-            <div class="why-choose__card-header">
-              <div class="why-choose__card-icon-title">
-                <img src="/assets/images/icon-people-toolbox.svg" alt="" role="presentation" width="24" height="24" class="why-choose__card-icon" />
-                <h3 class="why-choose__card-title">Customer-Focused Approach</h3>
-              </div>
-              <button class="why-choose__card-toggle" aria-label="Toggle Customer-Focused Approach details" aria-expanded="false">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2"/><line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2"/></svg>
-              </button>
-            </div>
-            <div class="why-choose__card-body" hidden>
-              <p>Your needs and satisfaction are at the center of everything we do. We listen, adapt, and deliver solutions tailored to your home.</p>
+              <span class="about-hero__stat-number">5.0★</span>
+              <span class="about-hero__stat-label">GOOGLE RATING</span>
             </div>
           </div>
         </div>
@@ -123,34 +48,36 @@ import Footer from '../components/Footer.astro';
     <section class="our-story">
       <div class="our-story__inner container">
         <div class="our-story__image-col">
-          <img
-            src="/assets/images/about-story.jpg"
-            alt="Handyman team collaborating on a home improvement project"
-            width="552"
-            height="637"
-            class="our-story__image"
-            loading="lazy"
-          />
+          <div class="our-story__image-placeholder" aria-label="Elite Property Innovations team at work">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/><path d="M9 20v-6h6v6"/></svg>
+          </div>
         </div>
         <div class="our-story__content">
-          <span class="section-label">HANDYHUB</span>
-          <h2 class="our-story__heading">Our story</h2>
+          <span class="section-label">Our Story</span>
+          <h2 class="our-story__heading">Rooted in Westminster, Built on Integrity</h2>
           <p class="our-story__text">
-            Founded in 2014, HandyHub started with a simple idea: every homeowner deserves access to reliable, high-quality handyman services. What began as a small team of dedicated professionals has grown into a trusted name in the New York community.
+            Jacob founded Elite Property Innovations with one goal: to bring the kind of craftsmanship and reliability to Westminster that homeowners actually deserve. After years of seeing contractors cut corners, overbill, and ghost their clients, he decided to build something different — a company where communication is constant, timelines are real, and every project meets the standard he'd set for his own home.
+          </p>
+          <p class="our-story__text">
+            What started as a one-man operation has grown into a trusted team serving Westminster, Arvada, Broomfield, Thornton, Northglenn, and the greater Denver metro. But the values haven't changed: show up, do excellent work, and treat every homeowner like a neighbor — because they are.
           </p>
           <div class="our-story__items">
             <div class="our-story__item">
-              <img src="/assets/images/icon-discount.svg" alt="" role="presentation" width="24" height="24" class="our-story__item-icon" />
+              <div class="our-story__item-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
               <div>
                 <h3 class="our-story__item-title">Our Mission</h3>
-                <p class="our-story__item-text">Our mission is simple: to provide top-quality handyman services that make your home a better place to live.</p>
+                <p class="our-story__item-text">Deliver home improvements that exceed expectations — on time, on budget, and with the kind of attention to detail that makes you proud to show off your home.</p>
               </div>
             </div>
             <div class="our-story__item">
-              <img src="/assets/images/icon-discount.svg" alt="" role="presentation" width="24" height="24" class="our-story__item-icon" />
+              <div class="our-story__item-icon-wrap">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
               <div>
                 <h3 class="our-story__item-title">Our Values</h3>
-                <p class="our-story__item-text">Honesty and transparency guide everything we do. We believe in fair pricing, open communication, and delivering on our promises.</p>
+                <p class="our-story__item-text">Honesty, transparency, and accountability. We give detailed estimates upfront, communicate every step of the way, and never charge for work we didn't complete to your satisfaction.</p>
               </div>
             </div>
           </div>
@@ -158,61 +85,59 @@ import Footer from '../components/Footer.astro';
       </div>
     </section>
 
-    <!-- ========== TEAMS ========== -->
-    <section class="teams">
-      <div class="teams__inner container">
-        <div class="teams__header">
-          <span class="section-label">HANDYHUB</span>
-          <h2 class="teams__heading">Meet our team</h2>
-          <p class="teams__subtext">
-            Our skilled professionals are dedicated to delivering quality workmanship on every project.
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="why-choose">
+      <div class="why-choose__inner container">
+        <div class="why-choose__header">
+          <span class="section-label">Why Choose Us</span>
+          <h2 class="why-choose__heading">The EPI Difference</h2>
+          <p class="why-choose__subtext">
+            We're not just another contractor. We're the team Westminster homeowners call when they want the job done right — and done with respect.
           </p>
         </div>
-        <div class="teams__grid">
-          <div class="teams__card">
-            <img src="/assets/images/team-member-1.jpg" alt="James Vile, Founder" width="340" height="400" class="teams__card-image" loading="lazy" />
-            <h3 class="teams__card-name">James Vile</h3>
-            <p class="teams__card-role">Founder</p>
+        <div class="why-choose__grid">
+          <div class="why-choose__card">
+            <div class="why-choose__card-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="why-choose__card-title">We Show Up When We Say We Will</h3>
+            <p class="why-choose__card-desc">Punctuality isn't a bonus — it's the baseline. We respect your time because we know your schedule matters.</p>
           </div>
-          <div class="teams__card">
-            <img src="/assets/images/team-member-2.jpg" alt="Sarah Johnson, Lead Technician" width="340" height="400" class="teams__card-image" loading="lazy" />
-            <h3 class="teams__card-name">Sarah Johnson</h3>
-            <p class="teams__card-role">Lead Technician</p>
+          <div class="why-choose__card">
+            <div class="why-choose__card-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="why-choose__card-title">Clear Communication, Always</h3>
+            <p class="why-choose__card-desc">Daily updates, detailed estimates, and honest timelines. You'll never have to chase us for an answer.</p>
           </div>
-          <div class="teams__card">
-            <img src="/assets/images/team-member-3.jpg" alt="Mike Chen, Project Manager" width="340" height="400" class="teams__card-image" loading="lazy" />
-            <h3 class="teams__card-name">Mike Chen</h3>
-            <p class="teams__card-role">Project Manager</p>
+          <div class="why-choose__card">
+            <div class="why-choose__card-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="why-choose__card-title">Quality Over Speed</h3>
+            <p class="why-choose__card-desc">We'd rather take an extra day to get it perfect than rush and leave you with "good enough." Your home deserves better.</p>
           </div>
-          <div class="teams__card">
-            <img src="/assets/images/team-member-4.jpg" alt="Emily Davis, Operations" width="340" height="400" class="teams__card-image" loading="lazy" />
-            <h3 class="teams__card-name">Emily Davis</h3>
-            <p class="teams__card-role">Operations</p>
+          <div class="why-choose__card">
+            <div class="why-choose__card-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="why-choose__card-title">Colorado Homes, Colorado Expertise</h3>
+            <p class="why-choose__card-desc">We know the Denver climate, local building codes, and what materials hold up against Colorado weather.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== CONTACT SECTION ========== -->
-    <section class="contact-section">
-      <div class="contact-section__inner container">
-        <div class="contact-section__content">
-          <span class="section-label">HANDYHUB</span>
-          <h2 class="contact-section__heading">Ready to get started?</h2>
-          <p class="contact-section__text">
-            Get in touch with us today for a free estimate. Our team is ready to help with all your home improvement needs.
-          </p>
-          <a href="/contact" class="btn">Contact us</a>
-        </div>
-        <div class="contact-section__image-wrapper">
-          <img
-            src="/assets/images/about-contact.jpg"
-            alt="Professional handyman ready to assist"
-            width="552"
-            height="400"
-            class="contact-section__image"
-            loading="lazy"
-          />
+    <!-- ========== CTA SECTION ========== -->
+    <section class="about-cta">
+      <div class="about-cta__inner container">
+        <h2 class="about-cta__heading">Let's Talk About Your Project</h2>
+        <p class="about-cta__text">
+          Whether you're planning a full remodel or just need a quick fix, we'd love to hear about it. Free estimates, honest advice, and zero pressure.
+        </p>
+        <div class="about-cta__actions">
+          <a href="/contact" class="btn btn--accent">Get Your Free Estimate</a>
+          <a href="tel:7202991238" class="btn btn--outline">(720) 299-1238</a>
         </div>
       </div>
     </section>
@@ -221,29 +146,6 @@ import Footer from '../components/Footer.astro';
   <Footer />
 </BaseLayout>
 
-<script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
-    const toggles = document.querySelectorAll('.why-choose__card-toggle');
-    toggles.forEach(toggle => {
-      toggle.addEventListener('click', () => {
-        const card = toggle.closest('.why-choose__card');
-        const body = card.querySelector('.why-choose__card-body');
-        const isOpen = toggle.getAttribute('aria-expanded') === 'true';
-        toggle.setAttribute('aria-expanded', String(!isOpen));
-        if (isOpen) {
-          body.setAttribute('hidden', '');
-          card.classList.remove('why-choose__card--open');
-          toggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2"/><line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="2"/></svg>';
-        } else {
-          body.removeAttribute('hidden');
-          card.classList.add('why-choose__card--open');
-          toggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2"/></svg>';
-        }
-      });
-    });
-  });
-</script>
-
 <style>
   /* ========== ABOUT HERO ========== */
   .about-hero {
@@ -251,204 +153,99 @@ import Footer from '../components/Footer.astro';
     background-color: var(--color-bg-dark);
     position: relative;
     overflow: hidden;
-    min-height: 54em;
+    padding: 10em 0 6em;
   }
 
-  .about-hero__lines {
+  .about-hero__gradient {
     position: absolute;
     inset: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(0, 200, 232, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 80%, rgba(168, 224, 0, 0.05) 0%, transparent 50%);
     pointer-events: none;
-    display: flex;
-    justify-content: space-evenly;
-    max-width: var(--size-container);
-    margin-inline: auto;
-    padding-inline: var(--container-padding);
   }
 
-  .about-hero__lines span {
-    width: 1px;
-    height: 100%;
-    background-color: var(--color-border-dark);
-  }
-
-  .about-hero__image-wrapper {
+  .about-hero__grid-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 40.75em;
-    height: 100%;
-  }
-
-  .about-hero__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 1px,
+      transparent 60px
+    );
+    pointer-events: none;
   }
 
   .about-hero__inner {
     position: relative;
     z-index: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    min-height: 54em;
-    padding-block: 5em;
+    justify-content: center;
   }
 
   .about-hero__content {
-    width: 34.5em;
+    max-width: 42em;
+    text-align: center;
   }
 
   .about-hero__eyebrow {
     display: block;
-    color: var(--color-text-white-muted);
     margin-bottom: 1.5em;
   }
 
   .about-hero__heading {
     font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.133;
-    letter-spacing: -1.92px;
+    font-size: 3.5em;
+    font-weight: 800;
+    line-height: 1.1;
     color: var(--color-text-white);
-    margin-bottom: 0.4em;
+    margin-bottom: 0.5em;
   }
 
   .about-hero__text {
-    font-size: 0.875em;
-    line-height: 1.429;
-    color: var(--color-text-white-muted);
+    font-size: 1.0625em;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
     margin-bottom: 2em;
+  }
+
+  .about-hero__ctas {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .about-hero__stats {
     display: flex;
     gap: 3em;
+    justify-content: center;
     margin-top: 3em;
     padding-top: 2em;
-    border-top: 1px solid var(--color-border-dark);
+    border-top: 1px solid var(--color-border);
   }
 
   .about-hero__stat {
     display: flex;
     flex-direction: column;
     gap: 0.25em;
+    text-align: center;
   }
 
   .about-hero__stat-number {
     font-family: var(--font-heading);
     font-size: 2em;
-    font-weight: 400;
-    line-height: 1.25;
+    font-weight: 800;
+    line-height: 1.2;
     color: var(--color-text-white);
   }
 
   .about-hero__stat-label {
-    font-family: var(--font-body);
-    font-size: 0.75em;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 1.44px;
+    font-size: 0.6875em;
+    font-weight: 600;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--color-text-white-muted);
-  }
-
-  /* ========== WHY CHOOSE US ========== */
-  .why-choose {
-    width: 100%;
-    background-color: var(--color-bg-white);
-    padding-block: 7.5em;
-  }
-
-  .why-choose__inner {
-    padding-inline: var(--container-padding);
-  }
-
-  .why-choose__header {
-    margin-bottom: 3.75em;
-  }
-
-  .why-choose__header .section-label {
-    display: block;
-    color: var(--color-text-secondary);
-    margin-bottom: 1em;
-  }
-
-  .why-choose__heading {
-    font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.133;
-    letter-spacing: -1.92px;
-    color: var(--color-text-primary);
-    margin-bottom: 0.267em;
-  }
-
-  .why-choose__subtext {
-    font-size: 0.875em;
-    line-height: 1.429;
-    color: var(--color-text-secondary);
-    max-width: 34.5em;
-  }
-
-  .why-choose__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25em;
-  }
-
-  .why-choose__card {
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    padding: 2em;
-    background-color: transparent;
-  }
-
-  .why-choose__card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .why-choose__card-icon-title {
-    display: flex;
-    align-items: center;
-    gap: 0.75em;
-  }
-
-  .why-choose__card-icon {
-    width: 1.5em;
-    height: 1.5em;
-    flex-shrink: 0;
-  }
-
-  .why-choose__card-title {
-    font-family: var(--font-heading);
-    font-size: 1.25em;
-    font-weight: 500;
-    line-height: 1.4;
-    color: var(--color-text-primary);
-  }
-
-  .why-choose__card-toggle {
-    width: 2.5em;
-    height: 2.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    border: 1px solid var(--color-border);
-    border-radius: 50%;
-    cursor: pointer;
-    color: var(--color-text-primary);
-    flex-shrink: 0;
-  }
-
-  .why-choose__card-body {
-    margin-top: 1em;
-    font-size: 0.875em;
-    line-height: 1.429;
     color: var(--color-text-secondary);
   }
 
@@ -456,14 +253,13 @@ import Footer from '../components/Footer.astro';
   .our-story {
     width: 100%;
     background-color: var(--color-bg-white);
-    padding-block: 7.5em;
+    padding-block: 6.25em;
   }
 
   .our-story__inner {
     display: flex;
     gap: 3.75em;
     align-items: flex-start;
-    padding-inline: var(--container-padding);
   }
 
   .our-story__image-col {
@@ -471,11 +267,16 @@ import Footer from '../components/Footer.astro';
     min-width: 0;
   }
 
-  .our-story__image {
+  .our-story__image-placeholder {
     width: 100%;
-    height: 39.8125em;
-    object-fit: cover;
+    height: 32em;
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
   }
 
   .our-story__content {
@@ -485,31 +286,30 @@ import Footer from '../components/Footer.astro';
 
   .our-story__content .section-label {
     display: block;
-    color: var(--color-text-secondary);
     margin-bottom: 1em;
   }
 
   .our-story__heading {
     font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.133;
-    letter-spacing: -1.92px;
-    color: var(--color-text-primary);
-    margin-bottom: 0.267em;
+    font-size: 2.75em;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--color-text-white);
+    margin-bottom: 0.5em;
   }
 
   .our-story__text {
-    font-size: 0.875em;
-    line-height: 1.429;
+    font-size: 0.9375em;
+    line-height: 1.6;
     color: var(--color-text-secondary);
-    margin-bottom: 2.5em;
+    margin-bottom: 1.5em;
   }
 
   .our-story__items {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+    margin-top: 1em;
   }
 
   .our-story__item {
@@ -518,207 +318,184 @@ import Footer from '../components/Footer.astro';
     align-items: flex-start;
   }
 
-  .our-story__item-icon {
-    width: 1.5em;
-    height: 1.5em;
+  .our-story__item-icon-wrap {
+    width: 2.75em;
+    height: 2.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 200, 232, 0.08);
+    border-radius: var(--radius-md);
     flex-shrink: 0;
+    color: var(--color-primary);
     margin-top: 0.125em;
   }
 
   .our-story__item-title {
     font-family: var(--font-heading);
-    font-size: 1.25em;
-    font-weight: 500;
-    line-height: 1.4;
-    color: var(--color-text-primary);
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-text-white);
     margin-bottom: 0.25em;
   }
 
   .our-story__item-text {
     font-size: 0.875em;
-    line-height: 1.429;
+    line-height: 1.6;
     color: var(--color-text-secondary);
   }
 
-  /* ========== TEAMS ========== */
-  .teams {
+  /* ========== WHY CHOOSE US ========== */
+  .why-choose {
     width: 100%;
-    background-color: var(--color-bg-white);
-    padding-block: 7.5em;
+    background-color: var(--color-bg-dark);
+    padding-block: 6.25em;
   }
 
-  .teams__inner {
-    padding-inline: var(--container-padding);
+  .why-choose__inner {
+    display: flex;
+    flex-direction: column;
   }
 
-  .teams__header {
+  .why-choose__header {
+    margin-bottom: 3em;
     text-align: center;
-    margin-bottom: 3.75em;
   }
 
-  .teams__header .section-label {
+  .why-choose__header .section-label {
     display: block;
-    color: var(--color-text-secondary);
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
   }
 
-  .teams__heading {
+  .why-choose__heading {
     font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.133;
-    letter-spacing: -1.92px;
-    color: var(--color-text-primary);
-    margin-bottom: 0.267em;
+    font-size: 2.75em;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--color-text-white);
+    margin-bottom: 0.5em;
   }
 
-  .teams__subtext {
-    font-size: 0.875em;
-    line-height: 1.429;
+  .why-choose__subtext {
+    font-size: 1em;
+    line-height: 1.6;
     color: var(--color-text-secondary);
-    max-width: 34.5em;
+    max-width: 36em;
     margin-inline: auto;
   }
 
-  .teams__grid {
+  .why-choose__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.25em;
   }
 
-  .teams__card {
-    text-align: center;
-  }
-
-  .teams__card-image {
-    width: 100%;
-    height: 25em;
-    object-fit: cover;
+  .why-choose__card {
+    padding: 2em;
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
-    margin-bottom: 1em;
+    transition: all var(--transition-base);
   }
 
-  .teams__card-name {
+  .why-choose__card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .why-choose__card-icon-wrap {
+    width: 2.75em;
+    height: 2.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 200, 232, 0.08);
+    border-radius: var(--radius-md);
+    margin-bottom: 1.25em;
+    color: var(--color-primary);
+  }
+
+  .why-choose__card-title {
     font-family: var(--font-heading);
-    font-size: 1.25em;
-    font-weight: 500;
-    line-height: 1.4;
-    color: var(--color-text-primary);
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-text-white);
+    margin-bottom: 0.5em;
   }
 
-  .teams__card-role {
+  .why-choose__card-desc {
     font-size: 0.875em;
-    line-height: 1.429;
+    line-height: 1.6;
     color: var(--color-text-secondary);
   }
 
-  /* ========== CONTACT SECTION ========== */
-  .contact-section {
+  /* ========== CTA SECTION ========== */
+  .about-cta {
     width: 100%;
-    background-color: var(--color-bg-dark);
-    padding-block: 7.5em;
+    background: linear-gradient(135deg, rgba(0, 200, 232, 0.1) 0%, var(--color-bg-dark) 50%, rgba(168, 224, 0, 0.08) 100%);
+    border-top: 1px solid var(--color-border);
+    padding-block: 5em;
   }
 
-  .contact-section__inner {
-    display: flex;
-    align-items: center;
-    gap: 3.75em;
-    padding-inline: var(--container-padding);
+  .about-cta__inner {
+    text-align: center;
   }
 
-  .contact-section__content {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .contact-section__content .section-label {
-    display: block;
-    color: var(--color-text-white-muted);
-    margin-bottom: 1em;
-  }
-
-  .contact-section__heading {
+  .about-cta__heading {
     font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.133;
-    letter-spacing: -1.92px;
+    font-size: 2.5em;
+    font-weight: 800;
     color: var(--color-text-white);
-    margin-bottom: 0.267em;
+    margin-bottom: 0.5em;
   }
 
-  .contact-section__text {
-    font-size: 0.875em;
-    line-height: 1.429;
-    color: var(--color-text-white-muted);
+  .about-cta__text {
+    font-size: 1.0625em;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    max-width: 36em;
+    margin-inline: auto;
     margin-bottom: 2em;
   }
 
-  .contact-section__image-wrapper {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .contact-section__image {
-    width: 100%;
-    height: 25em;
-    object-fit: cover;
-    border-radius: var(--radius-lg);
+  .about-cta__actions {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   /* ========== RESPONSIVE ========== */
 
   /* Tablet */
   @media (max-width: 991px) {
-    .about-hero {
-      min-height: auto;
-    }
-
-    .about-hero__image-wrapper {
-      position: relative;
-      width: 100%;
-      height: 25em;
-    }
-
-    .about-hero__inner {
-      justify-content: center;
-      min-height: auto;
-      padding-block: 3em;
-    }
-
-    .about-hero__content {
-      width: 100%;
-    }
-
-    .why-choose__grid {
-      grid-template-columns: 1fr;
+    .about-hero__heading {
+      font-size: 2.75em;
     }
 
     .our-story__inner {
       flex-direction: column;
     }
 
-    .our-story__image {
-      height: 25em;
+    .our-story__image-placeholder {
+      height: 22em;
     }
 
-    .teams__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-section__inner {
-      flex-direction: column;
+    .why-choose__grid {
+      grid-template-columns: 1fr;
     }
   }
 
   /* Mobile */
   @media (max-width: 767px) {
-    .about-hero__image-wrapper {
-      height: 20em;
+    .about-hero {
+      padding: 8em 0 4em;
     }
 
     .about-hero__heading {
-      font-size: 2.5em;
+      font-size: 2.25em;
     }
 
     .about-hero__stats {
@@ -726,30 +503,20 @@ import Footer from '../components/Footer.astro';
       gap: 2em;
     }
 
-    .why-choose__heading,
     .our-story__heading,
-    .teams__heading,
-    .contact-section__heading {
-      font-size: 2.5em;
+    .why-choose__heading {
+      font-size: 2.25em;
     }
 
-    .our-story__image {
-      height: 18em;
-    }
-
-    .teams__grid {
-      grid-template-columns: 1fr;
-    }
-
-    .contact-section__image {
-      height: 18em;
+    .about-cta__heading {
+      font-size: 2em;
     }
   }
 
   /* Mobile portrait */
   @media (max-width: 479px) {
     .about-hero__heading {
-      font-size: 2em;
+      font-size: 1.875em;
     }
 
     .about-hero__stats {
@@ -757,11 +524,23 @@ import Footer from '../components/Footer.astro';
       gap: 1.5em;
     }
 
-    .why-choose__heading,
+    .about-hero__ctas,
+    .about-cta__actions {
+      flex-direction: column;
+    }
+
+    .about-hero__ctas .btn,
+    .about-cta__actions .btn {
+      width: 100%;
+    }
+
     .our-story__heading,
-    .teams__heading,
-    .contact-section__heading {
-      font-size: 2em;
+    .why-choose__heading {
+      font-size: 1.875em;
+    }
+
+    .about-cta__heading {
+      font-size: 1.75em;
     }
   }
 </style>

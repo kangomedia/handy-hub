@@ -4,134 +4,133 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout title="Contact Us | HandyHub" description="Get in touch with HandyHub today for a free estimate. Our team is ready to help with all your home improvement needs.">
+<BaseLayout
+  title="Contact Us | Free Estimates in Westminster & Denver — Elite Property Innovations"
+  description="Contact Elite Property Innovations for a free home improvement estimate. Call (720) 299-1238 or fill out our form. Serving Westminster, Arvada, Broomfield, Thornton, Northglenn & Denver."
+>
   <Navbar variant="dark" />
   <main id="main-content">
 
     <!-- ========== CONTACT HERO ========== -->
     <section class="contact-hero">
-      <div class="contact-hero__lines" aria-hidden="true">
-        <span></span><span></span><span></span><span></span><span></span>
-      </div>
+      <div class="contact-hero__gradient" aria-hidden="true"></div>
+      <div class="contact-hero__grid-overlay" aria-hidden="true"></div>
       <div class="contact-hero__inner container">
         <div class="contact-hero__header">
-          <span class="section-label contact-hero__eyebrow">HANDYHUB</span>
-          <h1 class="contact-hero__heading">Get in touch with us today</h1>
+          <span class="section-label contact-hero__eyebrow">Contact Us</span>
+          <h1 class="contact-hero__heading">Get Your Free Home Improvement&nbsp;Estimate</h1>
           <p class="contact-hero__subtext">
-            Have a question or need a quote? Fill out the form below and our team will get back to you within 24 hours.
+            Tell us about your project and we'll respond within 60 seconds — even after hours. Or call us directly at <a href="tel:7202991238" class="contact-hero__phone-link">(720) 299-1238</a>.
           </p>
         </div>
         <form class="contact-hero__form" action="#" method="post">
           <div class="contact-hero__form-row">
             <div class="contact-hero__form-group">
               <label for="full-name" class="contact-hero__label">Full Name</label>
-              <input
-                type="text"
-                id="full-name"
-                name="full-name"
-                class="contact-hero__input"
-                placeholder="Enter your full name"
-                required
-              />
+              <input type="text" id="full-name" name="full-name" class="contact-hero__input" placeholder="Your full name" required />
             </div>
             <div class="contact-hero__form-group">
               <label for="phone" class="contact-hero__label">Phone Number</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                class="contact-hero__input"
-                placeholder="Enter your phone number"
-                required
-              />
+              <input type="tel" id="phone" name="phone" class="contact-hero__input" placeholder="(xxx) xxx-xxxx" required />
+            </div>
+          </div>
+          <div class="contact-hero__form-row">
+            <div class="contact-hero__form-group">
+              <label for="email" class="contact-hero__label">Email Address</label>
+              <input type="email" id="email" name="email" class="contact-hero__input" placeholder="your@email.com" />
+            </div>
+            <div class="contact-hero__form-group">
+              <label for="service" class="contact-hero__label">Service Needed</label>
+              <select id="service" name="service" class="contact-hero__input contact-hero__select" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="kitchen-remodeling">Kitchen Remodeling</option>
+                <option value="bathroom-remodeling">Bathroom Remodeling</option>
+                <option value="painting">Interior & Exterior Painting</option>
+                <option value="handyman">Handyman Services</option>
+                <option value="drywall">Drywall Services</option>
+                <option value="carpentry">Carpentry</option>
+                <option value="deck">Deck Construction & Repair</option>
+                <option value="fence">Fence Installation & Repair</option>
+                <option value="windows-doors">Window & Door Replacement</option>
+                <option value="roofing">Roofing Services</option>
+                <option value="other">Other</option>
+              </select>
             </div>
           </div>
           <div class="contact-hero__form-group">
-            <label for="service" class="contact-hero__label">Select Services</label>
-            <select id="service" name="service" class="contact-hero__input contact-hero__select" required>
-              <option value="" disabled selected>Select a service</option>
-              <option value="plumbing">Plumbing</option>
-              <option value="electrical">Electrical</option>
-              <option value="painting">Painting</option>
-              <option value="carpentry">Carpentry</option>
-              <option value="general-repair">General Repair</option>
-              <option value="renovation">Renovation</option>
-              <option value="other">Other</option>
-            </select>
+            <label for="message" class="contact-hero__label">Project Details</label>
+            <textarea id="message" name="message" class="contact-hero__input contact-hero__textarea" placeholder="Tell us about your project — scope, timeline, budget, or any questions you have..." rows="5"></textarea>
           </div>
-          <div class="contact-hero__form-group">
-            <label for="message" class="contact-hero__label">Your message</label>
-            <textarea
-              id="message"
-              name="message"
-              class="contact-hero__input contact-hero__textarea"
-              placeholder="Tell us about your project..."
-              rows="5"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn--light contact-hero__submit">Submit</button>
+          <button type="submit" class="btn btn--accent contact-hero__submit">Request Free Estimate</button>
         </form>
       </div>
     </section>
 
-    <!-- ========== MAPS SECTION ========== -->
-    <section class="maps-section">
-      <div class="maps-section__inner container">
-        <div class="maps-section__header">
-          <span class="section-label">HANDYHUB</span>
-          <h2 class="maps-section__heading">Find our office</h2>
+    <!-- ========== CONTACT INFO SECTION ========== -->
+    <section class="contact-info">
+      <div class="contact-info__inner container">
+        <div class="contact-info__cards">
+          <!-- Phone -->
+          <a href="tel:7202991238" class="contact-info__card">
+            <div class="contact-info__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3 class="contact-info__card-title">Call Us</h3>
+            <p class="contact-info__card-text">(720) 299-1238</p>
+            <span class="contact-info__card-note">Mon – Sat, 7am – 7pm</span>
+          </a>
+          <!-- Email -->
+          <a href="mailto:jacob@epiinnovations.com" class="contact-info__card">
+            <div class="contact-info__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3 class="contact-info__card-title">Email Us</h3>
+            <p class="contact-info__card-text">jacob@epiinnovations.com</p>
+            <span class="contact-info__card-note">We respond within 24 hours</span>
+          </a>
+          <!-- Location -->
+          <a href="https://www.google.com/maps/search/Elite+Property+Innovations+Westminster+CO" target="_blank" rel="noopener noreferrer" class="contact-info__card">
+            <div class="contact-info__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="contact-info__card-title">Service Area</h3>
+            <p class="contact-info__card-text">Westminster, CO</p>
+            <span class="contact-info__card-note">Serving the Denver Metro</span>
+          </a>
         </div>
-        <div class="maps-section__map" role="img" aria-label="Map showing HandyHub office locations">
-          <span class="maps-section__map-placeholder">Map</span>
-        </div>
-        <div class="maps-section__offices">
-          <div class="maps-section__office">
-            <div class="maps-section__office-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
-              </svg>
-            </div>
-            <div>
-              <h3 class="maps-section__office-title">Office</h3>
-              <p class="maps-section__office-address">123 Street, New York, NY 10001</p>
-              <a href="#" class="maps-section__office-direction">Direction <span aria-hidden="true">&rarr;</span></a>
-            </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICE AREAS ========== -->
+    <section class="service-areas">
+      <div class="service-areas__inner container">
+        <span class="section-label">Service Areas</span>
+        <h2 class="service-areas__heading">Proudly Serving the Denver Metro</h2>
+        <p class="service-areas__subtext">We provide home improvement services throughout the northern Denver metro area, including:</p>
+        <div class="service-areas__grid">
+          <div class="service-areas__area">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Westminster</span>
           </div>
-          <div class="maps-section__office">
-            <div class="maps-section__office-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
-              </svg>
-            </div>
-            <div>
-              <h3 class="maps-section__office-title">Office</h3>
-              <p class="maps-section__office-address">123 Street, New York, NY 10001</p>
-              <a href="#" class="maps-section__office-direction">Direction <span aria-hidden="true">&rarr;</span></a>
-            </div>
+          <div class="service-areas__area">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Arvada</span>
           </div>
-          <div class="maps-section__office">
-            <div class="maps-section__office-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
-              </svg>
-            </div>
-            <div>
-              <h3 class="maps-section__office-title">Office</h3>
-              <p class="maps-section__office-address">123 Street, New York, NY 10001</p>
-              <a href="#" class="maps-section__office-direction">Direction <span aria-hidden="true">&rarr;</span></a>
-            </div>
+          <div class="service-areas__area">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Broomfield</span>
           </div>
-          <div class="maps-section__office">
-            <div class="maps-section__office-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
-              </svg>
-            </div>
-            <div>
-              <h3 class="maps-section__office-title">Office</h3>
-              <p class="maps-section__office-address">123 Street, New York, NY 10001</p>
-              <a href="#" class="maps-section__office-direction">Direction <span aria-hidden="true">&rarr;</span></a>
-            </div>
+          <div class="service-areas__area">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Thornton</span>
+          </div>
+          <div class="service-areas__area">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Northglenn</span>
+          </div>
+          <div class="service-areas__area">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Denver</span>
           </div>
         </div>
       </div>
@@ -148,73 +147,84 @@ import Footer from '../components/Footer.astro';
     background-color: var(--color-bg-dark);
     position: relative;
     overflow: hidden;
-    padding-block: 7.5em;
+    padding: 10em 0 6em;
   }
 
-  .contact-hero__lines {
+  .contact-hero__gradient {
     position: absolute;
     inset: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(0, 200, 232, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 80%, rgba(168, 224, 0, 0.05) 0%, transparent 50%);
     pointer-events: none;
-    display: flex;
-    justify-content: space-evenly;
-    max-width: var(--size-container);
-    margin-inline: auto;
-    padding-inline: var(--container-padding);
   }
 
-  .contact-hero__lines span {
-    width: 1px;
-    height: 100%;
-    background-color: var(--color-border-dark);
+  .contact-hero__grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 1px,
+      transparent 60px
+    );
+    pointer-events: none;
   }
 
   .contact-hero__inner {
     position: relative;
     z-index: 1;
-    padding-inline: var(--container-padding);
   }
 
   .contact-hero__header {
     text-align: center;
-    margin-bottom: 3.75em;
+    margin-bottom: 3em;
   }
 
   .contact-hero__eyebrow {
     display: block;
-    color: var(--color-text-white-muted);
     margin-bottom: 1.5em;
   }
 
   .contact-hero__heading {
     font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.133;
-    letter-spacing: -1.92px;
+    font-size: 3.5em;
+    font-weight: 800;
+    line-height: 1.1;
     color: var(--color-text-white);
-    margin-bottom: 0.267em;
+    margin-bottom: 0.5em;
   }
 
   .contact-hero__subtext {
-    font-size: 0.875em;
-    line-height: 1.429;
-    color: var(--color-text-white-muted);
-    max-width: 34.5em;
+    font-size: 1.0625em;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    max-width: 36em;
     margin-inline: auto;
   }
 
+  .contact-hero__phone-link {
+    color: var(--color-primary);
+    font-weight: 600;
+    transition: color var(--transition-fast);
+  }
+
+  .contact-hero__phone-link:hover {
+    color: var(--color-accent);
+  }
+
   .contact-hero__form {
-    max-width: 46.5em;
+    max-width: 46em;
     margin-inline: auto;
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 1.25em;
   }
 
   .contact-hero__form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5em;
+    gap: 1.25em;
   }
 
   .contact-hero__form-group {
@@ -224,23 +234,28 @@ import Footer from '../components/Footer.astro';
   }
 
   .contact-hero__label {
-    font-family: var(--font-body);
     font-size: 0.875em;
-    font-weight: 400;
-    line-height: 1.429;
-    color: var(--color-text-white-muted);
+    font-weight: 500;
+    color: var(--color-text-white);
   }
 
   .contact-hero__input {
     width: 100%;
-    padding: 1.25em;
-    background: transparent;
+    padding: 1em 1.25em;
+    background: var(--color-bg-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     font-family: var(--font-body);
     font-size: 1em;
     line-height: 1.5;
     color: var(--color-text-white);
+    transition: border-color var(--transition-fast);
+  }
+
+  .contact-hero__input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: var(--shadow-glow-cyan);
   }
 
   .contact-hero__input::placeholder {
@@ -249,7 +264,7 @@ import Footer from '../components/Footer.astro';
 
   .contact-hero__select {
     appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23969ea3' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%2300C8E8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 1.25em center;
     padding-right: 3em;
@@ -258,155 +273,193 @@ import Footer from '../components/Footer.astro';
 
   .contact-hero__textarea {
     resize: vertical;
-    min-height: 8em;
+    min-height: 7em;
   }
 
   .contact-hero__submit {
     align-self: flex-start;
-    min-width: 10em;
+    min-width: 14em;
   }
 
-  /* ========== MAPS SECTION ========== */
-  .maps-section {
+  /* ========== CONTACT INFO ========== */
+  .contact-info {
     width: 100%;
-    background-color: var(--color-bg-dark);
-    padding-block: 7.5em;
+    background-color: var(--color-bg-white);
+    padding-block: 6.25em;
   }
 
-  .maps-section__inner {
-    padding-inline: var(--container-padding);
-  }
-
-  .maps-section__header {
-    text-align: center;
-    margin-bottom: 3.75em;
-  }
-
-  .maps-section__header .section-label {
-    display: block;
-    color: var(--color-text-white-muted);
-    margin-bottom: 1em;
-  }
-
-  .maps-section__heading {
-    font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.133;
-    letter-spacing: -1.92px;
-    color: var(--color-text-white);
-  }
-
-  .maps-section__map {
-    width: 100%;
-    height: 39.6875em;
-    background-color: #2a3a47;
-    border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3.75em;
-  }
-
-  .maps-section__map-placeholder {
-    font-family: var(--font-heading);
-    font-size: 2em;
-    font-weight: 400;
-    color: var(--color-text-white-muted);
-  }
-
-  .maps-section__offices {
+  .contact-info__cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.25em;
   }
 
-  .maps-section__office {
+  .contact-info__card {
     display: flex;
-    gap: 1em;
-    align-items: flex-start;
-    padding: 2em;
-    border: 1px solid var(--color-border-dark);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5em 2em;
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
+    text-decoration: none;
+    transition: all var(--transition-base);
+    color: inherit;
   }
 
-  .maps-section__office-icon {
-    width: 2.5em;
-    height: 2.5em;
+  .contact-info__card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-2px);
+  }
+
+  .contact-info__card-icon {
+    width: 3.5em;
+    height: 3.5em;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    color: var(--color-text-white);
+    background: rgba(0, 200, 232, 0.08);
+    border-radius: var(--radius-md);
+    margin-bottom: 1.25em;
+    color: var(--color-primary);
   }
 
-  .maps-section__office-title {
+  .contact-info__card-title {
     font-family: var(--font-heading);
-    font-size: 1.25em;
-    font-weight: 500;
-    line-height: 1.4;
+    font-size: 1.125em;
+    font-weight: 700;
     color: var(--color-text-white);
+    margin-bottom: 0.5em;
+  }
+
+  .contact-info__card-text {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--color-primary);
     margin-bottom: 0.25em;
   }
 
-  .maps-section__office-address {
-    font-size: 0.875em;
-    line-height: 1.429;
-    color: var(--color-text-white-muted);
-    margin-bottom: 0.75em;
+  .contact-info__card-note {
+    font-size: 0.8125em;
+    color: var(--color-text-secondary);
   }
 
-  .maps-section__office-direction {
-    font-family: var(--font-body);
-    font-size: 0.875em;
-    font-weight: 500;
-    line-height: 1.429;
+  /* ========== SERVICE AREAS ========== */
+  .service-areas {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    padding-block: 6.25em;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .service-areas__inner {
+    text-align: center;
+  }
+
+  .service-areas__heading {
+    font-family: var(--font-heading);
+    font-size: 2.5em;
+    font-weight: 800;
+    line-height: 1.15;
     color: var(--color-text-white);
-    transition: opacity var(--transition-base);
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
   }
 
-  .maps-section__office-direction:hover {
-    opacity: 0.7;
+  .service-areas__subtext {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: 2.5em;
+  }
+
+  .service-areas__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.25em;
+    max-width: 56em;
+    margin-inline: auto;
+  }
+
+  .service-areas__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1.5em 1em;
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    color: var(--color-primary);
+    transition: all var(--transition-base);
+  }
+
+  .service-areas__area:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .service-areas__area span {
+    font-family: var(--font-heading);
+    font-size: 0.875em;
+    font-weight: 600;
+    color: var(--color-text-white);
   }
 
   /* ========== RESPONSIVE ========== */
 
   /* Tablet */
   @media (max-width: 991px) {
+    .contact-hero__heading {
+      font-size: 2.75em;
+    }
+
     .contact-hero__form-row {
       grid-template-columns: 1fr;
     }
 
-    .maps-section__offices {
+    .contact-info__cards {
       grid-template-columns: 1fr;
+    }
+
+    .service-areas__grid {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
   /* Mobile */
   @media (max-width: 767px) {
-    .contact-hero__heading,
-    .maps-section__heading {
-      font-size: 2.5em;
+    .contact-hero {
+      padding: 8em 0 4em;
     }
 
-    .maps-section__map {
-      height: 20em;
+    .contact-hero__heading {
+      font-size: 2.25em;
     }
 
     .contact-hero__submit {
       width: 100%;
     }
+
+    .service-areas__heading {
+      font-size: 2em;
+    }
+
+    .service-areas__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   /* Mobile portrait */
   @media (max-width: 479px) {
-    .contact-hero__heading,
-    .maps-section__heading {
-      font-size: 2em;
+    .contact-hero__heading {
+      font-size: 1.875em;
     }
 
-    .maps-section__map {
-      height: 15em;
+    .service-areas__grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 </style>
