@@ -45,26 +45,30 @@
 }
 
 /* ==========================================================================
-   Design Tokens — Update per project (Phase 0)
+   Design Tokens — Elite Property Innovations
+   Dark theme derived from logo colors: Cyan #00C8E8 + Lime #A8E000
    ========================================================================== */
 
 :root {
-  /* Colors */
-  --color-primary: #021623;
-  --color-accent: #021623;
-  --color-bg-white: #f8f8f8;
-  --color-bg-dark: #021623;
-  --color-text-primary: #021623;
-  --color-text-secondary: #6c6c6c;
-  --color-text-white: #ffffff;
-  --color-text-white-muted: rgba(255, 255, 255, 0.8);
-  --color-text-gray: #969ea3;
-  --color-border: #e4e4e4;
-  --color-border-dark: #0c1f2c;
+  /* Colors — Dark Theme */
+  --color-primary: #00C8E8;         /* Electric Cyan — links, accents, icon fills, borders */
+  --color-accent: #A8E000;          /* Lime Green — CTAs ONLY, never backgrounds */
+  --color-accent-hover: #8FBF00;    /* Lime Green darker — hover state */
+  --color-bg-dark: #0A0F14;         /* Deep charcoal — hero, nav, footer */
+  --color-bg-white: #0F1419;        /* Dark surface — "light" sections */
+  --color-bg-surface: #151C24;      /* Elevated surface — cards, inputs */
+  --color-bg-surface-hover: #1A2430; /* Card hover state */
+  --color-text-primary: #F0F2F5;    /* Primary text on dark */
+  --color-text-secondary: #8B95A1;  /* Muted body text */
+  --color-text-white: #ffffff;      /* Pure white — headings */
+  --color-text-white-muted: rgba(255, 255, 255, 0.65);
+  --color-text-gray: #5A6472;       /* Dimmed labels */
+  --color-border: #1E2A36;          /* Subtle dark border */
+  --color-border-dark: #162230;     /* Darker variant — footer/nav */
 
-  /* Typography */
-  --font-heading: 'Geist', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+  /* Typography — Montserrat */
+  --font-heading: 'Montserrat', system-ui, sans-serif;
+  --font-body: 'Montserrat', system-ui, sans-serif;
 
   /* Spacing scale */
   --spacing-xs: 0.25em;   /* 4px */
@@ -83,11 +87,19 @@
   --radius-sm: 0.25em;    /* 4px */
   --radius-md: 0.5em;     /* 8px */
   --radius-lg: 0.75em;    /* 12px */
+  --radius-xl: 1em;       /* 16px */
   --radius-pill: 2.5em;   /* 40px */
 
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
+  --transition-smooth: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Shadows — subtle glow effects on dark */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--color-border);
+  --shadow-card-hover: 0 8px 24px rgba(0, 200, 232, 0.08), 0 0 0 1px var(--color-primary);
+  --shadow-glow-cyan: 0 0 20px rgba(0, 200, 232, 0.15);
+  --shadow-glow-lime: 0 0 20px rgba(168, 224, 0, 0.15);
 }
 
 /* ==========================================================================
@@ -113,8 +125,8 @@ body {
   font-family: var(--font-body);
   font-size: var(--size-font);
   color: var(--color-text-secondary);
-  background-color: var(--color-bg-white);
-  line-height: 1.5;
+  background-color: var(--color-bg-dark);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -156,6 +168,7 @@ h6 {
   font-family: var(--font-heading);
   line-height: 1.143;
   overflow-wrap: break-word;
+  color: var(--color-text-white);
 }
 
 p {
@@ -188,38 +201,82 @@ p {
 /* Section label — uppercase eyebrow text */
 .section-label {
   font-family: var(--font-body);
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 0.875em;
+  font-weight: 600;
   line-height: 1.5;
-  letter-spacing: 2.4px;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  color: var(--color-primary);
 }
 
-/* Button — primary dark */
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+/* Button — base */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
-  height: 3.75em;
-  padding-inline: 1.5em;
-  background-color: var(--color-bg-dark);
+  height: 3.5em;
+  padding-inline: 2em;
+  background-color: var(--color-bg-surface);
   color: var(--color-text-white);
   font-family: var(--font-body);
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 0.9375em;
+  font-weight: 600;
   line-height: 1.5;
-  border: none;
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
+  transition: all var(--transition-base);
 }
 
-/* Button — light variant */
+.btn:hover {
+  background-color: var(--color-bg-surface-hover);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-glow-cyan);
+}
+
+/* Button — accent (lime green CTA) */
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #0A0F14;
+  border-color: var(--color-accent);
+  font-weight: 700;
+}
+
+.btn--accent:hover {
+  background-color: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  box-shadow: var(--shadow-glow-lime);
+}
+
+/* Button — outline (cyan border) */
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn--outline:hover {
+  background-color: rgba(0, 200, 232, 0.08);
+  box-shadow: var(--shadow-glow-cyan);
+}
+
+/* Button — light (white) */
 .btn--light {
   background-color: var(--color-text-white);
-  color: var(--color-primary);
+  color: var(--color-bg-dark);
+  border-color: var(--color-text-white);
+}
+
+.btn--light:hover {
+  background-color: var(--color-text-primary);
+  opacity: 0.95;
 }
 
 /* ==========================================================================
@@ -227,7 +284,7 @@ p {
    ========================================================================== */
 
 :focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
 
@@ -256,6 +313,11 @@ p {
   text-decoration: none;
 }
 
-.btn:hover {
-  opacity: 0.85;
+/* ==========================================================================
+   Selection
+   ========================================================================== */
+
+::selection {
+  background-color: rgba(0, 200, 232, 0.3);
+  color: var(--color-text-white);
 }

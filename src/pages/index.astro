@@ -4,299 +4,312 @@ import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout title="HandyHub — Your Trusted Partner for Home Maintenance" description="From fixing leaks to full maintenance, our trusted professionals ensure your home is always in top shape.">
+<BaseLayout
+  title="Elite Property Innovations | Home Improvement & Remodeling in Westminster, CO"
+  description="Westminster's trusted home improvement contractor. Kitchen & bath remodeling, painting, carpentry, roofing & more. 25+ years experience. Free estimates — call (720) 299-1238."
+>
   <Navbar variant="dark" />
 
   <main id="main-content">
 
     <!-- ============================== HERO ============================== -->
-    <section class="hero">
-      <img
-        src="/assets/images/hero-bg-vectors.png"
-        alt=""
-        role="presentation"
-        class="hero__bg"
-        width="1440"
-        height="864"
-      />
+    <section class="hero" id="hero">
+      <div class="hero__gradient" aria-hidden="true"></div>
+      <div class="hero__grid-overlay" aria-hidden="true"></div>
       <div class="hero__inner container">
         <div class="hero__content">
-          <div class="hero__text">
-            <span class="hero__eyebrow section-label">HANDYHUB</span>
-            <h1 class="hero__heading">Your trusted partner for home maintenance</h1>
-            <p class="hero__subtext">From fixing leaks to full maintenance, our trusted professionals ensure your home is always in top shape.</p>
-            <a href="/contact" class="btn btn--light">Contact us</a>
+          <div class="hero__text" data-animate>
+            <span class="hero__eyebrow section-label">Elite Property Innovations</span>
+            <h1 class="hero__heading">Quality Home Improvements in Westminster & the Denver Metro</h1>
+            <p class="hero__subtext">From kitchen remodels to custom carpentry, we deliver craftsmanship you can rely on. Over 25 years of hands-on experience transforming Colorado homes — with integrity, precision, and care.</p>
+            <div class="hero__badges">
+              <div class="hero__badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>25+ Years Experience</span>
+              </div>
+              <div class="hero__badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span>5-Star Google Rated</span>
+              </div>
+              <div class="hero__badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Locally Owned & Operated</span>
+              </div>
+            </div>
+            <div class="hero__ctas">
+              <a href="/contact" class="btn btn--accent">Get Your Free Estimate</a>
+              <a href="tel:7202991238" class="btn btn--outline">(720) 299-1238</a>
+            </div>
           </div>
-          <div class="hero__image-wrapper">
-            <img
-              src="/assets/images/hero-home.jpg"
-              alt="Professional handyman working on home maintenance"
-              width="600"
-              height="700"
-              class="hero__image"
-            />
-          </div>
-        </div>
-        <div class="hero__stats">
-          <div class="hero__stat">
-            <span class="hero__stat-number">10y</span>
-            <span class="hero__stat-label section-label">EXPEREINCES</span>
-          </div>
-          <div class="hero__stat">
-            <span class="hero__stat-number">100+</span>
-            <span class="hero__stat-label section-label">TEAM MEMBERS</span>
-          </div>
-          <div class="hero__stat">
-            <span class="hero__stat-number">1k</span>
-            <span class="hero__stat-label section-label">PROJECTS</span>
+          <div class="hero__form-wrapper" data-animate>
+            <div class="hero__form-card">
+              <h2 class="hero__form-title">Request a Free Quote</h2>
+              <p class="hero__form-subtitle">We respond within 60 seconds — even after hours.</p>
+              <form class="hero__form" action="#" method="post">
+                <input type="text" name="name" class="hero__form-input" placeholder="Full Name" required aria-label="Full Name" />
+                <input type="tel" name="phone" class="hero__form-input" placeholder="Phone Number" required aria-label="Phone Number" />
+                <input type="email" name="email" class="hero__form-input" placeholder="Email Address" aria-label="Email Address" />
+                <select name="service" class="hero__form-input hero__form-select" aria-label="Select service">
+                  <option value="" disabled selected>Select a Service</option>
+                  <option value="kitchen-remodeling">Kitchen Remodeling</option>
+                  <option value="bathroom-remodeling">Bathroom Remodeling</option>
+                  <option value="painting">Interior & Exterior Painting</option>
+                  <option value="handyman">Handyman Services</option>
+                  <option value="drywall">Drywall Services</option>
+                  <option value="carpentry">Carpentry</option>
+                  <option value="deck-construction">Deck Construction & Repair</option>
+                  <option value="fencing">Fence Installation & Repair</option>
+                  <option value="windows-doors">Window & Door Replacement</option>
+                  <option value="roofing">Roofing Services</option>
+                </select>
+                <textarea name="description" class="hero__form-input hero__form-textarea" placeholder="Tell us about your project..." rows="3" aria-label="Project description"></textarea>
+                <button type="submit" class="btn btn--accent hero__form-submit">Get My Free Estimate</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================== ABOUT ============================== -->
-    <section class="about">
-      <div class="about__inner container">
-        <span class="about__eyebrow section-label">HANDYHUB</span>
-        <h2 class="about__heading">
-          <span class="about__heading--gray">A statement about Handyman's </span><span class="about__heading--dark">dedication to quality, reliability, and customer satisfaction.</span>
-        </h2>
-        <div class="about__row">
-          <a href="/about" class="btn">Learn more</a>
-          <p class="about__description">Introduce the team, focusing on their experience and commitment to delivering top-notch services. Including real team photos can build trust.</p>
+    <!-- ============================== TRUST STRIP ============================== -->
+    <section class="trust-strip" data-animate>
+      <div class="trust-strip__inner container">
+        <div class="trust-strip__google">
+          <div class="trust-strip__stars">
+            {[1,2,3,4,5].map(() => (
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            ))}
+          </div>
+          <span class="trust-strip__rating"><strong>5.0</strong> on Google</span>
         </div>
+        <span class="trust-strip__divider" aria-hidden="true"></span>
+        <p class="trust-strip__text">Trusted by homeowners across Westminster, Arvada, Broomfield & beyond</p>
+        <a href="https://www.google.com/maps/place/Elite+Property+Innovations+LLC" class="trust-strip__link" target="_blank" rel="noopener">Read our reviews →</a>
       </div>
     </section>
 
     <!-- ============================== SERVICES ============================== -->
-    <section class="services">
+    <section class="services" id="services">
       <div class="services__inner container">
-        <span class="services__eyebrow section-label">HANDYHUB</span>
-        <h2 class="services__heading">Quality handyman solutions</h2>
-        <p class="services__subtext">At QuickFix, we offer a comprehensive range of handyman services to keep your home in top condition. Whether it's a minor repair or a major project, our skilled team is here to help.</p>
+        <span class="services__eyebrow section-label" data-animate>What We Do</span>
+        <h2 class="services__heading" data-animate>Home Improvement Services in Westminster, CO</h2>
+        <p class="services__subtext" data-animate>From full-scale remodels to everyday repairs, our skilled team delivers lasting results. Every project is backed by 25+ years of construction expertise and a commitment to doing things the right way.</p>
 
         <div class="services__grid">
-          <div class="services__card">
-            <img src="/assets/images/icon-home-repair.svg" alt="" role="presentation" width="32" height="32" class="services__card-icon" />
-            <h3 class="services__card-title">Home Repairs</h3>
-            <p class="services__card-desc">Quick and reliable repair services for all your household needs, from fixing leaky faucets to patching drywall.</p>
-            <a href="/services" class="services__card-link">LEARN MORE &rarr;</a>
+          <!-- 1. Kitchen Remodeling -->
+          <div class="services__card" data-animate>
+            <div class="services__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18"/><path d="M3 15h18"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/></svg>
+            </div>
+            <h3 class="services__card-title">Kitchen Remodeling</h3>
+            <p class="services__card-desc">Cabinet installation, lighting upgrades, countertops, and modern design updates tailored to your lifestyle and budget.</p>
+            <a href="/services/kitchen-remodeling" class="services__card-link">Learn More →</a>
           </div>
-          <div class="services__card">
-            <img src="/assets/images/icon-paint.svg" alt="" role="presentation" width="32" height="32" class="services__card-icon" />
-            <h3 class="services__card-title">Decorating service</h3>
-            <p class="services__card-desc">Transform your space with our professional painting and decorating services, tailored to your style and preferences.</p>
-            <a href="/services" class="services__card-link">LEARN MORE &rarr;</a>
+
+          <!-- 2. Bathroom Remodeling -->
+          <div class="services__card" data-animate>
+            <div class="services__card-icon">
+              <svg viewBox="0 0 32 32" fill="currentColor" width="32" height="32"><path d="M22.6673 2.66602C23.6876 2.66596 24.6693 3.05578 25.4117 3.75573C26.154 4.45567 26.6008 5.41282 26.6607 6.43135L26.6673 6.66602C27.7282 6.66602 28.7456 7.08744 29.4957 7.83759C30.2459 8.58773 30.6673 9.60515 30.6673 10.666C30.6674 12.7359 29.8652 14.7252 28.4294 16.216C26.9935 17.7068 25.0357 18.5831 22.9673 18.6607L22.6673 18.666H17.334L17.534 18.6727C18.1689 18.7204 18.7658 18.9937 19.2167 19.4432C19.6676 19.8926 19.9429 20.4886 19.9927 21.1233L20.0007 21.3327V26.666C20.0009 27.3388 19.7468 27.9868 19.2893 28.4801C18.8319 28.9734 18.2049 29.2756 17.534 29.326L17.334 29.3327H14.6673C13.9945 29.3329 13.3466 29.0788 12.8533 28.6214C12.3599 28.1639 12.0578 27.5369 12.0073 26.866L12.0007 26.666V21.3327C12.0004 20.6599 12.2545 20.0119 12.712 19.5186C13.1694 19.0253 13.7964 18.7231 14.4673 18.6727L14.6673 18.666V17.3327C14.6674 17.0061 14.7873 16.6909 15.0043 16.4469C15.2213 16.2028 15.5203 16.0469 15.8447 16.0087L16.0007 15.9993H22.6673C24.0818 15.9993 25.4384 15.4374 26.4386 14.4373C27.4387 13.4371 28.0007 12.0805 28.0007 10.666C28.0006 10.3394 27.8807 10.0242 27.6637 9.78019C27.4467 9.53614 27.1477 9.38022 26.8233 9.34202L26.6673 9.33268L26.6607 9.56735C26.6032 10.5455 26.1888 11.4685 25.496 12.1613C24.8031 12.8541 23.8801 13.2686 22.902 13.326L22.6673 13.3327H9.33398C8.3137 13.3327 7.33196 12.9429 6.58964 12.243C5.84731 11.543 5.40051 10.5859 5.34065 9.56735L5.33398 9.33268V6.66602C5.33393 5.64573 5.72375 4.664 6.4237 3.92167C7.12364 3.17934 8.08079 2.73254 9.09932 2.67268L9.33398 2.66602H22.6673Z"/></svg>
+            </div>
+            <h3 class="services__card-title">Bathroom Remodeling</h3>
+            <p class="services__card-desc">Shower and tile installation, vanity replacements, lighting improvements, and full bathroom transformations.</p>
+            <a href="/services/bathroom-remodeling" class="services__card-link">Learn More →</a>
           </div>
-          <div class="services__card">
-            <img src="/assets/images/icon-plumbing.svg" alt="" role="presentation" width="32" height="32" class="services__card-icon" />
-            <h3 class="services__card-title">Plumbing Services</h3>
-            <p class="services__card-desc">From dripping taps to full plumbing installations, our experts handle it all with precision and care.</p>
-            <a href="/services" class="services__card-link">LEARN MORE &rarr;</a>
+
+          <!-- 3. Interior & Exterior Painting -->
+          <div class="services__card" data-animate>
+            <div class="services__card-icon">
+              <svg viewBox="0 0 32 32" fill="currentColor" width="32" height="32"><path d="M22.6673 2.66602C23.6876 2.66596 24.6693 3.05578 25.4117 3.75573C26.154 4.45567 26.6008 5.41282 26.6607 6.43135L26.6673 6.66602C27.7282 6.66602 28.7456 7.08744 29.4957 7.83759C30.2459 8.58773 30.6673 9.60515 30.6673 10.666C30.6674 12.7359 29.8652 14.7252 28.4294 16.216C26.9935 17.7068 25.0357 18.5831 22.9673 18.6607L22.6673 18.666H17.334L17.534 18.6727C18.1689 18.7204 18.7658 18.9937 19.2167 19.4432C19.6676 19.8926 19.9429 20.4886 19.9927 21.1233L20.0007 21.3327V26.666C20.0009 27.3388 19.7468 27.9868 19.2893 28.4801C18.8319 28.9734 18.2049 29.2756 17.534 29.326L17.334 29.3327H14.6673C13.9945 29.3329 13.3466 29.0788 12.8533 28.6214C12.3599 28.1639 12.0578 27.5369 12.0073 26.866L12.0007 26.666V21.3327C12.0004 20.6599 12.2545 20.0119 12.712 19.5186C13.1694 19.0253 13.7964 18.7231 14.4673 18.6727L14.6673 18.666V17.3327C14.6674 17.0061 14.7873 16.6909 15.0043 16.4469C15.2213 16.2028 15.5203 16.0469 15.8447 16.0087L16.0007 15.9993H22.6673C24.0818 15.9993 25.4384 15.4374 26.4386 14.4373C27.4387 13.4371 28.0007 12.0805 28.0007 10.666C28.0006 10.3394 27.8807 10.0242 27.6637 9.78019C27.4467 9.53614 27.1477 9.38022 26.8233 9.34202L26.6673 9.33268L26.6607 9.56735C26.6032 10.5455 26.1888 11.4685 25.496 12.1613C24.8031 12.8541 23.8801 13.2686 22.902 13.326L22.6673 13.3327H9.33398C8.3137 13.3327 7.33196 12.9429 6.58964 12.243C5.84731 11.543 5.40051 10.5859 5.34065 9.56735L5.33398 9.33268V6.66602C5.33393 5.64573 5.72375 4.664 6.4237 3.92167C7.12364 3.17934 8.08079 2.73254 9.09932 2.67268L9.33398 2.66602H22.6673Z"/></svg>
+            </div>
+            <h3 class="services__card-title">Interior & Exterior Painting</h3>
+            <p class="services__card-desc">Professional painting services that refresh walls, ceilings, trim, and exteriors with clean, lasting results.</p>
+            <a href="/services/painting" class="services__card-link">Learn More →</a>
           </div>
-          <div class="services__card">
-            <img src="/assets/images/icon-electrical.svg" alt="" role="presentation" width="32" height="32" class="services__card-icon" />
-            <h3 class="services__card-title">Electrical Work</h3>
-            <p class="services__card-desc">Safe and professional electrical services, including wiring, lighting installation, and troubleshooting.</p>
-            <a href="/services" class="services__card-link">LEARN MORE &rarr;</a>
+
+          <!-- 4. Handyman Services -->
+          <div class="services__card" data-animate>
+            <div class="services__card-icon">
+              <svg viewBox="0 0 32 32" fill="currentColor" width="32" height="32"><path d="M17.6048 3.8144C17.1643 3.41861 16.593 3.19967 16.0008 3.19967C15.4086 3.19967 14.8373 3.41861 14.3968 3.8144L5.5968 11.7232C5.3461 11.9482 5.14559 12.2235 5.00831 12.5312C4.87103 12.8388 4.80005 13.1719 4.8 13.5088V24.8C4.8 25.4365 5.05286 26.047 5.50294 26.4971C5.95303 26.9471 6.56348 27.2 7.2 27.2H24.8C25.4365 27.2 26.047 26.9471 26.4971 26.4971C26.9471 26.047 27.2 25.4365 27.2 24.8V13.5088C27.2001 13.172 27.1294 12.839 26.9924 12.5314C26.8554 12.2237 26.6552 11.9484 26.4048 11.7232L17.6048 3.8144ZM11.2 17.6C10.7757 17.6 10.3687 17.4314 10.0686 17.1314C9.76857 16.8313 9.6 16.4243 9.6 16C9.6 15.5757 9.76857 15.1687 10.0686 14.8686C10.3687 14.5686 10.7757 14.4 11.2 14.4C11.6243 14.4 12.0313 14.5686 12.3314 14.8686C12.6314 15.1687 12.8 15.5757 12.8 16C12.8 16.4243 12.6314 16.8313 12.3314 17.1314C12.0313 17.4314 11.6243 17.6 11.2 17.6ZM17.6 16C17.6 16.4243 17.4314 16.8313 17.1314 17.1314C16.8313 17.4314 16.4243 17.6 16 17.6C15.5757 17.6 15.1687 17.4314 14.8686 17.1314C14.5686 16.8313 14.4 16.4243 14.4 16C14.4 15.5757 14.5686 15.1687 14.8686 14.8686C15.1687 14.5686 15.5757 14.4 16 14.4C16.4243 14.4 16.8313 14.5686 17.1314 14.8686C17.4314 15.1687 17.6 15.5757 17.6 16ZM20.8 17.6C20.3757 17.6 19.9687 17.4314 19.6686 17.1314C19.3686 16.8313 19.2 16.4243 19.2 16C19.2 15.5757 19.3686 15.1687 19.6686 14.8686C19.9687 14.5686 20.3757 14.4 20.8 14.4C21.2243 14.4 21.6313 14.5686 21.9314 14.8686C22.2314 15.1687 22.4 15.5757 22.4 16C22.4 16.4243 22.2314 16.8313 21.9314 17.1314C21.6313 17.4314 21.2243 17.6 20.8 17.6ZM12.8 20.8C12.8 21.2243 12.6314 21.6313 12.3314 21.9314C12.0313 22.2314 11.6243 22.4 11.2 22.4C10.7757 22.4 10.3687 22.2314 10.0686 21.9314C9.76857 21.6313 9.6 21.2243 9.6 20.8C9.6 20.3757 9.76857 19.9687 10.0686 19.6686C10.3687 19.3686 10.7757 19.2 11.2 19.2C11.6243 19.2 12.0313 19.3686 12.3314 19.6686C12.6314 19.9687 12.8 20.3757 12.8 20.8ZM16 22.4C15.5757 22.4 15.1687 22.2314 14.8686 21.9314C14.5686 21.6313 14.4 21.2243 14.4 20.8C14.4 20.3757 14.5686 19.9687 14.8686 19.6686C15.1687 19.3686 15.5757 19.2 16 19.2C16.4243 19.2 16.8313 19.3686 17.1314 19.6686C17.4314 19.9687 17.6 20.3757 17.6 20.8C17.6 21.2243 17.4314 21.6313 17.1314 21.9314C16.8313 22.2314 16.4243 22.4 16 22.4ZM22.4 20.8C22.4 21.2243 22.2314 21.6313 21.9314 21.9314C21.6313 22.2314 21.2243 22.4 20.8 22.4C20.3757 22.4 19.9687 22.2314 19.6686 21.9314C19.3686 21.6313 19.2 21.2243 19.2 20.8C19.2 20.3757 19.3686 19.9687 19.6686 19.6686C19.9687 19.3686 20.3757 19.2 20.8 19.2C21.2243 19.2 21.6313 19.3686 21.9314 19.6686C22.2314 19.9687 22.4 20.3757 22.4 20.8Z"/></svg>
+            </div>
+            <h3 class="services__card-title">Handyman Services</h3>
+            <p class="services__card-desc">Repairs, furniture assembly, seasonal maintenance, and small home projects handled efficiently and reliably.</p>
+            <a href="/services/handyman" class="services__card-link">Learn More →</a>
           </div>
-          <div class="services__card">
-            <img src="/assets/images/icon-carpentry.svg" alt="" role="presentation" width="32" height="32" class="services__card-icon" />
-            <h3 class="services__card-title">Carpentry Services</h3>
-            <p class="services__card-desc">Custom carpentry solutions for shelving, cabinetry, doors, and more, crafted with skill and attention to detail.</p>
-            <a href="/services" class="services__card-link">LEARN MORE &rarr;</a>
+
+          <!-- 5. Drywall Services -->
+          <div class="services__card" data-animate>
+            <div class="services__card-icon">
+              <svg viewBox="0 0 32 32" fill="currentColor" width="32" height="32"><path d="M4 29.3333V26.6667H8.66667V20.6667H14.6667V14.6667H20.6667V8.66667H26.6667V4H29.3333V11.3333H23.3333V17.3333H17.3333V23.3333H11.3333V29.3333H4Z"/></svg>
+            </div>
+            <h3 class="services__card-title">Drywall Services</h3>
+            <p class="services__card-desc">Installation, repair, texture matching, and water damage restoration for flawless, paint-ready walls and ceilings.</p>
+            <a href="/services/drywall" class="services__card-link">Learn More →</a>
           </div>
-          <div class="services__card">
-            <img src="/assets/images/icon-furniture.svg" alt="" role="presentation" width="32" height="32" class="services__card-icon" />
-            <h3 class="services__card-title">Furniture Assembly</h3>
-            <p class="services__card-desc">Fast and efficient furniture assembly services, so you can enjoy your new furniture without the hassle.</p>
-            <a href="/services" class="services__card-link">LEARN MORE &rarr;</a>
+
+          <!-- 6. Carpentry -->
+          <div class="services__card" data-animate>
+            <div class="services__card-icon">
+              <svg viewBox="0 0 32 32" fill="currentColor" width="32" height="32"><path d="M26.3065 18.9724L9.33315 1.99902L4.14648 7.18569L14.9865 22.7457C13.9465 23.7857 13.9465 25.479 14.9865 26.519L16.8665 28.399C17.9065 29.439 19.5998 29.439 20.6398 28.399L26.2931 22.7457C27.3465 21.7057 27.3465 20.0124 26.3065 18.9724ZM18.7598 26.5057L16.8798 24.6257L22.5331 18.9724L24.4131 20.8524L18.7598 26.5057Z"/></svg>
+            </div>
+            <h3 class="services__card-title">Carpentry</h3>
+            <p class="services__card-desc">Custom woodwork, trim installation, door replacements, and framing to elevate both style and structural integrity.</p>
+            <a href="/services/carpentry" class="services__card-link">Learn More →</a>
+          </div>
+
+          <!-- 7. Deck Construction -->
+          <div class="services__card" data-animate>
+            <div class="services__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="12" width="20" height="10" rx="1"/><path d="M2 17h20"/><path d="M7 12V2"/><path d="M17 12V2"/><path d="M2 7h20"/></svg>
+            </div>
+            <h3 class="services__card-title">Deck Construction & Repair</h3>
+            <p class="services__card-desc">New deck builds, repairs, and seasonal maintenance for durable, attractive outdoor living spaces.</p>
+            <a href="/services/deck-construction" class="services__card-link">Learn More →</a>
+          </div>
+
+          <!-- 8. Fence Installation -->
+          <div class="services__card" data-animate>
+            <div class="services__card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3v18"/><path d="M12 3v18"/><path d="M20 3v18"/><path d="M2 8h6"/><path d="M10 8h6"/><path d="M18 8h4"/><path d="M2 16h6"/><path d="M10 16h6"/><path d="M18 16h4"/><path d="M4 3l-2 3"/><path d="M4 3l2 3"/><path d="M12 3l-2 3"/><path d="M12 3l2 3"/><path d="M20 3l-2 3"/><path d="M20 3l2 3"/></svg>
+            </div>
+            <h3 class="services__card-title">Fence Installation & Repair</h3>
+            <p class="services__card-desc">Wood, vinyl, chain-link, and ornamental fencing to enhance privacy, security, and curb appeal.</p>
+            <a href="/services/fencing" class="services__card-link">Learn More →</a>
+          </div>
+
+          <!-- 9. Window & Door Replacement -->
+          <div class="services__card" data-animate>
+            <div class="services__card-icon">
+              <svg viewBox="0 0 32 32" fill="currentColor" width="32" height="32"><path d="M17.3333 17.3333H28V25.3333C28 26.0667 27.7391 26.6947 27.2173 27.2173C26.6956 27.74 26.0676 28.0009 25.3333 28H17.3333V17.3333ZM17.3333 14.6667V4H25.3333C26.0667 4 26.6947 4.26133 27.2173 4.784C27.74 5.30667 28.0009 5.93422 28 6.66667V14.6667H17.3333ZM14.6667 14.6667H4V6.66667C4 5.93333 4.26133 5.30578 4.784 4.784C5.30667 4.26222 5.93422 4.00089 6.66667 4H14.6667V14.6667ZM14.6667 17.3333V28H6.66667C5.93333 28 5.30578 27.7391 4.784 27.2173C4.26222 26.6956 4.00089 26.0676 4 25.3333V17.3333H14.6667Z"/></svg>
+            </div>
+            <h3 class="services__card-title">Window & Door Replacement</h3>
+            <p class="services__card-desc">Energy-efficient windows and doors for improved comfort, security, and style throughout your home.</p>
+            <a href="/services/windows-doors" class="services__card-link">Learn More →</a>
+          </div>
+
+          <!-- 10. Roofing Services -->
+          <div class="services__card" data-animate>
+            <div class="services__card-icon">
+              <svg viewBox="0 0 32 32" fill="currentColor" width="32" height="32"><path d="M30.895 15.5525L25.895 5.5525C25.8119 5.38636 25.6841 5.24666 25.526 5.14908C25.3679 5.05149 25.1858 4.99987 25 5H7C6.81422 4.99987 6.63208 5.05149 6.47399 5.14908C6.31591 5.24666 6.18814 5.38636 6.105 5.5525L1.105 15.5525C1.03616 15.6916 1.00023 15.8448 1 16V23C1 23.5304 1.21071 24.0391 1.58579 24.4142C1.96086 24.7893 2.46957 25 3 25H29C29.5304 25 30.0391 24.7893 30.4142 24.4142C30.7893 24.0391 31 23.5304 31 23V16C30.9998 15.8448 30.9638 15.6916 30.895 15.5525ZM12.3825 7L13.8825 10H10.1175L8.6175 7H12.3825ZM18.3825 7L19.8825 10H16.1175L14.6175 7H18.3825ZM12.6175 15L11.1175 12H14.8825L16.3825 15H12.6175ZM18.6175 15L17.1175 12H20.8825L22.3825 15H18.6175ZM24.6175 15L23.1175 12H26.8825L28.3825 15H24.6175ZM25.8825 10H22.1175L20.6175 7H24.3825L25.8825 10ZM13 23V17H29V23H13Z"/></svg>
+            </div>
+            <h3 class="services__card-title">Roofing Services</h3>
+            <p class="services__card-desc">New roof installation, repairs, and maintenance for lasting protection against Colorado's weather.</p>
+            <a href="/services/roofing" class="services__card-link">Learn More →</a>
           </div>
         </div>
 
-        <div class="services__cta">
-          <a href="/services" class="btn">View all services</a>
+        <div class="services__cta" data-animate>
+          <a href="/services" class="btn btn--outline">View All Services</a>
         </div>
       </div>
     </section>
 
-    <!-- ============================== CTA ============================== -->
-    <section class="cta">
-      <img
-        src="/assets/images/hero-bg-vectors.png"
-        alt=""
-        role="presentation"
-        class="cta__bg"
-        width="1440"
-        height="864"
-      />
-      <div class="cta__inner container">
-        <span class="cta__eyebrow section-label">HANDYHUB</span>
-        <h2 class="cta__heading">Fast, reliable, and affordable home maintenance solutions</h2>
-        <a href="/contact" class="btn btn--light">Contact us</a>
-        <div class="cta__image-wrapper">
-          <img
-            src="/assets/images/hero-cta.jpg"
-            alt="Professional home maintenance team at work"
-            width="1200"
-            height="600"
-            class="cta__image"
-            loading="lazy"
-          />
+    <!-- ============================== WHY CHOOSE US ============================== -->
+    <section class="why" id="why-us">
+      <div class="why__inner container">
+        <div class="why__header" data-animate>
+          <span class="why__eyebrow section-label">Why Choose Us</span>
+          <h2 class="why__heading">Built on Experience, Reliability & Attention to Detail</h2>
+          <p class="why__subtext">With over two decades in construction, our team delivers home improvement results that last. Every project — big or small — is approached with precision and a commitment to exceeding your expectations.</p>
+        </div>
+        <div class="why__grid">
+          <div class="why__card" data-animate>
+            <div class="why__card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="why__card-title">We Show Up When We Say We Will</h3>
+            <p class="why__card-desc">On-time arrivals and honest scheduling. We respect your time because trust starts before the first nail is driven.</p>
+          </div>
+          <div class="why__card" data-animate>
+            <div class="why__card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="why__card-title">Clear Communication, Always</h3>
+            <p class="why__card-desc">From the first call to the final walkthrough, we keep you informed. No surprises, no hidden costs — just transparent, honest updates.</p>
+          </div>
+          <div class="why__card" data-animate>
+            <div class="why__card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="why__card-title">Quality Over Speed</h3>
+            <p class="why__card-desc">We never cut corners. Every joint is measured, every finish is inspected, and every detail is done right — the first time.</p>
+          </div>
+          <div class="why__card" data-animate>
+            <div class="why__card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="why__card-title">Colorado Homes, Colorado Expertise</h3>
+            <p class="why__card-desc">Dry winters, temperature swings, altitude effects — we know what Colorado homes need and build accordingly.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============================== TESTIMONIALS ============================== -->
-    <section class="testimonials">
+    <section class="testimonials" id="reviews">
       <div class="testimonials__inner container">
-        <span class="testimonials__eyebrow section-label">HANDYHUB</span>
-        <h2 class="testimonials__heading">What our customers are saying</h2>
+        <span class="testimonials__eyebrow section-label" data-animate>Customer Reviews</span>
+        <h2 class="testimonials__heading" data-animate>What Westminster Homeowners Are Saying</h2>
 
         <div class="testimonials__grid">
-          <div class="testimonials__card">
-            <div class="testimonials__card-image-wrapper">
-              <img src="/assets/images/testimonial-1.jpg" alt="Maria Onana" width="376" height="180" class="testimonials__card-image" loading="lazy" />
+          <div class="testimonials__card" data-animate>
+            <div class="testimonials__card-stars">
+              {[1,2,3,4,5].map(() => (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              ))}
             </div>
-            <div class="testimonials__card-content">
-              <h3 class="testimonials__card-title">Fantastic work!</h3>
-              <p class="testimonials__card-quote">I needed a few small repairs done around the house, and Handyhub was fantastic!</p>
-              <span class="testimonials__card-name">MARIA ONANA</span>
-            </div>
-          </div>
-          <div class="testimonials__card">
-            <div class="testimonials__card-image-wrapper">
-              <img src="/assets/images/testimonial-2.jpg" alt="David Alaba" width="376" height="180" class="testimonials__card-image" loading="lazy" />
-            </div>
-            <div class="testimonials__card-content">
-              <h3 class="testimonials__card-title">Excellent Work!</h3>
-              <p class="testimonials__card-quote">The team was knowledgeable, courteous, and completed the job efficiently.</p>
-              <span class="testimonials__card-name">DAVID ALABA</span>
+            <p class="testimonials__card-quote">"We have been so happy with our experience with Jacob and his company! The work is great and his communication is unmatched and makes all the difference! Contractors are hard to work with… Not this one!"</p>
+            <div class="testimonials__card-author">
+              <span class="testimonials__card-name">Corie D.</span>
+              <span class="testimonials__card-service">Home Remodel — Westminster, CO</span>
             </div>
           </div>
-          <div class="testimonials__card">
-            <div class="testimonials__card-image-wrapper">
-              <img src="/assets/images/testimonial-3.jpg" alt="Lawkey Nova" width="376" height="180" class="testimonials__card-image" loading="lazy" />
+
+          <div class="testimonials__card" data-animate>
+            <div class="testimonials__card-stars">
+              {[1,2,3,4,5].map(() => (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              ))}
             </div>
-            <div class="testimonials__card-content">
-              <h3 class="testimonials__card-title">well done!</h3>
-              <p class="testimonials__card-quote">The team was knowledgeable, courteous, and completed the job efficiently.</p>
-              <span class="testimonials__card-name">LAWKEY NOVA</span>
+            <p class="testimonials__card-quote">"We worked with Jacob on a pretty complex renovation job. He helped us manage vendors, coordinate timelines and stay on top of the many crews. Jacob was professional and extremely responsive. His attention to detail is reinforced when you watch him working in your home."</p>
+            <div class="testimonials__card-author">
+              <span class="testimonials__card-name">Gabriella G.</span>
+              <span class="testimonials__card-service">Renovation — Denver Metro</span>
             </div>
           </div>
-          <div class="testimonials__card">
-            <div class="testimonials__card-image-wrapper">
-              <img src="/assets/images/testimonial-4.jpg" alt="David Alaba" width="376" height="180" class="testimonials__card-image" loading="lazy" />
+
+          <div class="testimonials__card" data-animate>
+            <div class="testimonials__card-stars">
+              {[1,2,3,4,5].map(() => (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              ))}
             </div>
-            <div class="testimonials__card-content">
-              <h3 class="testimonials__card-title">Excellent Work!</h3>
-              <p class="testimonials__card-quote">The team was knowledgeable, courteous, and completed the job efficiently.</p>
-              <span class="testimonials__card-name">DAVID ALABA</span>
+            <p class="testimonials__card-quote">"Jacob was so wonderful to work with! He always kept us posted on things and answered our questions immediately! He caught a structural engineer's negligent error which we are extremely grateful for!"</p>
+            <div class="testimonials__card-author">
+              <span class="testimonials__card-name">Alyson A.</span>
+              <span class="testimonials__card-service">Renovation — Westminster, CO</span>
             </div>
           </div>
         </div>
 
-        <div class="testimonials__nav">
-          <button class="testimonials__nav-btn" type="button" aria-label="Previous testimonial">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15L7 10L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <button class="testimonials__nav-btn" type="button" aria-label="Next testimonial">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 5L13 10L8 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
+        <div class="testimonials__google" data-animate>
+          <div class="testimonials__google-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <strong>5.0</strong> rating on Google
+          </div>
+          <a href="https://www.google.com/maps/place/Elite+Property+Innovations+LLC" class="testimonials__google-link" target="_blank" rel="noopener">Read All Reviews →</a>
         </div>
       </div>
     </section>
 
-    <!-- ============================== TEAMS ============================== -->
-    <section class="teams">
-      <img
-        src="/assets/images/bg-team-home.png"
-        alt=""
-        role="presentation"
-        class="teams__bg"
-        width="1440"
-        height="800"
-      />
-      <div class="teams__inner container">
-        <div class="teams__sidebar">
-          <span class="teams__eyebrow section-label">HANDYHUB</span>
-          <h2 class="teams__heading">Meet Our Team</h2>
-          <p class="teams__description">Our team of skilled professionals is dedicated to providing the highest quality handyman services.</p>
-          <div class="teams__stat">
-            <span class="teams__stat-number">100+</span>
-            <span class="teams__stat-label section-label">TEAM MEMBERS</span>
-          </div>
-        </div>
-        <div class="teams__grid">
-          <div class="teams__member">
-            <img src="/assets/images/team-member-1.jpg" alt="Ronie vonie" width="300" height="306" class="teams__member-image" loading="lazy" />
-            <h3 class="teams__member-name">Ronie vonie</h3>
-            <p class="teams__member-role">Founder & Lead Handyman</p>
-          </div>
-          <div class="teams__member">
-            <img src="/assets/images/team-member-2.jpg" alt="Bowie david" width="300" height="306" class="teams__member-image" loading="lazy" />
-            <h3 class="teams__member-name">Bowie david</h3>
-            <p class="teams__member-role">Founder & Lead Handyman</p>
-          </div>
-          <div class="teams__member">
-            <img src="/assets/images/team-member-3.jpg" alt="Andrea davis" width="300" height="306" class="teams__member-image" loading="lazy" />
-            <h3 class="teams__member-name">Andrea davis</h3>
-            <p class="teams__member-role">Founder & Lead Handyman</p>
-          </div>
-          <div class="teams__member">
-            <img src="/assets/images/team-member-4.jpg" alt="Noel javier" width="300" height="306" class="teams__member-image" loading="lazy" />
-            <h3 class="teams__member-name">Noel javier</h3>
-            <p class="teams__member-role">Founder & Lead Handyman</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================== CONTACT ============================== -->
-    <section class="contact">
-      <div class="contact__inner container">
-        <div class="contact__left">
-          <span class="contact__eyebrow section-label">HANDYHUB</span>
-          <h2 class="contact__heading">Get in touch with us today</h2>
-          <img
-            src="/assets/images/contact-image.jpg"
-            alt="HandyHub team ready to help"
-            width="600"
-            height="306"
-            class="contact__image"
-            loading="lazy"
-          />
-        </div>
-        <div class="contact__right">
-          <form class="contact__form" action="#" method="post">
-            <div class="contact__field">
-              <label for="full-name" class="contact__label">Full Name</label>
-              <input type="text" id="full-name" name="full-name" class="contact__input" placeholder="Enter your full name" required />
-            </div>
-            <div class="contact__field">
-              <label for="phone" class="contact__label">Phone Number</label>
-              <input type="tel" id="phone" name="phone" class="contact__input" placeholder="Enter your phone number" />
-            </div>
-            <div class="contact__field">
-              <label for="service" class="contact__label">Select Services</label>
-              <div class="contact__select-wrapper">
-                <select id="service" name="service" class="contact__input contact__select">
-                  <option value="" disabled selected>Select a service</option>
-                  <option value="home-repairs">Home Repairs</option>
-                  <option value="decorating">Decorating Service</option>
-                  <option value="plumbing">Plumbing Services</option>
-                  <option value="electrical">Electrical Work</option>
-                  <option value="carpentry">Carpentry Services</option>
-                  <option value="furniture">Furniture Assembly</option>
-                </select>
-              </div>
-            </div>
-            <div class="contact__field">
-              <label for="message" class="contact__label">Your message</label>
-              <textarea id="message" name="message" class="contact__input contact__textarea" placeholder="Write your message here" rows="5"></textarea>
-            </div>
-            <button type="submit" class="btn contact__submit">Submit</button>
-          </form>
+    <!-- ============================== CTA BANNER ============================== -->
+    <section class="cta-banner">
+      <div class="cta-banner__glow" aria-hidden="true"></div>
+      <div class="cta-banner__inner container" data-animate>
+        <h2 class="cta-banner__heading">Transform Your Home With Westminster's Most Trusted Contractor</h2>
+        <p class="cta-banner__subtext">Free estimates. We respond within 60 seconds — even after hours.</p>
+        <div class="cta-banner__buttons">
+          <a href="/contact" class="btn btn--accent">Request Your Free Quote</a>
+          <a href="tel:7202991238" class="btn btn--outline">(720) 299-1238</a>
         </div>
       </div>
     </section>
@@ -315,36 +328,40 @@ import Footer from '../components/Footer.astro';
     background-color: var(--color-bg-dark);
     position: relative;
     overflow: hidden;
-    min-height: 54em;
+    min-height: 100vh;
+    padding-top: 5em; /* account for fixed navbar */
   }
 
-  .hero__bg {
+  .hero__gradient {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 40%, rgba(0, 200, 232, 0.06) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 50% at 80% 20%, rgba(168, 224, 0, 0.04) 0%, transparent 50%);
     pointer-events: none;
-    opacity: 0.3;
+  }
+
+  .hero__grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+    background-size: 4em 4em;
+    pointer-events: none;
   }
 
   .hero__inner {
     position: relative;
     z-index: 1;
-    padding-block: 4em 3em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 54em;
+    padding-block: 4em 5em;
   }
 
   .hero__content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 3em;
-    flex: 1;
+    gap: 4em;
   }
 
   .hero__text {
@@ -352,74 +369,128 @@ import Footer from '../components/Footer.astro';
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    padding-top: 4em;
-  }
-
-  .hero__eyebrow {
-    font-size: 0.875em;
-    letter-spacing: 2.8px;
-    color: var(--color-text-white);
+    padding-top: 2em;
+    flex: 1;
   }
 
   .hero__heading {
     font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -1.2px;
+    font-size: 3.25em;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
     color: var(--color-text-white);
-    max-width: 12.77em; /* ~479px at 3.75em */
   }
 
   .hero__subtext {
     font-family: var(--font-body);
-    font-size: 1em;
+    font-size: 1.0625em;
     font-weight: 400;
-    line-height: 1.5;
-    color: var(--color-text-white);
-    max-width: 27.8em;
+    line-height: 1.65;
+    color: var(--color-text-secondary);
+    max-width: 30em;
   }
 
-  .hero__image-wrapper {
-    flex-shrink: 0;
-    width: 36em;
-    height: 40em;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
+  .hero__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
   }
 
-  .hero__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .hero__stats {
+  .hero__badge {
     display: flex;
     align-items: center;
-    gap: 6em;
-    padding-top: 3em;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    background-color: rgba(0, 200, 232, 0.06);
+    border: 1px solid rgba(0, 200, 232, 0.15);
+    border-radius: var(--radius-pill);
+    color: var(--color-primary);
+    font-size: 0.8125em;
+    font-weight: 600;
   }
 
-  .hero__stat {
+  .hero__badge svg {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+  }
+
+  .hero__ctas {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  /* Hero Form */
+  .hero__form-wrapper {
+    flex-shrink: 0;
+    width: 24em;
+  }
+
+  .hero__form-card {
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: 2em;
+  }
+
+  .hero__form-title {
+    font-family: var(--font-heading);
+    font-size: 1.25em;
+    font-weight: 700;
+    color: var(--color-text-white);
+    margin-bottom: 0.25em;
+  }
+
+  .hero__form-subtitle {
+    font-size: 0.8125em;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5em;
+  }
+
+  .hero__form {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 0.75em;
   }
 
-  .hero__stat-number {
-    font-family: var(--font-heading);
-    font-size: 3em;
-    font-weight: 400;
-    line-height: 1.167;
-    letter-spacing: -0.96px;
+  .hero__form-input {
+    width: 100%;
+    padding: 0.75em 1em;
+    background-color: var(--color-bg-dark);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
     color: var(--color-text-white);
-  }
-
-  .hero__stat-label {
     font-size: 0.875em;
-    letter-spacing: 2.8px;
-    color: var(--color-text-white);
+    transition: border-color var(--transition-base);
+  }
+
+  .hero__form-input::placeholder {
+    color: var(--color-text-gray);
+  }
+
+  .hero__form-input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+  }
+
+  .hero__form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238B95A1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1em center;
+    padding-right: 2.5em;
+  }
+
+  .hero__form-textarea {
+    resize: vertical;
+    min-height: 4em;
+  }
+
+  .hero__form-submit {
+    width: 100%;
+    margin-top: 0.5em;
   }
 
   /* Hero responsive */
@@ -428,132 +499,122 @@ import Footer from '../components/Footer.astro';
       min-height: auto;
     }
 
-    .hero__inner {
-      min-height: auto;
-      padding-block: 3em 2em;
-    }
-
     .hero__content {
       flex-direction: column;
+      gap: 2.5em;
     }
 
     .hero__text {
       max-width: 100%;
-      padding-top: 2em;
+      padding-top: 1em;
     }
 
-    .hero__image-wrapper {
+    .hero__form-wrapper {
       width: 100%;
-      height: 28em;
-    }
-
-    .hero__stats {
-      gap: 3em;
-      flex-wrap: wrap;
+      max-width: 32em;
     }
   }
 
   @media (max-width: 767px) {
     .hero__heading {
-      max-width: 100%;
-    }
-
-    .hero__image-wrapper {
-      height: 22em;
-    }
-
-    .hero__stats {
-      gap: 2em;
-    }
-
-    .hero__stat-number {
       font-size: 2.25em;
+    }
+
+    .hero__badges {
+      flex-direction: column;
     }
   }
 
   @media (max-width: 479px) {
-    .hero__image-wrapper {
-      height: 18em;
+    .hero__heading {
+      font-size: 1.875em;
     }
 
-    .hero__stats {
+    .hero__ctas {
       flex-direction: column;
-      align-items: flex-start;
-      gap: 1.5em;
+    }
+
+    .hero__ctas .btn {
+      width: 100%;
     }
   }
 
   /* ====================================================================
-     ABOUT
+     TRUST STRIP
      ==================================================================== */
-  .about {
+  .trust-strip {
     width: 100%;
-    background-color: var(--color-bg-white);
+    background-color: var(--color-bg-surface);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
   }
 
-  .about__inner {
-    padding-block: 6.25em;
+  .trust-strip__inner {
     display: flex;
-    flex-direction: column;
-    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding-block: 1.25em;
+    flex-wrap: wrap;
   }
 
-  .about__eyebrow {
-    color: var(--color-text-primary);
-  }
-
-  .about__heading {
-    font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -1.2px;
-  }
-
-  .about__heading--gray {
-    color: var(--color-text-gray);
-  }
-
-  .about__heading--dark {
-    color: var(--color-text-primary);
-  }
-
-  .about__row {
+  .trust-strip__google {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 3em;
-    margin-top: 1em;
+    align-items: center;
+    gap: 0.75em;
   }
 
-  .about__description {
-    font-family: var(--font-body);
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
+  .trust-strip__stars {
+    display: flex;
+    gap: 0.125em;
+    color: var(--color-primary);
+  }
+
+  .trust-strip__stars svg {
+    width: 1.125em;
+    height: 1.125em;
+  }
+
+  .trust-strip__rating {
+    font-size: 0.875em;
+    color: var(--color-text-white-muted);
+  }
+
+  .trust-strip__rating strong {
+    color: var(--color-text-white);
+  }
+
+  .trust-strip__divider {
+    width: 1px;
+    height: 1.5em;
+    background-color: var(--color-border);
+  }
+
+  .trust-strip__text {
+    font-size: 0.875em;
     color: var(--color-text-secondary);
-    max-width: 40.5em;
   }
 
-  /* About responsive */
-  @media (max-width: 991px) {
-    .about__inner {
-      padding-block: 4em;
-    }
+  .trust-strip__link {
+    font-size: 0.875em;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: opacity var(--transition-base);
+  }
 
-    .about__row {
-      flex-direction: column;
-      gap: 1.5em;
-    }
+  .trust-strip__link:hover {
+    opacity: 0.7;
   }
 
   @media (max-width: 767px) {
-    .about__inner {
-      padding-block: 3em;
+    .trust-strip__inner {
+      flex-direction: column;
+      gap: 0.75em;
+      text-align: center;
     }
 
-    .about__description {
-      max-width: 100%;
+    .trust-strip__divider {
+      display: none;
     }
   }
 
@@ -562,87 +623,95 @@ import Footer from '../components/Footer.astro';
      ==================================================================== */
   .services {
     width: 100%;
-    background-color: var(--color-bg-white);
+    background-color: var(--color-bg-dark);
   }
 
   .services__inner {
-    padding-block: 7.5em;
+    padding-block: 6.25em;
     display: flex;
     flex-direction: column;
     gap: 1.5em;
   }
 
-  .services__eyebrow {
-    color: var(--color-text-primary);
-  }
-
   .services__heading {
     font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -1.2px;
-    color: var(--color-text-primary);
+    font-size: 2.75em;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--color-text-white);
   }
 
   .services__subtext {
     font-family: var(--font-body);
     font-size: 1em;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.65;
     color: var(--color-text-secondary);
-    max-width: 45em;
+    max-width: 48em;
   }
 
   .services__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
     margin-top: 2em;
+    background-color: var(--color-border);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
   }
 
   .services__card {
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    padding: 2em;
-    border: 1px solid var(--color-border);
-    margin-right: -1px;
-    margin-bottom: -1px;
+    gap: 0.75em;
+    padding: 1.75em;
+    background-color: var(--color-bg-white);
+    transition: background-color var(--transition-base);
+  }
+
+  .services__card:hover {
+    background-color: var(--color-bg-surface);
   }
 
   .services__card-icon {
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+  }
+
+  .services__card-icon svg {
+    width: 1.75em;
+    height: 1.75em;
   }
 
   .services__card-title {
-    font-family: var(--font-body);
-    font-size: 1em;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 3.2px;
-    text-transform: uppercase;
-    color: var(--color-text-primary);
+    font-family: var(--font-heading);
+    font-size: 0.9375em;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--color-text-white);
   }
 
   .services__card-desc {
     font-family: var(--font-body);
-    font-size: 0.875em;
+    font-size: 0.8125em;
     font-weight: 400;
-    line-height: 1.429;
+    line-height: 1.5;
     color: var(--color-text-secondary);
+    flex: 1;
   }
 
   .services__card-link {
     font-family: var(--font-body);
-    font-size: 0.875em;
-    font-weight: 500;
-    line-height: 1.429;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-    text-decoration: underline;
-    color: var(--color-text-primary);
+    font-size: 0.8125em;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: opacity var(--transition-base);
     margin-top: auto;
   }
 
@@ -652,6 +721,7 @@ import Footer from '../components/Footer.astro';
 
   .services__cta {
     margin-top: 2.5em;
+    text-align: center;
   }
 
   /* Services responsive */
@@ -667,97 +737,126 @@ import Footer from '../components/Footer.astro';
 
   @media (max-width: 767px) {
     .services__inner {
-      padding-block: 3em;
+      padding-block: 3.5em;
+    }
+
+    .services__heading {
+      font-size: 2em;
     }
 
     .services__grid {
       grid-template-columns: 1fr;
     }
-
-    .services__card {
-      margin-right: 0;
-    }
   }
 
   /* ====================================================================
-     CTA
+     WHY CHOOSE US
      ==================================================================== */
-  .cta {
+  .why {
     width: 100%;
-    background-color: var(--color-bg-dark);
-    position: relative;
-    overflow: hidden;
+    background-color: var(--color-bg-white);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
   }
 
-  .cta__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-    opacity: 0.3;
+  .why__inner {
+    padding-block: 6.25em;
   }
 
-  .cta__inner {
-    position: relative;
-    z-index: 1;
-    padding-top: 6.25em;
+  .why__header {
+    text-align: center;
+    max-width: 42em;
+    margin: 0 auto 3em;
     display: flex;
     flex-direction: column;
+    gap: 1em;
+  }
+
+  .why__heading {
+    font-family: var(--font-heading);
+    font-size: 2.75em;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--color-text-white);
+  }
+
+  .why__subtext {
+    font-size: 1em;
+    color: var(--color-text-secondary);
+    line-height: 1.65;
+  }
+
+  .why__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5em;
   }
 
-  .cta__eyebrow {
-    font-size: 0.875em;
-    letter-spacing: 2.8px;
-    color: var(--color-text-white);
+  .why__card {
+    padding: 2em;
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    transition: border-color var(--transition-base), box-shadow var(--transition-base);
   }
 
-  .cta__heading {
+  .why__card:hover {
+    border-color: rgba(0, 200, 232, 0.3);
+    box-shadow: var(--shadow-glow-cyan);
+  }
+
+  .why__card-icon {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 200, 232, 0.08);
+    border: 1px solid rgba(0, 200, 232, 0.15);
+    border-radius: var(--radius-md);
+    color: var(--color-primary);
+  }
+
+  .why__card-icon svg {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .why__card-title {
     font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -1.2px;
+    font-size: 1em;
+    font-weight: 700;
     color: var(--color-text-white);
-    max-width: 18em;
+    line-height: 1.3;
   }
 
-  .cta__image-wrapper {
-    margin-top: 2em;
-    width: 100%;
-    overflow: hidden;
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  .why__card-desc {
+    font-size: 0.875em;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
   }
 
-  .cta__image {
-    width: 100%;
-    height: 37.5em;
-    object-fit: cover;
-  }
-
-  /* CTA responsive */
   @media (max-width: 991px) {
-    .cta__inner {
-      padding-top: 4em;
+    .why__grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (max-width: 767px) {
-    .cta__inner {
-      padding-top: 3em;
+    .why__inner {
+      padding-block: 3.5em;
     }
 
-    .cta__image {
-      height: 22em;
+    .why__heading {
+      font-size: 2em;
     }
-  }
 
-  @media (max-width: 479px) {
-    .cta__image {
-      height: 16em;
+    .why__grid {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -766,431 +865,221 @@ import Footer from '../components/Footer.astro';
      ==================================================================== */
   .testimonials {
     width: 100%;
-    background-color: var(--color-bg-white);
+    background-color: var(--color-bg-dark);
   }
 
   .testimonials__inner {
-    padding-block: 7.5em;
+    padding-block: 6.25em;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 2em;
-  }
-
-  .testimonials__eyebrow {
-    color: var(--color-text-primary);
+    gap: 1.5em;
   }
 
   .testimonials__heading {
     font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -1.2px;
-    color: var(--color-text-primary);
+    font-size: 2.75em;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--color-text-white);
   }
 
   .testimonials__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
     width: 100%;
-    margin-top: 1.5em;
+    margin-top: 2em;
   }
 
   .testimonials__card {
-    border: 1px solid var(--color-border);
-    margin-right: -1px;
     text-align: left;
-  }
-
-  .testimonials__card-image-wrapper {
-    width: 100%;
-    height: 11.25em;
-    overflow: hidden;
-  }
-
-  .testimonials__card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .testimonials__card-content {
-    padding: 1.5em;
+    padding: 2em;
+    background-color: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
     display: flex;
     flex-direction: column;
-    gap: 0.75em;
+    gap: 1.25em;
+    transition: border-color var(--transition-base);
   }
 
-  .testimonials__card-title {
-    font-family: var(--font-heading);
-    font-size: 1.25em;
-    font-weight: 400;
-    line-height: 1.2;
-    color: var(--color-text-primary);
+  .testimonials__card:hover {
+    border-color: rgba(0, 200, 232, 0.2);
+  }
+
+  .testimonials__card-stars {
+    display: flex;
+    gap: 0.125em;
+    color: var(--color-primary);
+  }
+
+  .testimonials__card-stars svg {
+    width: 1em;
+    height: 1em;
   }
 
   .testimonials__card-quote {
     font-family: var(--font-body);
-    font-size: 0.875em;
+    font-size: 0.9375em;
     font-weight: 400;
-    line-height: 1.429;
+    line-height: 1.65;
     color: var(--color-text-secondary);
+    font-style: italic;
+    flex: 1;
+  }
+
+  .testimonials__card-author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125em;
+    padding-top: 0.75em;
+    border-top: 1px solid var(--color-border);
   }
 
   .testimonials__card-name {
-    font-family: var(--font-body);
+    font-weight: 700;
     font-size: 0.875em;
-    font-weight: 500;
-    line-height: 1.429;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-    color: var(--color-text-primary);
-    margin-top: 0.5em;
-  }
-
-  .testimonials__nav {
-    display: flex;
-    gap: 1em;
-    margin-top: 1em;
-  }
-
-  .testimonials__nav-btn {
-    width: 3em;
-    height: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-bg-dark);
-    border: none;
-    border-radius: var(--radius-lg);
-    cursor: pointer;
-  }
-
-  .testimonials__nav-btn:hover {
-    opacity: 0.85;
-  }
-
-  /* Testimonials responsive */
-  @media (max-width: 991px) {
-    .testimonials__inner {
-      padding-block: 5em;
-    }
-
-    .testimonials__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .testimonials__card {
-      margin-bottom: -1px;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .testimonials__inner {
-      padding-block: 3em;
-    }
-
-    .testimonials__grid {
-      grid-template-columns: 1fr;
-    }
-
-    .testimonials__card {
-      margin-right: 0;
-    }
-  }
-
-  /* ====================================================================
-     TEAMS
-     ==================================================================== */
-  .teams {
-    width: 100%;
-    background-color: var(--color-bg-dark);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .teams__bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-    opacity: 0.3;
-  }
-
-  .teams__inner {
-    position: relative;
-    z-index: 1;
-    padding-block: 6.25em;
-    display: flex;
-    gap: 4em;
-    align-items: flex-start;
-  }
-
-  .teams__sidebar {
-    width: 21.5em;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-  }
-
-  .teams__eyebrow {
-    font-size: 0.875em;
-    letter-spacing: 2.8px;
     color: var(--color-text-white);
   }
 
-  .teams__heading {
-    font-family: var(--font-heading);
-    font-size: 3em;
-    font-weight: 400;
-    line-height: 1.167;
-    letter-spacing: -0.96px;
-    color: var(--color-text-white);
-  }
-
-  .teams__description {
-    font-family: var(--font-body);
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--color-text-white-muted);
-  }
-
-  .teams__stat {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    margin-top: 1em;
-  }
-
-  .teams__stat-number {
-    font-family: var(--font-heading);
-    font-size: 3em;
-    font-weight: 400;
-    line-height: 1.167;
-    letter-spacing: -0.96px;
-    color: var(--color-text-white);
-  }
-
-  .teams__stat-label {
-    font-size: 0.875em;
-    letter-spacing: 2.8px;
-    color: var(--color-text-white);
-  }
-
-  .teams__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5em 1.5em;
-    flex: 1;
-  }
-
-  .teams__member {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75em;
-  }
-
-  .teams__member-image {
-    width: 100%;
-    height: 19.125em;
-    object-fit: cover;
-    border-radius: var(--radius-lg);
-  }
-
-  .teams__member-name {
-    font-family: var(--font-body);
-    font-size: 1em;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 3.2px;
-    text-transform: uppercase;
-    color: var(--color-text-white);
-  }
-
-  .teams__member-role {
-    font-family: var(--font-body);
-    font-size: 0.875em;
-    font-weight: 400;
-    line-height: 1.429;
-    color: var(--color-text-white-muted);
-  }
-
-  /* Teams responsive */
-  @media (max-width: 991px) {
-    .teams__inner {
-      flex-direction: column;
-      padding-block: 4em;
-      gap: 3em;
-    }
-
-    .teams__sidebar {
-      width: 100%;
-    }
-
-    .teams__grid {
-      width: 100%;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .teams__inner {
-      padding-block: 3em;
-    }
-
-    .teams__grid {
-      grid-template-columns: 1fr;
-      gap: 2em;
-    }
-
-    .teams__member-image {
-      height: 16em;
-    }
-  }
-
-  /* ====================================================================
-     CONTACT
-     ==================================================================== */
-  .contact {
-    width: 100%;
-    background-color: var(--color-bg-white);
-  }
-
-  .contact__inner {
-    padding-block: 7.5em;
-    display: flex;
-    gap: 3.75em;
-    align-items: flex-start;
-  }
-
-  .contact__left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-  }
-
-  .contact__eyebrow {
-    color: var(--color-text-primary);
-  }
-
-  .contact__heading {
-    font-family: var(--font-heading);
-    font-size: 3.75em;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -1.2px;
-    color: var(--color-text-primary);
-  }
-
-  .contact__image {
-    width: 100%;
-    height: 19.125em;
-    object-fit: cover;
-    border-radius: var(--radius-lg);
-    margin-top: auto;
-  }
-
-  .contact__right {
-    flex: 1;
-  }
-
-  .contact__form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-  }
-
-  .contact__field {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-  }
-
-  .contact__label {
-    font-family: var(--font-body);
-    font-size: 0.875em;
-    font-weight: 500;
-    line-height: 1.429;
-    color: var(--color-text-primary);
-  }
-
-  .contact__input {
-    width: 100%;
-    padding: 1.25em;
-    font-family: var(--font-body);
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--color-text-primary);
-    background-color: transparent;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-  }
-
-  .contact__input::placeholder {
+  .testimonials__card-service {
+    font-size: 0.75em;
     color: var(--color-text-gray);
   }
 
-  .contact__select-wrapper {
-    position: relative;
+  .testimonials__google {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 1.5em;
   }
 
-  .contact__select {
-    appearance: none;
-    cursor: pointer;
-    padding-right: 3em;
+  .testimonials__google-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.9375em;
+    color: var(--color-text-white-muted);
   }
 
-  .contact__select-wrapper::after {
-    content: '';
-    position: absolute;
-    right: 1.25em;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-left: 0.35em solid transparent;
-    border-right: 0.35em solid transparent;
-    border-top: 0.35em solid var(--color-text-primary);
-    pointer-events: none;
+  .testimonials__google-badge svg {
+    color: var(--color-primary);
   }
 
-  .contact__textarea {
-    height: 10em;
-    resize: vertical;
+  .testimonials__google-badge strong {
+    color: var(--color-text-white);
   }
 
-  .contact__submit {
-    align-self: flex-start;
+  .testimonials__google-link {
+    font-size: 0.9375em;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: opacity var(--transition-base);
   }
 
-  /* Contact responsive */
+  .testimonials__google-link:hover {
+    opacity: 0.7;
+  }
+
   @media (max-width: 991px) {
-    .contact__inner {
-      flex-direction: column;
-      padding-block: 4em;
-      gap: 3em;
-    }
-
-    .contact__image {
-      margin-top: 1em;
+    .testimonials__grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (max-width: 767px) {
-    .contact__inner {
-      padding-block: 3em;
+    .testimonials__inner {
+      padding-block: 3.5em;
     }
 
-    .contact__submit {
+    .testimonials__heading {
+      font-size: 2em;
+    }
+
+    .testimonials__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .testimonials__google {
+      flex-direction: column;
+      gap: 0.75em;
+    }
+  }
+
+  /* ====================================================================
+     CTA BANNER
+     ==================================================================== */
+  .cta-banner {
+    width: 100%;
+    background-color: var(--color-bg-surface);
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .cta-banner__glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40em;
+    height: 40em;
+    background: radial-gradient(circle, rgba(0, 200, 232, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cta-banner__inner {
+    position: relative;
+    z-index: 1;
+    padding-block: 5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+  }
+
+  .cta-banner__heading {
+    font-family: var(--font-heading);
+    font-size: 2.5em;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--color-text-white);
+    max-width: 18em;
+  }
+
+  .cta-banner__subtext {
+    font-size: 1.0625em;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    max-width: 32em;
+  }
+
+  .cta-banner__buttons {
+    display: flex;
+    gap: 1em;
+    margin-top: 0.75em;
+  }
+
+  @media (max-width: 767px) {
+    .cta-banner__inner {
+      padding-block: 3.5em;
+    }
+
+    .cta-banner__heading {
+      font-size: 1.75em;
+    }
+
+    .cta-banner__buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .cta-banner__buttons .btn {
       width: 100%;
     }
   }

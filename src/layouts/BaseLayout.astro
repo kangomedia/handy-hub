@@ -8,7 +8,7 @@ interface Props {
 
 const {
   title,
-  description = '',
+  description = 'Westminster\'s trusted home improvement contractor. Kitchen & bath remodeling, painting, carpentry, roofing & more. 25+ years experience. Free estimates — call (720) 299-1238.',
   ogImage = '',
   canonicalUrl = '',
 } = Astro.props;
@@ -22,6 +22,7 @@ const {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#0A0F14" />
 
     <!-- SEO -->
     <title>{title}</title>
@@ -34,11 +35,12 @@ const {
     {ogImage && <meta property="og:image" content={ogImage} />}
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalUrl || Astro.url.href} />
+    <meta property="og:site_name" content="Elite Property Innovations" />
 
-    <!-- Fonts -->
+    <!-- Fonts — Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <!-- GSAP + ScrollTrigger -->
     <script is:inline src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
@@ -58,7 +60,20 @@ const {
         const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         if (prefersReduced) return;
 
-        // Add scroll-triggered animations here
+        // Fade-in-up animation for sections
+        gsap.utils.toArray('[data-animate]').forEach((el) => {
+          gsap.from(el, {
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 85%',
+              toggleActions: 'play none none none',
+            },
+          });
+        });
       });
     </script>
   </body>
