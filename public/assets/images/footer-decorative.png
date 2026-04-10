@@ -1,0 +1,6 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 928 928" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Decorative shape container">
+<path id="Ellipse 2154" d="M928 464C928 340.94 879.114 222.919 792.097 135.902C705.081 48.8856 587.06 9.29081e-06 464 0C340.94 -9.2908e-06 222.919 48.8855 135.902 135.902C48.8856 222.919 1.85816e-05 340.939 0 464L464 464H928Z" fill="var(--fill-0, white)"/>
+<path id="Ellipse 2155" d="M928 928C928 804.94 879.114 686.919 792.098 599.902C705.081 512.886 587.06 464 464 464C340.94 464 222.919 512.886 135.903 599.902C48.8856 686.919 5.50806e-05 804.939 3.6499e-05 928L464 928H928Z" fill="var(--fill-0, white)"/>
+</g>
+</svg>

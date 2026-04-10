@@ -1,0 +1,652 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Blog | HandyHub" description="Read helpful tips, DIY guides, and home maintenance advice from the HandyHub team.">
+  <Navbar variant="dark" />
+  <main id="main-content">
+
+    <!-- ========== HERO ========== -->
+    <section class="blog-hero">
+      <div class="blog-hero__lines" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="blog-hero__inner container">
+        <div class="blog-hero__content">
+          <span class="section-label blog-hero__eyebrow">HANDYHUB</span>
+          <h1 class="blog-hero__heading">Our blog and helpful tips</h1>
+          <a href="/contact" class="btn btn--light">Contact us</a>
+        </div>
+      </div>
+      <div class="blog-hero__image-wrapper container">
+        <div class="blog-hero__image-container">
+          <img
+            src="/assets/images/blog-hero.jpg"
+            alt="Home improvement project in progress"
+            width="1140"
+            height="500"
+            class="blog-hero__image"
+          />
+          <div class="blog-hero__image-gradient" aria-hidden="true"></div>
+        </div>
+        <div class="blog-hero__partners">
+          <img src="/assets/images/logo-partner-1.svg" alt="Partner logo" width="120" height="40" class="blog-hero__partner-logo" />
+          <img src="/assets/images/logo-partner-2.svg" alt="Partner logo" width="120" height="40" class="blog-hero__partner-logo" />
+          <img src="/assets/images/logo-partner-3.svg" alt="Partner logo" width="120" height="40" class="blog-hero__partner-logo" />
+          <img src="/assets/images/logo-partner-4.svg" alt="Partner logo" width="120" height="40" class="blog-hero__partner-logo" />
+          <img src="/assets/images/logo-partner-5.svg" alt="Partner logo" width="120" height="40" class="blog-hero__partner-logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURED ARTICLES ========== -->
+    <section class="featured-articles">
+      <div class="featured-articles__inner container">
+        <div class="featured-articles__header">
+          <span class="section-label">HANDYHUB</span>
+          <h2 class="featured-articles__heading">Our recent blog post</h2>
+        </div>
+        <div class="featured-articles__grid">
+          <article class="featured-card">
+            <a href="/blog-detail" class="featured-card__link">
+              <div class="featured-card__image-wrapper">
+                <img
+                  src="/assets/images/blog-card-1.jpg"
+                  alt="Seasonal home maintenance checklist tools and materials"
+                  width="564"
+                  height="360"
+                  class="featured-card__image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="featured-card__body">
+                <h3 class="featured-card__title">SEASONAL HOME MAINTENANCE CHECKLIST</h3>
+                <p class="featured-card__desc">Keep your home in top shape year-round with this comprehensive seasonal maintenance guide covering everything from HVAC to gutters.</p>
+                <span class="featured-card__cta">LEARN MORE <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
+          <article class="featured-card">
+            <a href="/blog-detail" class="featured-card__link">
+              <div class="featured-card__image-wrapper">
+                <img
+                  src="/assets/images/blog-card-2.jpg"
+                  alt="Simple DIY fixes for homeowners"
+                  width="564"
+                  height="360"
+                  class="featured-card__image"
+                  loading="lazy"
+                />
+              </div>
+              <div class="featured-card__body">
+                <h3 class="featured-card__title">SIMPLE FIXES YOU CAN DO YOURSELF</h3>
+                <p class="featured-card__desc">Save money and time by learning these easy home repairs that any homeowner can handle with basic tools.</p>
+                <span class="featured-card__cta">LEARN MORE <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ALL ARTICLES ========== -->
+    <section class="all-articles">
+      <div class="all-articles__inner container">
+        <div class="all-articles__header">
+          <span class="section-label">HANDYHUB</span>
+          <h2 class="all-articles__heading">All articles</h2>
+        </div>
+        <div class="all-articles__grid">
+          <article class="article-card">
+            <a href="/blog-detail" class="article-card__link">
+              <div class="article-card__image-wrapper">
+                <img src="/assets/images/blog-article-1.jpg" alt="Seasonal home maintenance checklist" width="376" height="306" class="article-card__image" loading="lazy" />
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">SEASONAL HOME MAINTENANCE CHECKLIST</h3>
+                <p class="article-card__desc">Keep your home in top shape year-round with this comprehensive seasonal maintenance guide.</p>
+                <span class="article-card__cta">LEARN MORE <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
+          <article class="article-card">
+            <a href="/blog-detail" class="article-card__link">
+              <div class="article-card__image-wrapper">
+                <img src="/assets/images/blog-article-2.jpg" alt="Simple DIY home fixes" width="376" height="306" class="article-card__image" loading="lazy" />
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">SIMPLE FIXES YOU CAN DO YOURSELF</h3>
+                <p class="article-card__desc">Save money and time by learning these easy home repairs that any homeowner can handle.</p>
+                <span class="article-card__cta">LEARN MORE <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
+          <article class="article-card">
+            <a href="/blog-detail" class="article-card__link">
+              <div class="article-card__image-wrapper">
+                <img src="/assets/images/blog-article-3.jpg" alt="Budget-friendly DIY home improvements" width="376" height="306" class="article-card__image" loading="lazy" />
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">BUDGET-FRIENDLY DIY HOME IMPROVEMENTS</h3>
+                <p class="article-card__desc">Transform your living space without breaking the bank with these affordable improvement ideas.</p>
+                <span class="article-card__cta">LEARN MORE <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
+          <article class="article-card">
+            <a href="/blog-detail" class="article-card__link">
+              <div class="article-card__image-wrapper">
+                <img src="/assets/images/blog-article-4.jpg" alt="Preventing leaks and clogs" width="376" height="306" class="article-card__image" loading="lazy" />
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">PREVENTING LEAKS AND CLOGS</h3>
+                <p class="article-card__desc">Learn how to prevent common plumbing issues before they become expensive problems.</p>
+                <span class="article-card__cta">LEARN MORE <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
+          <article class="article-card">
+            <a href="/blog-detail" class="article-card__link">
+              <div class="article-card__image-wrapper">
+                <img src="/assets/images/blog-article-5.jpg" alt="Painting tips for a professional finish" width="376" height="306" class="article-card__image" loading="lazy" />
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">PAINTING TIPS FOR A PROFESSIONAL FINISH</h3>
+                <p class="article-card__desc">Achieve a flawless paint job with these expert tips on preparation, technique, and finishing.</p>
+                <span class="article-card__cta">LEARN MORE <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
+          <article class="article-card">
+            <a href="/blog-detail" class="article-card__link">
+              <div class="article-card__image-wrapper">
+                <img src="/assets/images/blog-article-6.jpg" alt="Tips before starting a DIY project" width="376" height="306" class="article-card__image" loading="lazy" />
+              </div>
+              <div class="article-card__body">
+                <h3 class="article-card__title">TIPS BEFORE STARTING A DIY PROJECT</h3>
+                <p class="article-card__desc">Essential preparation steps every DIY enthusiast should follow before picking up their tools.</p>
+                <span class="article-card__cta">LEARN MORE <span aria-hidden="true">&rarr;</span></span>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="all-articles__nav">
+          <button class="all-articles__nav-btn" aria-label="Previous articles">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="all-articles__nav-btn" aria-label="Next articles">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="contact-section">
+      <div class="contact-section__inner container">
+        <div class="contact-section__content">
+          <span class="section-label">HANDYHUB</span>
+          <h2 class="contact-section__heading">Ready to get started?</h2>
+          <p class="contact-section__text">
+            Get in touch with us today for a free estimate. Our team is ready to help with all your home improvement needs.
+          </p>
+          <a href="/contact" class="btn">Contact us</a>
+        </div>
+        <div class="contact-section__image-wrapper">
+          <img
+            src="/assets/images/about-contact.jpg"
+            alt="Professional handyman ready to assist"
+            width="552"
+            height="400"
+            class="contact-section__image"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  /* ========== BLOG HERO ========== */
+  .blog-hero {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5em;
+  }
+
+  .blog-hero__lines {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: var(--size-container);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+  }
+
+  .blog-hero__lines span {
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-border-dark);
+  }
+
+  .blog-hero__inner {
+    position: relative;
+    z-index: 1;
+    padding-block: 7.5em 3em;
+    padding-inline: var(--container-padding);
+  }
+
+  .blog-hero__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-hero__eyebrow {
+    display: block;
+    color: var(--color-text-white-muted);
+    margin-bottom: 1.5em;
+  }
+
+  .blog-hero__heading {
+    font-family: var(--font-heading);
+    font-size: 3.75em;
+    font-weight: 400;
+    line-height: 1.133;
+    letter-spacing: -1.92px;
+    color: var(--color-text-white);
+    max-width: 42.75em;
+    margin-bottom: 0.533em;
+  }
+
+  .blog-hero__image-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-inline: var(--container-padding);
+  }
+
+  .blog-hero__image-container {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  .blog-hero__image {
+    width: 100%;
+    height: 31.25em;
+    object-fit: cover;
+  }
+
+  .blog-hero__image-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(2, 22, 35, 0.8), transparent);
+    pointer-events: none;
+  }
+
+  .blog-hero__partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding-top: 2.5em;
+  }
+
+  .blog-hero__partner-logo {
+    width: 7.5em;
+    height: 2.5em;
+    object-fit: contain;
+    opacity: 0.6;
+  }
+
+  /* ========== FEATURED ARTICLES ========== */
+  .featured-articles {
+    width: 100%;
+    background-color: var(--color-bg-white);
+    padding-block: 7.5em;
+  }
+
+  .featured-articles__inner {
+    padding-inline: var(--container-padding);
+  }
+
+  .featured-articles__header {
+    text-align: center;
+    margin-bottom: 3.75em;
+  }
+
+  .featured-articles__header .section-label {
+    display: block;
+    color: var(--color-text-secondary);
+    margin-bottom: 1em;
+  }
+
+  .featured-articles__heading {
+    font-family: var(--font-heading);
+    font-size: 3.75em;
+    font-weight: 400;
+    line-height: 1.133;
+    letter-spacing: -1.92px;
+    color: var(--color-text-primary);
+  }
+
+  .featured-articles__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25em;
+  }
+
+  .featured-card__link {
+    display: block;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: opacity var(--transition-base);
+  }
+
+  .featured-card__link:hover {
+    opacity: 0.85;
+  }
+
+  .featured-card__image-wrapper {
+    overflow: hidden;
+  }
+
+  .featured-card__image {
+    width: 100%;
+    height: 22.5em;
+    object-fit: cover;
+  }
+
+  .featured-card__body {
+    padding: 2em;
+  }
+
+  .featured-card__title {
+    font-family: var(--font-heading);
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 1.6px;
+    color: var(--color-text-primary);
+    text-transform: uppercase;
+    margin-bottom: 0.75em;
+  }
+
+  .featured-card__desc {
+    font-size: 0.875em;
+    line-height: 1.429;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5em;
+  }
+
+  .featured-card__cta {
+    font-family: var(--font-body);
+    font-size: 0.875em;
+    font-weight: 500;
+    line-height: 1.429;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+  }
+
+  /* ========== ALL ARTICLES ========== */
+  .all-articles {
+    width: 100%;
+    background-color: var(--color-bg-white);
+    padding-block: 7.5em;
+  }
+
+  .all-articles__inner {
+    padding-inline: var(--container-padding);
+  }
+
+  .all-articles__header {
+    text-align: center;
+    margin-bottom: 3.75em;
+  }
+
+  .all-articles__header .section-label {
+    display: block;
+    color: var(--color-text-secondary);
+    margin-bottom: 1em;
+  }
+
+  .all-articles__heading {
+    font-family: var(--font-heading);
+    font-size: 3.75em;
+    font-weight: 400;
+    line-height: 1.133;
+    letter-spacing: -1.92px;
+    color: var(--color-text-primary);
+  }
+
+  .all-articles__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25em;
+  }
+
+  .article-card__link {
+    display: block;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: opacity var(--transition-base);
+  }
+
+  .article-card__link:hover {
+    opacity: 0.85;
+  }
+
+  .article-card__image-wrapper {
+    overflow: hidden;
+  }
+
+  .article-card__image {
+    width: 100%;
+    height: 19.125em;
+    object-fit: cover;
+  }
+
+  .article-card__body {
+    padding: 1.5em;
+  }
+
+  .article-card__title {
+    font-family: var(--font-heading);
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1.28px;
+    color: var(--color-text-primary);
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+  }
+
+  .article-card__desc {
+    font-size: 0.875em;
+    line-height: 1.429;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.25em;
+  }
+
+  .article-card__cta {
+    font-family: var(--font-body);
+    font-size: 0.875em;
+    font-weight: 500;
+    line-height: 1.429;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+  }
+
+  .all-articles__nav {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 3em;
+  }
+
+  .all-articles__nav-btn {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color-text-primary);
+    transition: opacity var(--transition-base);
+  }
+
+  .all-articles__nav-btn:hover {
+    opacity: 0.7;
+  }
+
+  /* ========== CONTACT SECTION ========== */
+  .contact-section {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    padding-block: 7.5em;
+  }
+
+  .contact-section__inner {
+    display: flex;
+    align-items: center;
+    gap: 3.75em;
+    padding-inline: var(--container-padding);
+  }
+
+  .contact-section__content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .contact-section__content .section-label {
+    display: block;
+    color: var(--color-text-white-muted);
+    margin-bottom: 1em;
+  }
+
+  .contact-section__heading {
+    font-family: var(--font-heading);
+    font-size: 3.75em;
+    font-weight: 400;
+    line-height: 1.133;
+    letter-spacing: -1.92px;
+    color: var(--color-text-white);
+    margin-bottom: 0.267em;
+  }
+
+  .contact-section__text {
+    font-size: 0.875em;
+    line-height: 1.429;
+    color: var(--color-text-white-muted);
+    margin-bottom: 2em;
+  }
+
+  .contact-section__image-wrapper {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .contact-section__image {
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+  }
+
+  /* ========== RESPONSIVE ========== */
+
+  /* Tablet */
+  @media (max-width: 991px) {
+    .blog-hero__heading {
+      font-size: 3em;
+    }
+
+    .blog-hero__partners {
+      flex-wrap: wrap;
+      gap: 2em;
+    }
+
+    .featured-articles__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .all-articles__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-section__inner {
+      flex-direction: column;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 767px) {
+    .blog-hero__heading {
+      font-size: 2.5em;
+    }
+
+    .blog-hero__image {
+      height: 18em;
+    }
+
+    .blog-hero__partners {
+      gap: 1.5em;
+    }
+
+    .blog-hero__partner-logo {
+      width: 5em;
+      height: 2em;
+    }
+
+    .featured-articles__heading,
+    .all-articles__heading,
+    .contact-section__heading {
+      font-size: 2.5em;
+    }
+
+    .featured-card__image {
+      height: 15em;
+    }
+
+    .all-articles__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-section__image {
+      height: 18em;
+    }
+  }
+
+  /* Mobile portrait */
+  @media (max-width: 479px) {
+    .blog-hero__heading {
+      font-size: 2em;
+    }
+
+    .featured-articles__heading,
+    .all-articles__heading,
+    .contact-section__heading {
+      font-size: 2em;
+    }
+  }
+</style>

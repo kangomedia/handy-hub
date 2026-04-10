@@ -1,0 +1,913 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout title="Home Repairs Service | HandyHub" description="Professional home repairs service with skilled handymen, durable solutions, and cost-effective pricing.">
+  <Navbar variant="dark" />
+  <main id="main-content">
+
+    <!-- ============================================================
+         Hero Section
+         ============================================================ -->
+    <section class="is-hero">
+      <div class="is-hero__pattern" aria-hidden="true"></div>
+      <div class="is-hero__content container">
+        <div class="is-hero__text">
+          <span class="section-label is-hero__eyebrow">HANDYHUB</span>
+          <h1 class="is-hero__heading">Home repairs service</h1>
+          <a href="/contact" class="btn btn--light">Contact us</a>
+        </div>
+        <div class="is-hero__stats">
+          <div class="is-hero__stat">
+            <span class="is-hero__stat-number">10y</span>
+            <span class="is-hero__stat-label">EXPERIENCES</span>
+          </div>
+          <div class="is-hero__stat">
+            <span class="is-hero__stat-number">100+</span>
+            <span class="is-hero__stat-label">TEAM MEMBERS</span>
+          </div>
+          <div class="is-hero__stat">
+            <span class="is-hero__stat-number">10k+</span>
+            <span class="is-hero__stat-label">PROJECT DONE</span>
+          </div>
+          <div class="is-hero__stat">
+            <span class="is-hero__stat-number">99%</span>
+            <span class="is-hero__stat-label">TRUSTED BY CLIENTS</span>
+          </div>
+        </div>
+      </div>
+      <div class="is-hero__image-wrap">
+        <img
+          src="/assets/images/hero-internal-services.jpg"
+          alt="Professional home repair service"
+          width="1440"
+          height="600"
+          class="is-hero__image"
+          loading="eager"
+        />
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Benefits Section
+         ============================================================ -->
+    <section class="is-benefits">
+      <div class="is-benefits__inner container">
+        <span class="section-label">HANDYHUB</span>
+        <h2 class="is-benefits__heading">Benefits home repairs service</h2>
+        <p class="is-benefits__subtext">
+          We offer a wide range of handyman services to meet all your needs, from minor fixes to major renovations.
+        </p>
+
+        <div class="is-benefits__grid">
+          <div class="is-benefit-card">
+            <div class="is-benefit-card__icon-wrap">
+              <img src="/assets/images/icon-home-repair.svg" alt="" role="presentation" width="24" height="24" class="is-benefit-card__icon" />
+            </div>
+            <h3 class="is-benefit-card__title">Skilled Handymen</h3>
+            <p class="is-benefit-card__desc">
+              Our team consists of experienced professionals who tackle repairs efficiently and effectively.
+            </p>
+          </div>
+
+          <div class="is-benefit-card">
+            <div class="is-benefit-card__icon-wrap">
+              <img src="/assets/images/icon-search.svg" alt="" role="presentation" width="24" height="24" class="is-benefit-card__icon" />
+            </div>
+            <h3 class="is-benefit-card__title">Attention to Detail</h3>
+            <p class="is-benefit-card__desc">
+              We ensure every repair is completed to the highest standard, paying close attention to every detail.
+            </p>
+          </div>
+
+          <div class="is-benefit-card">
+            <div class="is-benefit-card__icon-wrap">
+              <img src="/assets/images/icon-home-more.svg" alt="" role="presentation" width="24" height="24" class="is-benefit-card__icon" />
+            </div>
+            <h3 class="is-benefit-card__title">Durable Solution</h3>
+            <p class="is-benefit-card__desc">
+              We use quality materials to ensure that all repairs are long-lasting and sturdy.
+            </p>
+          </div>
+
+          <div class="is-benefit-card">
+            <div class="is-benefit-card__icon-wrap">
+              <img src="/assets/images/icon-money-bag.svg" alt="" role="presentation" width="24" height="24" class="is-benefit-card__icon" />
+            </div>
+            <h3 class="is-benefit-card__title">Cost-Effective Repairs</h3>
+            <p class="is-benefit-card__desc">
+              We focus on providing solutions that fit your budget without compromising quality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Service Detail CTA
+         ============================================================ -->
+    <section class="is-detail-cta">
+      <div class="is-detail-cta__pattern" aria-hidden="true"></div>
+      <div class="is-detail-cta__inner container">
+        <div class="is-detail-cta__image-wrap">
+          <img
+            src="/assets/images/service-detail-image.jpg"
+            alt="Home repair service in progress"
+            width="240"
+            height="240"
+            class="is-detail-cta__image"
+            loading="lazy"
+          />
+        </div>
+        <div class="is-detail-cta__content">
+          <span class="section-label is-detail-cta__eyebrow">HANDYHUB</span>
+          <h2 class="is-detail-cta__heading">Service detail: Home repairs</h2>
+          <p class="is-detail-cta__text">
+            Our home repairs service covers everything from minor fixes to major structural repairs. We ensure your home is safe, functional, and looking its best.
+          </p>
+          <a href="/contact" class="btn btn--light">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Services Included Section
+         ============================================================ -->
+    <section class="is-included">
+      <div class="is-included__inner container">
+        <div class="is-included__left">
+          <span class="section-label">HANDYHUB</span>
+          <h2 class="is-included__heading">Our home repair services include</h2>
+          <p class="is-included__desc">
+            We provide comprehensive home repair services designed to keep your property in top condition.
+          </p>
+        </div>
+        <div class="is-included__right">
+          <div class="is-accordion" data-accordion>
+            <div class="is-accordion__item is-accordion__item--active" data-accordion-item>
+              <button class="is-accordion__header" type="button" aria-expanded="true">
+                <div class="is-accordion__header-left">
+                  <img src="/assets/images/icon-roof.svg" alt="" role="presentation" width="24" height="24" class="is-accordion__icon" />
+                  <span class="is-accordion__title">ROOF AND WALL REPAIRS</span>
+                </div>
+                <span class="is-accordion__toggle" aria-hidden="true">
+                  <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="14" height="2" fill="white"/></svg>
+                </span>
+              </button>
+              <div class="is-accordion__body">
+                <p class="is-accordion__text">
+                  Expert repair and maintenance for roofs, walls, and structural elements to keep your home safe and weatherproof.
+                </p>
+              </div>
+            </div>
+
+            <div class="is-accordion__item" data-accordion-item>
+              <button class="is-accordion__header" type="button" aria-expanded="false">
+                <div class="is-accordion__header-left">
+                  <img src="/assets/images/icon-floor.svg" alt="" role="presentation" width="24" height="24" class="is-accordion__icon" />
+                  <span class="is-accordion__title">FLOORING REPAIRS</span>
+                </div>
+                <span class="is-accordion__toggle" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="6" width="14" height="2" fill="white"/><rect x="6" width="2" height="14" fill="white"/></svg>
+                </span>
+              </button>
+              <div class="is-accordion__body" hidden>
+                <p class="is-accordion__text">
+                  Repair and replacement of damaged flooring, including hardwood, tile, laminate, and vinyl surfaces.
+                </p>
+              </div>
+            </div>
+
+            <div class="is-accordion__item" data-accordion-item>
+              <button class="is-accordion__header" type="button" aria-expanded="false">
+                <div class="is-accordion__header-left">
+                  <img src="/assets/images/icon-window.svg" alt="" role="presentation" width="24" height="24" class="is-accordion__icon" />
+                  <span class="is-accordion__title">WINDOW AND DOOR REPAIRS</span>
+                </div>
+                <span class="is-accordion__toggle" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="6" width="14" height="2" fill="white"/><rect x="6" width="2" height="14" fill="white"/></svg>
+                </span>
+              </button>
+              <div class="is-accordion__body" hidden>
+                <p class="is-accordion__text">
+                  Fix squeaky hinges, broken locks, cracked glass, and weatherstripping for windows and doors throughout your home.
+                </p>
+              </div>
+            </div>
+
+            <div class="is-accordion__item" data-accordion-item>
+              <button class="is-accordion__header" type="button" aria-expanded="false">
+                <div class="is-accordion__header-left">
+                  <img src="/assets/images/icon-plumbing-alt.svg" alt="" role="presentation" width="24" height="24" class="is-accordion__icon" />
+                  <span class="is-accordion__title">PLUMBING FIXES</span>
+                </div>
+                <span class="is-accordion__toggle" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="6" width="14" height="2" fill="white"/><rect x="6" width="2" height="14" fill="white"/></svg>
+                </span>
+              </button>
+              <div class="is-accordion__body" hidden>
+                <p class="is-accordion__text">
+                  Address leaks, clogs, dripping faucets, and other plumbing issues to ensure your water systems run smoothly.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Contact Section
+         ============================================================ -->
+    <section class="is-contact">
+      <div class="is-contact__inner container">
+        <div class="is-contact__text">
+          <span class="section-label is-contact__eyebrow">HANDYHUB</span>
+          <h2 class="is-contact__heading">Get in touch with us</h2>
+          <p class="is-contact__desc">
+            Have a question or need a quote? Fill out the form and our team will get back to you shortly.
+          </p>
+        </div>
+        <form class="is-contact__form" action="#" method="post">
+          <div class="is-contact__form-row">
+            <div class="is-contact__field">
+              <label for="is-contact-name" class="is-contact__label">Name</label>
+              <input type="text" id="is-contact-name" name="name" class="is-contact__input" placeholder="Your name" required />
+            </div>
+            <div class="is-contact__field">
+              <label for="is-contact-email" class="is-contact__label">Email</label>
+              <input type="email" id="is-contact-email" name="email" class="is-contact__input" placeholder="Your email" required />
+            </div>
+          </div>
+          <div class="is-contact__field">
+            <label for="is-contact-message" class="is-contact__label">Message</label>
+            <textarea id="is-contact-message" name="message" class="is-contact__textarea" placeholder="Your message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <Footer />
+  </main>
+</BaseLayout>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const accordion = document.querySelector('[data-accordion]');
+    if (!accordion) return;
+
+    const items = accordion.querySelectorAll('[data-accordion-item]');
+
+    items.forEach((item) => {
+      const header = item.querySelector('.is-accordion__header');
+      const body = item.querySelector('.is-accordion__body');
+      const toggle = item.querySelector('.is-accordion__toggle');
+
+      header.addEventListener('click', () => {
+        const isOpen = item.classList.contains('is-accordion__item--active');
+
+        // Close all items
+        items.forEach((otherItem) => {
+          otherItem.classList.remove('is-accordion__item--active');
+          const otherBody = otherItem.querySelector('.is-accordion__body');
+          const otherHeader = otherItem.querySelector('.is-accordion__header');
+          const otherToggle = otherItem.querySelector('.is-accordion__toggle');
+          otherBody.hidden = true;
+          otherHeader.setAttribute('aria-expanded', 'false');
+          // Switch to plus icon
+          otherToggle.innerHTML = '<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect y="6" width="14" height="2" fill="white"/><rect x="6" width="2" height="14" fill="white"/></svg>';
+        });
+
+        // Toggle clicked item
+        if (!isOpen) {
+          item.classList.add('is-accordion__item--active');
+          body.hidden = false;
+          header.setAttribute('aria-expanded', 'true');
+          // Switch to minus icon
+          toggle.innerHTML = '<svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="14" height="2" fill="white"/></svg>';
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  /* ==========================================================================
+     Hero Section
+     ========================================================================== */
+  .is-hero {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    height: 64em;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .is-hero__pattern {
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 60px
+    );
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .is-hero__content {
+    position: relative;
+    z-index: 2;
+    padding-top: 7.5em;
+    padding-bottom: 3em;
+  }
+
+  .is-hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .is-hero__eyebrow {
+    color: var(--color-text-white-muted);
+    margin-bottom: 1.5em;
+  }
+
+  .is-hero__heading {
+    font-family: var(--font-heading);
+    font-size: 3.75em;
+    font-weight: 400;
+    line-height: 1.133;
+    letter-spacing: -1.2px;
+    color: var(--color-text-white);
+    margin-bottom: 1em;
+    max-width: 12em;
+  }
+
+  .is-hero__stats {
+    display: flex;
+    gap: 3em;
+    margin-top: 3em;
+  }
+
+  .is-hero__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+  }
+
+  .is-hero__stat-number {
+    font-family: var(--font-heading);
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    color: var(--color-text-white);
+  }
+
+  .is-hero__stat-label {
+    font-family: var(--font-body);
+    font-size: 0.75em;
+    font-weight: 400;
+    line-height: 1.333;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--color-text-white-muted);
+  }
+
+  .is-hero__image-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    z-index: 1;
+  }
+
+  .is-hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ==========================================================================
+     Benefits Section
+     ========================================================================== */
+  .is-benefits {
+    width: 100%;
+    background-color: var(--color-bg-white);
+    padding-block: 7.5em;
+  }
+
+  .is-benefits__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .is-benefits__heading {
+    font-family: var(--font-heading);
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.167;
+    letter-spacing: -0.96px;
+    color: var(--color-text-primary);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  .is-benefits__subtext {
+    font-family: var(--font-body);
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+    max-width: 40em;
+    margin-bottom: 3em;
+  }
+
+  .is-benefits__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    width: 100%;
+    max-width: 72em;
+  }
+
+  .is-benefit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2em;
+    background-color: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+  }
+
+  .is-benefit-card__icon-wrap {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.5em;
+  }
+
+  .is-benefit-card__icon {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .is-benefit-card__title {
+    font-family: var(--font-heading);
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.4px;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5em;
+  }
+
+  .is-benefit-card__desc {
+    font-family: var(--font-body);
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.429;
+    color: var(--color-text-secondary);
+  }
+
+  /* ==========================================================================
+     Service Detail CTA
+     ========================================================================== */
+  .is-detail-cta {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .is-detail-cta__pattern {
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 60px
+    );
+    pointer-events: none;
+  }
+
+  .is-detail-cta__inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    padding-block: 6.25em;
+  }
+
+  .is-detail-cta__image-wrap {
+    flex-shrink: 0;
+    width: 15em;
+    height: 15em;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  .is-detail-cta__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .is-detail-cta__content {
+    flex: 1;
+  }
+
+  .is-detail-cta__eyebrow {
+    color: var(--color-text-white-muted);
+    margin-bottom: 1.5em;
+    display: block;
+  }
+
+  .is-detail-cta__heading {
+    font-family: var(--font-heading);
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.167;
+    letter-spacing: -0.96px;
+    color: var(--color-text-white);
+    margin-bottom: 0.5em;
+  }
+
+  .is-detail-cta__text {
+    font-family: var(--font-body);
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-white-muted);
+    margin-bottom: 2em;
+    max-width: 36em;
+  }
+
+  /* ==========================================================================
+     Services Included Section
+     ========================================================================== */
+  .is-included {
+    width: 100%;
+    background-color: var(--color-bg-white);
+    padding-block: 7.5em;
+  }
+
+  .is-included__inner {
+    display: flex;
+    gap: 3.75em;
+  }
+
+  .is-included__left {
+    flex: 1;
+  }
+
+  .is-included__heading {
+    font-family: var(--font-heading);
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.167;
+    letter-spacing: -0.96px;
+    color: var(--color-text-primary);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  .is-included__desc {
+    font-family: var(--font-body);
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+    max-width: 28em;
+  }
+
+  .is-included__right {
+    flex: 1;
+  }
+
+  /* Accordion */
+  .is-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .is-accordion__item {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .is-accordion__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.25em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+  }
+
+  .is-accordion__header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+  }
+
+  .is-accordion__icon {
+    width: 1.5em;
+    height: 1.5em;
+    flex-shrink: 0;
+  }
+
+  .is-accordion__title {
+    font-family: var(--font-heading);
+    font-size: 0.875em;
+    font-weight: 500;
+    line-height: 1.429;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    color: var(--color-text-primary);
+  }
+
+  .is-accordion__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    background-color: var(--color-bg-dark);
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+  }
+
+  .is-accordion__body {
+    padding: 0 1.25em 1.25em;
+  }
+
+  .is-accordion__text {
+    font-family: var(--font-body);
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.429;
+    color: var(--color-text-secondary);
+    padding-left: 2.25em;
+  }
+
+  /* ==========================================================================
+     Contact Section
+     ========================================================================== */
+  .is-contact {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    padding-block: 7.5em;
+  }
+
+  .is-contact__inner {
+    display: flex;
+    gap: 4em;
+  }
+
+  .is-contact__text {
+    flex: 1;
+  }
+
+  .is-contact__eyebrow {
+    color: var(--color-text-white-muted);
+    display: block;
+    margin-bottom: 1.5em;
+  }
+
+  .is-contact__heading {
+    font-family: var(--font-heading);
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.167;
+    letter-spacing: -0.96px;
+    color: var(--color-text-white);
+    margin-bottom: 0.5em;
+  }
+
+  .is-contact__desc {
+    font-family: var(--font-body);
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-white-muted);
+    max-width: 28em;
+  }
+
+  .is-contact__form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .is-contact__form-row {
+    display: flex;
+    gap: 1.5em;
+  }
+
+  .is-contact__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    flex: 1;
+  }
+
+  .is-contact__label {
+    font-family: var(--font-body);
+    font-size: 0.875em;
+    font-weight: 500;
+    line-height: 1.429;
+    color: var(--color-text-white);
+  }
+
+  .is-contact__input,
+  .is-contact__textarea {
+    width: 100%;
+    padding: 0.875em 1em;
+    background-color: transparent;
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--radius-md);
+    color: var(--color-text-white);
+    font-family: var(--font-body);
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .is-contact__input::placeholder,
+  .is-contact__textarea::placeholder {
+    color: var(--color-text-gray);
+  }
+
+  .is-contact__textarea {
+    resize: vertical;
+    min-height: 8em;
+  }
+
+  /* ==========================================================================
+     Responsive — Tablet
+     ========================================================================== */
+  @media (max-width: 991px) {
+    .is-hero {
+      height: auto;
+      min-height: 48em;
+    }
+
+    .is-hero__content {
+      padding-top: 5em;
+    }
+
+    .is-hero__heading {
+      font-size: 3em;
+    }
+
+    .is-hero__stats {
+      flex-wrap: wrap;
+      gap: 2em;
+    }
+
+    .is-hero__image-wrap {
+      position: relative;
+      height: 22em;
+    }
+
+    .is-benefits__grid {
+      max-width: 100%;
+    }
+
+    .is-detail-cta__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .is-detail-cta__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .is-detail-cta__text {
+      max-width: 100%;
+    }
+
+    .is-included__inner {
+      flex-direction: column;
+      gap: 2.5em;
+    }
+
+    .is-included__left {
+      text-align: center;
+    }
+
+    .is-included__desc {
+      max-width: 100%;
+    }
+
+    .is-contact__inner {
+      flex-direction: column;
+    }
+  }
+
+  /* ==========================================================================
+     Responsive — Mobile Landscape
+     ========================================================================== */
+  @media (max-width: 767px) {
+    .is-hero__heading {
+      font-size: 2.5em;
+    }
+
+    .is-hero__stats {
+      gap: 1.5em;
+    }
+
+    .is-hero__stat-number {
+      font-size: 2em;
+    }
+
+    .is-hero__image-wrap {
+      height: 18em;
+    }
+
+    .is-benefits__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .is-contact__form-row {
+      flex-direction: column;
+    }
+
+    .is-accordion__title {
+      font-size: 0.75em;
+      letter-spacing: 2px;
+    }
+
+    .is-accordion__toggle {
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+
+  /* ==========================================================================
+     Responsive — Mobile Portrait
+     ========================================================================== */
+  @media (max-width: 479px) {
+    .is-hero__heading {
+      font-size: 2em;
+    }
+
+    .is-hero__content {
+      padding-top: 3em;
+    }
+
+    .is-hero__stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5em;
+    }
+
+    .is-hero__stat-number {
+      font-size: 1.75em;
+    }
+
+    .is-hero__image-wrap {
+      height: 14em;
+    }
+
+    .is-detail-cta__image-wrap {
+      width: 12em;
+      height: 12em;
+    }
+
+    .is-detail-cta__heading {
+      font-size: 2em;
+    }
+
+    .is-contact__inner {
+      gap: 2.5em;
+    }
+  }
+</style>

@@ -1,0 +1,263 @@
+---
+---
+
+<footer class="footer">
+  <img
+    src="/assets/images/footer-bg-shapes.png"
+    alt=""
+    role="presentation"
+    class="footer__bg-shapes"
+    width="1440"
+    height="600"
+    loading="lazy"
+  />
+  <img
+    src="/assets/images/footer-decorative.png"
+    alt=""
+    role="presentation"
+    class="footer__decorative"
+    width="400"
+    height="400"
+    loading="lazy"
+  />
+
+  <div class="footer__inner container">
+    <div class="footer__top">
+      <div class="footer__company">
+        <a href="/" class="footer__logo" aria-label="handyhub home">
+          <img
+            src="/assets/images/logo-icon.png"
+            alt=""
+            role="presentation"
+            width="32"
+            height="32"
+            class="footer__logo-icon"
+          />
+          <span class="footer__logo-text">handyhub</span>
+        </a>
+        <p class="footer__description">
+          We offer a wide range of handyman services to meet all your needs, from minor fixes to major renovations.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__link-column">
+          <h3 class="footer__link-heading">Extra links</h3>
+          <ul class="footer__link-list" role="list">
+            <li><a href="/" class="footer__link">Home</a></li>
+            <li><a href="/about" class="footer__link">About us</a></li>
+            <li><a href="/services" class="footer__link">Services</a></li>
+            <li><a href="/contact" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__link-column">
+          <h3 class="footer__link-heading">Useful links</h3>
+          <ul class="footer__link-list" role="list">
+            <li><a href="/team" class="footer__link">Our team</a></li>
+            <li><a href="/testimonials" class="footer__link">Testimonials</a></li>
+            <li><a href="/portfolio" class="footer__link">Portfolio</a></li>
+            <li><a href="/contact" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__link-column">
+          <h3 class="footer__link-heading">Social media</h3>
+          <ul class="footer__link-list" role="list">
+            <li><a href="#" class="footer__link">Instagram</a></li>
+            <li><a href="#" class="footer__link">YouTube</a></li>
+            <li><a href="#" class="footer__link">Facebook</a></li>
+            <li><a href="#" class="footer__link">X</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span class="footer__bottom-brand">handyhub</span>
+      <span class="footer__bottom-copy">&copy;2024 All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer__bg-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  .footer__decorative {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25em;
+    height: auto;
+    pointer-events: none;
+  }
+
+  .footer__inner {
+    position: relative;
+    z-index: 1;
+    padding-block: 5em 2em;
+  }
+
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    padding-bottom: 3em;
+    border-bottom: 1px solid var(--color-border-dark);
+  }
+
+  .footer__company {
+    max-width: 20em;
+    flex-shrink: 0;
+  }
+
+  .footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 1.25em;
+  }
+
+  .footer__logo-icon {
+    width: 2em;
+    height: 2em;
+  }
+
+  .footer__logo-text {
+    font-family: var(--font-heading);
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    color: var(--color-text-white);
+    line-height: 1;
+  }
+
+  .footer__description {
+    font-family: var(--font-body);
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.429;
+    color: var(--color-text-white-muted);
+  }
+
+  .footer__links {
+    display: flex;
+    gap: 4em;
+  }
+
+  .footer__link-heading {
+    font-family: var(--font-heading);
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-text-white);
+    margin-bottom: 1.25em;
+  }
+
+  .footer__link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+  }
+
+  .footer__link {
+    font-family: var(--font-heading);
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-white);
+    transition: opacity var(--transition-base);
+  }
+
+  .footer__link:hover {
+    opacity: 0.7;
+  }
+
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+  }
+
+  .footer__bottom-brand {
+    font-family: var(--font-heading);
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.429;
+    color: var(--color-text-white-muted);
+  }
+
+  .footer__bottom-copy {
+    font-family: var(--font-body);
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.429;
+    color: var(--color-text-white-muted);
+  }
+
+  /* Tablet */
+  @media (max-width: 991px) {
+    .footer__top {
+      flex-wrap: wrap;
+      gap: 3em;
+    }
+
+    .footer__company {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .footer__links {
+      width: 100%;
+      gap: 3em;
+    }
+
+    .footer__decorative {
+      width: 18em;
+      opacity: 0.5;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 767px) {
+    .footer__inner {
+      padding-block: 3em 1.5em;
+    }
+
+    .footer__top {
+      flex-direction: column;
+      gap: 2.5em;
+    }
+
+    .footer__links {
+      flex-direction: column;
+      gap: 2.5em;
+    }
+
+    .footer__bottom {
+      flex-direction: column;
+      gap: 0.75em;
+      text-align: center;
+    }
+
+    .footer__decorative {
+      display: none;
+    }
+  }
+</style>

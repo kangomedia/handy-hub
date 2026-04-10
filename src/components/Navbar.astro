@@ -1,0 +1,205 @@
+---
+interface Props {
+  variant?: 'dark' | 'light';
+}
+
+const { variant = 'dark' } = Astro.props;
+const isDark = variant === 'dark';
+const logoSrc = isDark ? '/assets/images/logo-icon.png' : '/assets/images/logo-dark.png';
+---
+
+<nav class:list={['navbar', { 'navbar--light': !isDark }]} aria-label="Main navigation">
+  <div class="navbar__inner container">
+    <a href="/" class="navbar__logo" aria-label="handyhub home">
+      <img src={logoSrc} alt="" width="32" height="32" class="navbar__logo-icon" role="presentation" />
+      <span class="navbar__logo-text">handyhub</span>
+    </a>
+
+    <button
+      class="navbar__hamburger"
+      type="button"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      aria-controls="navbar-menu"
+    >
+      <span class="navbar__hamburger-line"></span>
+      <span class="navbar__hamburger-line"></span>
+      <span class="navbar__hamburger-line"></span>
+    </button>
+
+    <ul id="navbar-menu" class="navbar__links" role="list">
+      <li><a href="/" class="navbar__link">Home</a></li>
+      <li><a href="/about" class="navbar__link">About us</a></li>
+      <li><a href="/services" class="navbar__link">Services</a></li>
+      <li><a href="/contact" class="navbar__link">Contact</a></li>
+      <li><a href="/blog" class="navbar__link">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.navbar__hamburger');
+    const menu = document.getElementById('navbar-menu');
+    if (!hamburger || !menu) return;
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', String(!isOpen));
+      menu.classList.toggle('navbar__links--open');
+      hamburger.classList.toggle('navbar__hamburger--active');
+    });
+  });
+</script>
+
+<style>
+  .navbar {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    border-bottom: 1px solid var(--color-border-dark);
+  }
+
+  .navbar--light {
+    background-color: var(--color-bg-white);
+    border-bottom-color: var(--color-border);
+  }
+
+  .navbar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.5em;
+  }
+
+  .navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .navbar__logo-icon {
+    width: 2em;
+    height: 2em;
+  }
+
+  .navbar__logo-text {
+    font-family: var(--font-heading);
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    color: var(--color-text-white);
+    line-height: 1;
+  }
+
+  .navbar--light .navbar__logo-text {
+    color: var(--color-text-primary);
+  }
+
+  .navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 3.25em;
+  }
+
+  .navbar__link {
+    font-family: var(--font-body);
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-white);
+    transition: opacity var(--transition-base);
+  }
+
+  .navbar__link:hover {
+    opacity: 0.7;
+  }
+
+  .navbar--light .navbar__link {
+    color: var(--color-text-primary);
+  }
+
+  /* Hamburger — hidden on desktop */
+  .navbar__hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3125em;
+    width: 2.75em;
+    height: 2.75em;
+    padding: 0.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar__hamburger-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-text-white);
+    border-radius: 1px;
+    transition: transform var(--transition-base), opacity var(--transition-base);
+  }
+
+  .navbar--light .navbar__hamburger-line {
+    background-color: var(--color-text-primary);
+  }
+
+  .navbar__hamburger--active .navbar__hamburger-line:nth-child(1) {
+    transform: translateY(0.4375em) rotate(45deg);
+  }
+
+  .navbar__hamburger--active .navbar__hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar__hamburger--active .navbar__hamburger-line:nth-child(3) {
+    transform: translateY(-0.4375em) rotate(-45deg);
+  }
+
+  /* Tablet and below — hamburger menu */
+  @media (max-width: 991px) {
+    .navbar__hamburger {
+      display: flex;
+    }
+
+    .navbar__links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      gap: 0;
+      padding: 1em 0;
+      background-color: var(--color-bg-dark);
+      border-bottom: 1px solid var(--color-border-dark);
+      z-index: 100;
+    }
+
+    .navbar--light .navbar__links {
+      background-color: var(--color-bg-white);
+      border-bottom-color: var(--color-border);
+    }
+
+    .navbar__links--open {
+      display: flex;
+    }
+
+    .navbar__link {
+      display: block;
+      padding: 0.75em var(--container-padding);
+      width: 100%;
+    }
+
+    .navbar__inner {
+      position: relative;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .navbar__link {
+      padding: 0.875em var(--container-padding);
+    }
+  }
+</style>
