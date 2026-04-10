@@ -48,9 +48,7 @@ import Footer from '../components/Footer.astro';
     <section class="our-story">
       <div class="our-story__inner container">
         <div class="our-story__image-col">
-          <div class="our-story__image-placeholder" aria-label="Elite Property Innovations team at work">
-            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M5 20V8l7-5 7 5v12"/><path d="M9 20v-6h6v6"/></svg>
-          </div>
+          <img src="/assets/images/about-story.jpg" alt="Elite Property Innovations team at work on a Westminster home improvement project" width="600" height="500" loading="lazy" class="our-story__image" />
         </div>
         <div class="our-story__content">
           <span class="section-label">Our Story</span>
@@ -151,6 +149,9 @@ import Footer from '../components/Footer.astro';
   .about-hero {
     width: 100%;
     background-color: var(--color-bg-dark);
+    background-image: url('/assets/images/hero-about.jpg');
+    background-size: cover;
+    background-position: center;
     position: relative;
     overflow: hidden;
     padding: 10em 0 6em;
@@ -159,7 +160,8 @@ import Footer from '../components/Footer.astro';
   .about-hero__gradient {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 30% 20%, rgba(0, 200, 232, 0.08) 0%, transparent 60%),
+    background: linear-gradient(to bottom, rgba(10, 15, 20, 0.8) 0%, rgba(10, 15, 20, 0.9) 100%),
+                radial-gradient(ellipse at 30% 20%, rgba(0, 200, 232, 0.08) 0%, transparent 60%),
                 radial-gradient(ellipse at 70% 80%, rgba(168, 224, 0, 0.05) 0%, transparent 50%);
     pointer-events: none;
   }
@@ -267,16 +269,13 @@ import Footer from '../components/Footer.astro';
     min-width: 0;
   }
 
-  .our-story__image-placeholder {
+  .our-story__image {
     width: 100%;
     height: 32em;
-    background-color: var(--color-bg-surface);
+    object-fit: cover;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-primary);
+    display: block;
   }
 
   .our-story__content {
@@ -434,13 +433,27 @@ import Footer from '../components/Footer.astro';
   /* ========== CTA SECTION ========== */
   .about-cta {
     width: 100%;
-    background: linear-gradient(135deg, rgba(0, 200, 232, 0.1) 0%, var(--color-bg-dark) 50%, rgba(168, 224, 0, 0.08) 100%);
+    background-color: var(--color-bg-dark);
+    background-image: url('/assets/images/hero-cta.jpg');
+    background-size: cover;
+    background-position: center;
     border-top: 1px solid var(--color-border);
     padding-block: 5em;
+    position: relative;
+  }
+
+  .about-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 15, 20, 0.88) 0%, rgba(10, 15, 20, 0.94) 100%);
+    pointer-events: none;
   }
 
   .about-cta__inner {
     text-align: center;
+    position: relative;
+    z-index: 1;
   }
 
   .about-cta__heading {
@@ -479,7 +492,7 @@ import Footer from '../components/Footer.astro';
       flex-direction: column;
     }
 
-    .our-story__image-placeholder {
+    .our-story__image {
       height: 22em;
     }
 

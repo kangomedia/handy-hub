@@ -259,8 +259,11 @@ import Footer from '../components/Footer.astro';
             </div>
             <p class="testimonials__card-quote">"We have been so happy with our experience with Jacob and his company! The work is great and his communication is unmatched and makes all the difference! Contractors are hard to work with… Not this one!"</p>
             <div class="testimonials__card-author">
-              <span class="testimonials__card-name">Corie D.</span>
-              <span class="testimonials__card-service">Home Remodel — Westminster, CO</span>
+              <img src="/assets/images/testimonial-1.jpg" alt="Corie D." class="testimonials__card-avatar" width="48" height="48" loading="lazy" />
+              <div class="testimonials__card-author-info">
+                <span class="testimonials__card-name">Corie D.</span>
+                <span class="testimonials__card-service">Home Remodel — Westminster, CO</span>
+              </div>
             </div>
           </div>
 
@@ -272,8 +275,11 @@ import Footer from '../components/Footer.astro';
             </div>
             <p class="testimonials__card-quote">"We worked with Jacob on a pretty complex renovation job. He helped us manage vendors, coordinate timelines and stay on top of the many crews. Jacob was professional and extremely responsive. His attention to detail is reinforced when you watch him working in your home."</p>
             <div class="testimonials__card-author">
-              <span class="testimonials__card-name">Gabriella G.</span>
-              <span class="testimonials__card-service">Renovation — Denver Metro</span>
+              <img src="/assets/images/testimonial-2.jpg" alt="Gabriella G." class="testimonials__card-avatar" width="48" height="48" loading="lazy" />
+              <div class="testimonials__card-author-info">
+                <span class="testimonials__card-name">Gabriella G.</span>
+                <span class="testimonials__card-service">Renovation — Denver Metro</span>
+              </div>
             </div>
           </div>
 
@@ -285,8 +291,11 @@ import Footer from '../components/Footer.astro';
             </div>
             <p class="testimonials__card-quote">"Jacob was so wonderful to work with! He always kept us posted on things and answered our questions immediately! He caught a structural engineer's negligent error which we are extremely grateful for!"</p>
             <div class="testimonials__card-author">
-              <span class="testimonials__card-name">Alyson A.</span>
-              <span class="testimonials__card-service">Renovation — Westminster, CO</span>
+              <img src="/assets/images/testimonial-3.jpg" alt="Alyson A." class="testimonials__card-avatar" width="48" height="48" loading="lazy" />
+              <div class="testimonials__card-author-info">
+                <span class="testimonials__card-name">Alyson A.</span>
+                <span class="testimonials__card-service">Renovation — Westminster, CO</span>
+              </div>
             </div>
           </div>
         </div>
@@ -326,6 +335,9 @@ import Footer from '../components/Footer.astro';
   .hero {
     width: 100%;
     background-color: var(--color-bg-dark);
+    background-image: url('/assets/images/hero-home.jpg');
+    background-size: cover;
+    background-position: center;
     position: relative;
     overflow: hidden;
     min-height: 100vh;
@@ -336,6 +348,7 @@ import Footer from '../components/Footer.astro';
     position: absolute;
     inset: 0;
     background:
+      linear-gradient(to bottom, rgba(10, 15, 20, 0.82) 0%, rgba(10, 15, 20, 0.88) 50%, rgba(10, 15, 20, 0.95) 100%),
       radial-gradient(ellipse 80% 60% at 20% 40%, rgba(0, 200, 232, 0.06) 0%, transparent 60%),
       radial-gradient(ellipse 60% 50% at 80% 20%, rgba(168, 224, 0, 0.04) 0%, transparent 50%);
     pointer-events: none;
@@ -933,10 +946,25 @@ import Footer from '../components/Footer.astro';
 
   .testimonials__card-author {
     display: flex;
-    flex-direction: column;
-    gap: 0.125em;
+    align-items: center;
+    gap: 0.75em;
     padding-top: 0.75em;
     border-top: 1px solid var(--color-border);
+  }
+
+  .testimonials__card-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-primary);
+    flex-shrink: 0;
+  }
+
+  .testimonials__card-author-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125em;
   }
 
   .testimonials__card-name {
@@ -1015,6 +1043,9 @@ import Footer from '../components/Footer.astro';
   .cta-banner {
     width: 100%;
     background-color: var(--color-bg-surface);
+    background-image: url('/assets/images/hero-cta.jpg');
+    background-size: cover;
+    background-position: center;
     position: relative;
     overflow: hidden;
     border-top: 1px solid var(--color-border);
@@ -1022,12 +1053,8 @@ import Footer from '../components/Footer.astro';
 
   .cta-banner__glow {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40em;
-    height: 40em;
-    background: radial-gradient(circle, rgba(0, 200, 232, 0.06) 0%, transparent 70%);
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 15, 20, 0.85) 0%, rgba(10, 15, 20, 0.92) 100%);
     pointer-events: none;
   }
 

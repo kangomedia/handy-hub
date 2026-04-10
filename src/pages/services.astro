@@ -146,6 +146,47 @@ import Footer from '../components/Footer.astro';
     </section>
 
     <!-- ============================================================
+         Recent Projects Portfolio Gallery
+         ============================================================ -->
+    <section class="services-portfolio">
+      <div class="services-portfolio__inner container">
+        <span class="section-label">Our Work</span>
+        <h2 class="services-portfolio__heading">Recent Projects</h2>
+        <p class="services-portfolio__subtext">Browse a selection of our recent home improvement projects across Westminster and the Denver Metro area.</p>
+        <div class="services-portfolio__grid">
+          <div class="services-portfolio__item">
+            <img src="/assets/images/portfolio-kitchen.jpg" alt="Modern kitchen remodel in Westminster, CO — quartz countertops and custom cabinetry" width="600" height="400" loading="lazy" class="services-portfolio__img" />
+            <div class="services-portfolio__overlay">
+              <span class="services-portfolio__category">Kitchen Remodel</span>
+              <span class="services-portfolio__location">Westminster, CO</span>
+            </div>
+          </div>
+          <div class="services-portfolio__item">
+            <img src="/assets/images/portfolio-bathroom.jpg" alt="Luxury bathroom renovation in Arvada, CO — walk-in shower and dual vanity" width="600" height="400" loading="lazy" class="services-portfolio__img" />
+            <div class="services-portfolio__overlay">
+              <span class="services-portfolio__category">Bathroom Renovation</span>
+              <span class="services-portfolio__location">Arvada, CO</span>
+            </div>
+          </div>
+          <div class="services-portfolio__item">
+            <img src="/assets/images/portfolio-painting.jpg" alt="Exterior home painting in Broomfield, CO — fresh modern earth-tone finish" width="600" height="400" loading="lazy" class="services-portfolio__img" />
+            <div class="services-portfolio__overlay">
+              <span class="services-portfolio__category">Exterior Painting</span>
+              <span class="services-portfolio__location">Broomfield, CO</span>
+            </div>
+          </div>
+          <div class="services-portfolio__item">
+            <img src="/assets/images/portfolio-deck.jpg" alt="Custom composite deck build with pergola in Westminster, CO" width="600" height="400" loading="lazy" class="services-portfolio__img" />
+            <div class="services-portfolio__overlay">
+              <span class="services-portfolio__category">Deck Construction</span>
+              <span class="services-portfolio__location">Westminster, CO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
          Why EPI Section
          ============================================================ -->
     <section class="services-why">
@@ -205,7 +246,7 @@ import Footer from '../components/Footer.astro';
               &ldquo;Jacob and his team did an incredible job remodeling our home. We had a pretty large job that included a complete renovation of our bedroom, and they knocked it out of the park!&rdquo;
             </p>
             <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar-placeholder">C</div>
+              <img src="/assets/images/testimonial-1.jpg" alt="Corie D." class="testimonial-card__avatar" width="44" height="44" loading="lazy" />
               <div>
                 <span class="testimonial-card__name">Corie D.</span>
                 <span class="testimonial-card__role">Home Remodel · Westminster</span>
@@ -218,7 +259,7 @@ import Footer from '../components/Footer.astro';
               &ldquo;The work they did on our property was absolutely amazing. They brought our vision to life. Professional, detailed, and just overall a great team to work with.&rdquo;
             </p>
             <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar-placeholder">G</div>
+              <img src="/assets/images/testimonial-2.jpg" alt="Gabriella G." class="testimonial-card__avatar" width="44" height="44" loading="lazy" />
               <div>
                 <span class="testimonial-card__name">Gabriella G.</span>
                 <span class="testimonial-card__role">Renovation · Denver Metro</span>
@@ -231,7 +272,7 @@ import Footer from '../components/Footer.astro';
               &ldquo;We hired Elite Property Innovations for our renovation and couldn't be happier. They were communicative, thorough, and really cared about the quality of their work.&rdquo;
             </p>
             <div class="testimonial-card__author">
-              <div class="testimonial-card__avatar-placeholder">A</div>
+              <img src="/assets/images/testimonial-3.jpg" alt="Alyson A." class="testimonial-card__avatar" width="44" height="44" loading="lazy" />
               <div>
                 <span class="testimonial-card__name">Alyson A.</span>
                 <span class="testimonial-card__role">Renovation · Westminster</span>
@@ -270,6 +311,9 @@ import Footer from '../components/Footer.astro';
   .services-hero {
     width: 100%;
     background-color: var(--color-bg-dark);
+    background-image: url('/assets/images/hero-services.jpg');
+    background-size: cover;
+    background-position: center;
     position: relative;
     overflow: hidden;
     padding: 10em 0 6em;
@@ -278,7 +322,8 @@ import Footer from '../components/Footer.astro';
   .services-hero__gradient {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 30% 20%, rgba(0, 200, 232, 0.08) 0%, transparent 60%),
+    background: linear-gradient(to bottom, rgba(10, 15, 20, 0.8) 0%, rgba(10, 15, 20, 0.9) 100%),
+                radial-gradient(ellipse at 30% 20%, rgba(0, 200, 232, 0.08) 0%, transparent 60%),
                 radial-gradient(ellipse at 70% 80%, rgba(168, 224, 0, 0.05) 0%, transparent 50%);
     pointer-events: none;
   }
@@ -522,6 +567,96 @@ import Footer from '../components/Footer.astro';
   }
 
   /* ==========================================================================
+     Portfolio Gallery
+     ========================================================================== */
+  .services-portfolio {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    padding-block: 6.25em;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .services-portfolio__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-portfolio__heading {
+    font-family: var(--font-heading);
+    font-size: 2.75em;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--color-text-white);
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+  }
+
+  .services-portfolio__subtext {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: 3em;
+    max-width: 36em;
+  }
+
+  .services-portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25em;
+    width: 100%;
+  }
+
+  .services-portfolio__item {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 3 / 2;
+  }
+
+  .services-portfolio__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .services-portfolio__item:hover .services-portfolio__img {
+    transform: scale(1.06);
+  }
+
+  .services-portfolio__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10, 15, 20, 0.85) 0%, transparent 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.25em;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+
+  .services-portfolio__item:hover .services-portfolio__overlay {
+    opacity: 1;
+  }
+
+  .services-portfolio__category {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.9375em;
+    color: var(--color-text-white);
+  }
+
+  .services-portfolio__location {
+    font-size: 0.75em;
+    color: var(--color-primary);
+    margin-top: 0.25em;
+  }
+
+  /* ==========================================================================
      Testimonials Section
      ========================================================================== */
   .services-testimonials {
@@ -603,18 +738,12 @@ import Footer from '../components/Footer.astro';
     gap: 0.75em;
   }
 
-  .testimonial-card__avatar-placeholder {
+  .testimonial-card__avatar {
     width: 2.75em;
     height: 2.75em;
     border-radius: 50%;
-    background-color: rgba(0, 200, 232, 0.15);
-    color: var(--color-primary);
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    object-fit: cover;
+    border: 2px solid var(--color-primary);
     flex-shrink: 0;
   }
 
@@ -637,13 +766,27 @@ import Footer from '../components/Footer.astro';
      ========================================================================== */
   .services-cta-banner {
     width: 100%;
-    background: linear-gradient(135deg, rgba(0, 200, 232, 0.1) 0%, var(--color-bg-dark) 50%, rgba(168, 224, 0, 0.08) 100%);
+    background-color: var(--color-bg-dark);
+    background-image: url('/assets/images/hero-cta.jpg');
+    background-size: cover;
+    background-position: center;
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
     padding-block: 5em;
+    position: relative;
+  }
+
+  .services-cta-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 15, 20, 0.88) 0%, rgba(10, 15, 20, 0.94) 100%);
+    pointer-events: none;
   }
 
   .services-cta-banner__inner {
+    position: relative;
+    z-index: 1;
     text-align: center;
   }
 
@@ -696,6 +839,14 @@ import Footer from '../components/Footer.astro';
       max-width: 50%;
       margin-inline: auto;
     }
+
+    .services-portfolio__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-portfolio__heading {
+      font-size: 2.25em;
+    }
   }
 
   /* ==========================================================================
@@ -729,6 +880,10 @@ import Footer from '../components/Footer.astro';
     .services-cta-banner__heading {
       font-size: 2em;
     }
+
+    .services-portfolio__overlay {
+      opacity: 1;
+    }
   }
 
   /* ==========================================================================
@@ -740,6 +895,10 @@ import Footer from '../components/Footer.astro';
     }
 
     .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .services-portfolio__grid {
       grid-template-columns: 1fr;
     }
 

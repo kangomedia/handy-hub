@@ -104,6 +104,15 @@ import Footer from '../components/Footer.astro';
     </section>
 
     <!-- ============================================================
+         Feature Image
+         ============================================================ -->
+    <section class="is-feature-image">
+      <div class="is-feature-image__inner container">
+        <img src="/assets/images/service-detail-image.jpg" alt="Professional kitchen remodeling in progress — custom cabinetry installation in Westminster, CO" width="1200" height="500" loading="lazy" class="is-feature-image__img" />
+      </div>
+    </section>
+
+    <!-- ============================================================
          What's Included — Accordion
          ============================================================ -->
     <section class="is-included">
@@ -255,6 +264,9 @@ import Footer from '../components/Footer.astro';
   .is-hero {
     width: 100%;
     background-color: var(--color-bg-dark);
+    background-image: url('/assets/images/hero-internal-services.jpg');
+    background-size: cover;
+    background-position: center;
     position: relative;
     overflow: hidden;
     padding: 10em 0 6em;
@@ -263,7 +275,8 @@ import Footer from '../components/Footer.astro';
   .is-hero__gradient {
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 30% 20%, rgba(0, 200, 232, 0.08) 0%, transparent 60%),
+    background: linear-gradient(to bottom, rgba(10, 15, 20, 0.8) 0%, rgba(10, 15, 20, 0.92) 100%),
+                radial-gradient(ellipse at 30% 20%, rgba(0, 200, 232, 0.08) 0%, transparent 60%),
                 radial-gradient(ellipse at 70% 80%, rgba(168, 224, 0, 0.05) 0%, transparent 50%);
     pointer-events: none;
   }
@@ -438,6 +451,32 @@ import Footer from '../components/Footer.astro';
   /* ==========================================================================
      Services Included Section
      ========================================================================== */
+  /* ==========================================================================
+     Feature Image
+     ========================================================================== */
+  .is-feature-image {
+    width: 100%;
+    background-color: var(--color-bg-dark);
+    padding-block: 3em 6em;
+  }
+
+  .is-feature-image__inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .is-feature-image__img {
+    width: 100%;
+    height: 24em;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    display: block;
+  }
+
+  /* ==========================================================================
+     What's Included — Accordion
+     ========================================================================== */
   .is-included {
     width: 100%;
     background-color: var(--color-bg-dark);
@@ -561,14 +600,28 @@ import Footer from '../components/Footer.astro';
      ========================================================================== */
   .is-cta-banner {
     width: 100%;
-    background: linear-gradient(135deg, rgba(0, 200, 232, 0.1) 0%, var(--color-bg-white) 50%, rgba(168, 224, 0, 0.08) 100%);
+    background-color: var(--color-bg-dark);
+    background-image: url('/assets/images/hero-cta.jpg');
+    background-size: cover;
+    background-position: center;
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
     padding-block: 5em;
+    position: relative;
+  }
+
+  .is-cta-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 15, 20, 0.88) 0%, rgba(10, 15, 20, 0.94) 100%);
+    pointer-events: none;
   }
 
   .is-cta-banner__inner {
     text-align: center;
+    position: relative;
+    z-index: 1;
   }
 
   .is-cta-banner__heading {
