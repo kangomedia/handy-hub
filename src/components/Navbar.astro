@@ -30,6 +30,20 @@ const isDark = variant === 'dark';
       <ul id="navbar-menu" class="navbar__links" role="list">
         <li><a href="/" class="navbar__link">Home</a></li>
         <li><a href="/services" class="navbar__link">Services</a></li>
+        <li class="navbar__dropdown">
+          <a href="/service-areas" class="navbar__link navbar__link--dropdown">
+            Service Areas
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="navbar__dropdown-chevron" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <ul class="navbar__dropdown-menu" role="list">
+            <li><a href="/service-areas/westminster" class="navbar__dropdown-link">Westminster, CO</a></li>
+            <li><a href="/service-areas/arvada" class="navbar__dropdown-link">Arvada, CO</a></li>
+            <li><a href="/service-areas/broomfield" class="navbar__dropdown-link">Broomfield, CO</a></li>
+            <li><a href="/service-areas/erie" class="navbar__dropdown-link">Erie, CO</a></li>
+            <li><a href="/service-areas/lafayette" class="navbar__dropdown-link">Lafayette, CO</a></li>
+            <li><a href="/service-areas/denver" class="navbar__dropdown-link">Denver, CO</a></li>
+          </ul>
+        </li>
         <li><a href="/about" class="navbar__link">About</a></li>
         <li><a href="/contact" class="navbar__link">Contact</a></li>
       </ul>
@@ -55,6 +69,18 @@ const isDark = variant === 'dark';
       menu.classList.toggle('navbar__links--open');
       hamburger.classList.toggle('navbar__hamburger--active');
     });
+
+    // Mobile dropdown toggle
+    const dropdownLink = document.querySelector('.navbar__link--dropdown');
+    if (dropdownLink) {
+      dropdownLink.addEventListener('click', (e) => {
+        if (window.innerWidth <= 991) {
+          e.preventDefault();
+          const parent = dropdownLink.closest('.navbar__dropdown');
+          parent.classList.toggle('navbar__dropdown--open');
+        }
+      });
+    }
 
     // Sticky nav background on scroll
     let lastScroll = 0;
@@ -173,6 +199,78 @@ const isDark = variant === 'dark';
 
   .navbar--light .navbar__link:hover {
     color: var(--color-text-primary);
+  }
+
+  /* Dropdown — Desktop */
+  .navbar__dropdown {
+    position: relative;
+  }
+
+  .navbar__link--dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+  }
+
+  .navbar__link--dropdown::after {
+    display: none;
+  }
+
+  .navbar__dropdown-chevron {
+    width: 0.625em;
+    height: 0.375em;
+    transition: transform var(--transition-base);
+    flex-shrink: 0;
+  }
+
+  .navbar__dropdown:hover .navbar__dropdown-chevron {
+    transform: rotate(180deg);
+  }
+
+  .navbar__dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.75em);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 12em;
+    padding: 0.5em 0;
+    background-color: rgba(10, 15, 20, 0.97);
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    z-index: 200;
+  }
+
+  .navbar__dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -0.75em;
+    left: 0;
+    right: 0;
+    height: 0.75em;
+  }
+
+  .navbar__dropdown:hover .navbar__dropdown-menu {
+    display: block;
+  }
+
+  .navbar__dropdown-link {
+    display: block;
+    padding: 0.625em 1.25em;
+    font-family: var(--font-body);
+    font-size: 0.875em;
+    font-weight: 500;
+    color: var(--color-text-white-muted);
+    transition: color var(--transition-base), background-color var(--transition-base);
+    white-space: nowrap;
+  }
+
+  .navbar__dropdown-link:hover {
+    color: var(--color-text-white);
+    background-color: rgba(0, 200, 232, 0.08);
   }
 
   .navbar__phone {
@@ -296,6 +394,38 @@ const isDark = variant === 'dark';
 
     .navbar__cta {
       display: none;
+    }
+
+    /* Mobile dropdown */
+    .navbar__dropdown:hover .navbar__dropdown-menu {
+      display: none;
+    }
+
+    .navbar__dropdown-menu {
+      display: none;
+      position: static;
+      transform: none;
+      min-width: 100%;
+      padding: 0;
+      background-color: rgba(0, 200, 232, 0.04);
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+
+    .navbar__dropdown--open .navbar__dropdown-menu {
+      display: block;
+    }
+
+    .navbar__dropdown--open .navbar__dropdown-chevron {
+      transform: rotate(180deg);
+    }
+
+    .navbar__dropdown-link {
+      padding: 0.625em var(--container-padding);
+      padding-left: calc(var(--container-padding) + 1.5em);
+      font-size: 0.875em;
     }
   }
 
